@@ -2,13 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7709316-5bee-4c36-9d85-1c1751e866d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ferdinand.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/alerts.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/badges.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/bootstrap.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/breadcrumbs.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/button-groups.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/buttons.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/carousel.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/close.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/code.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/component-animations.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/dropdowns.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/forms.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/glyphicons.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/grid.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/icons.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/input-groups.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/jumbotron.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/labels.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/larger.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/list-group.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/style/main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/media.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/mixins.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/modals.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/navbar.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/navs.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/normalize.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/pager.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/pagination.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/panels.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/popovers.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/print.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/progress-bars.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/responsive-embed.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/responsive-utilities.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/rotated-flipped.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/scaffolding.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/tables.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/theme.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/thumbnails.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/tooltip.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/type.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/utilities.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/variables.import.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/wells.import.less" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/theme.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/lib/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/rotated-flipped.less" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/animated.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/animated.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/bordered-pulled.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/core.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/core.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/fixed-width.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/fixed-width.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/font-awesome.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/font-awesome.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/list.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/list.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/mixins.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/mixins.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/path.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/path.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/stacked.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/stacked.import.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/variables.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/variables.import.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/font-awesome-4-less/font-awesome.import.less" afterPath="$PROJECT_DIR$/packages/font-awesome-4-less/font-awesome.import.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/bootstrap3-less/package.js" afterPath="$PROJECT_DIR$/packages/bootstrap3-less/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ferdinand.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +153,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/bootstrap3-less/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="806">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="806">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/style/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07692308" vertical-offset="0" max-vertical-offset="486">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,6 +183,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/packages/bootstrap3-less/.gitignore" />
+        <option value="$PROJECT_DIR$/packages/font-awesome-4-less/font-awesome.import.less" />
+        <option value="$PROJECT_DIR$/client/style/main.less" />
       </list>
     </option>
   </component>
@@ -125,6 +249,10 @@
               <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -140,7 +268,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap3-less" />
+              <option name="myItemId" value="font-awesome-4-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ferdinand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -169,6 +359,11 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/style" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -217,9 +412,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -270,8 +465,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/bootstrap3-less/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="806">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="806">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/font-awesome-4-less/font-awesome.import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3286517" vertical-offset="0" max-vertical-offset="2260">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/font-awesome-4-less/lib/less/font-awesome.import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42206895" vertical-offset="0" max-vertical-offset="1013">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/style/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07692308" vertical-offset="0" max-vertical-offset="486">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

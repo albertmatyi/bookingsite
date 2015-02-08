@@ -23,4 +23,5 @@ Package.on_use(function (api) {
   api.add_files('lib/fonts/glyphicons-halflings-regular.svg', 'client');
   api.add_files('lib/fonts/glyphicons-halflings-regular.ttf', 'client');
   api.add_files('lib/fonts/glyphicons-halflings-regular.woff', 'client');
+  api.add_files('lib/fonts/glyphicons-halflings-regular.woff2', 'client');
 });

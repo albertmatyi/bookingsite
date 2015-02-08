@@ -2,23 +2,22 @@
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-
 @import "lib/less/variables.import.less";
 
 @fa-font-path: "/packages/font-awesome-4-less/lib/fonts";
 //@fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts"; // for referencing Bootstrap CDN font files directly
 
-@import "lib/less/mixins.import.less";
-@import "lib/less/path.import.less";
-@import "lib/less/core.import.less";
-@import "lib/less/larger.import.less";
+@import "lib/less/animated.import.less";
 @import "lib/less/fixed-width.import.less";
-@import "lib/less/list.import.less";
+@import "lib/less/larger.import.less";
+@import "lib/less/path.import.less";
 @import "lib/less/bordered-pulled.import.less";
-@import "lib/less/spinning.import.less";
+@import "lib/less/list.import.less";
 @import "lib/less/rotated-flipped.import.less";
-@import "lib/less/stacked.import.less";
+@import "lib/less/core.import.less";
 @import "lib/less/icons.import.less";
+@import "lib/less/mixins.import.less";
+@import "lib/less/stacked.import.less";
 
 // Embedding Font Awesome icons
 
@@ -28,44 +27,61 @@
 #fa-icon(@name) {
   //.fa();
   @n: "fa-var-@{name}";
-  &:before { content: @@n;
+  &:before {
+    content: @@n;
     // .fa() does not work here, but it setting the fa settings on the before
     // avoids font-family of all children nodes to be changed to FontAwesome
     // instead, keep the original font for the text and FA for the icon. :)
-      display: inline-block;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
+
 //#fa-icon(@name, @color, @where:before) {
 #fa-icon(@name, @color) {
   #fa-icon(@name);
   //&:@{where} { color: @color; }
-  &:before { color: @color; }
+  &:before {
+    color: @color;
+  }
 }
 
 #fa-icon-after(@name) {
   @n: "fa-var-@{name}";
-  &:after { content: @@n;
-      display: inline-block;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+  &:after {
+    content: @@n;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
+
 #fa-icon-after(@name, @color) {
   #fa-icon(@name);
-  &:after { color: @color; }
+  &:after {
+    color: @color;
+  }
 }
 
 // Assign a Font Awesome icon to a class name for buttons>i, a>i and i tags
 
-#fa-set-icon(@cls, @icon) { button.@{cls} i, a.@{cls} i, i.@{cls} { #fa-icon(@icon); } }
-#fa-set-icon-after(@cls, @icon) { button.@{cls} i, a.@{cls} i, i.@{cls} { #fa-icon-after(@icon); } }
+#fa-set-icon(@cls, @icon) {
+  button.@{cls} i, a.@{cls} i, i.@{cls} {
+    #fa-icon(@icon);
+  }
+}
+
+#fa-set-icon-after(@cls, @icon) {
+  button.@{cls} i, a.@{cls} i, i.@{cls} {
+    #fa-icon-after(@icon);
+  }
+}
