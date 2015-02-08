@@ -1,12 +1,17 @@
 'use strict';
 
-Router.route('/home', function() {
-	this.layout('layout');
-	this.render('footer', {to: 'footer'});
-	this.render('header', {to: 'header'});
-	this.render('home', {
-		data: function() {
-			return {};
-		}
-	});
+Router.route('/home', {
+	path: '/home',
+	waitOn: function() {
+		return [];
+	},
+	onBeforeAction: function() {
+		this.next();
+	},
+	data: function() {
+		return [];
+	},
+	onAfterAction: function() {
+		console.log('went home');
+	}
 });
