@@ -12,6 +12,7 @@ boilerplate-generator@1.0.2
 bootstrap3-less@0.0.0
 callback-hook@1.0.2
 check@1.0.4
+coffeescript@1.0.5
 component@1.0.0
 ddp@1.0.14
 deps@1.0.6
@@ -19,6 +20,7 @@ ejson@1.0.5
 fastclick@1.0.2
 follower-livedata@1.0.3
 font-awesome-4-less@0.0.0
+gadicohen:famous-views@0.1.32
 geojson-utils@1.0.2
 google@1.1.4
 handlebars@1.0.2
@@ -35,6 +37,7 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jag:pince@0.0.5
 jquery@1.11.3
 json@1.0.2
 launch-screen@1.0.1
@@ -53,6 +56,7 @@ oauth@1.1.3
 oauth2@1.1.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+pierreeric:cssc@1.0.4
 rajit:bootstrap3-datepicker@1.3.1
 random@1.0.2
 reactive-dict@1.0.5
@@ -60,6 +64,7 @@ reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
 routepolicy@1.0.4
+sdecima:javascript-detect-element-resize@0.5.3
 service-configuration@1.0.3
 session@1.0.5
 spacebars@1.0.5
