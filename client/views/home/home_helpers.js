@@ -5,3 +5,4 @@ Template.home.helpers({
 		return 'hawaii';
 	}
 });
+
