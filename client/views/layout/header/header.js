@@ -9,11 +9,10 @@ Template.header.helpers({
 			{
 				routeName: 'home',
 				title: 'Home'
+			}, {
+				routeName: 'rooms',
+				title: 'Rooms'
 			}
-//			, {
-//				routeName: 'rooms',
-//				title: 'Rooms'
-//			}
 //			, {
 //				routeName: 'rooms',
 //				title: 'Rooms'
