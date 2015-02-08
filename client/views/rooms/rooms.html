@@ -1,16 +1,27 @@
 <template name="rooms">
-	{{#Scrollview}}
-		{{#Surface class="rooms"}}
-			{{#each rooms}}
-          <div class="room col-xs-12 col-md-6">
-              <div class="title">
-								{{ i18n this 'title' }}
-              </div>
-              <div class="description">
-								{{ i18n this 'description' }}
-              </div>
-          </div>
-			{{/each}}
-		{{/Surface}}
+	{{#Scrollview }}
+		{{#famousEach rooms}}
+			{{>Surface template='room' size="[undefined, true]"}}
+		{{/famousEach}}
 	{{/Scrollview}}
+</template>
+
+<template name="room">
+    <div class="room">
+        <div class="title">
+					{{{ i18n this 'title' }}}
+        </div>
+        <div class="description">
+					{{{ i18n this 'description' }}}
+        </div>
+			{{>bookingTrigger}}
+    </div>
+</template>
+
+
+<template name="bookingTrigger">
+    <button class="booking btn btn-primary">
+        <span class="fa fa-edit"></span>
+			{{i18n 'Book'}}
+    </button>
 </template>

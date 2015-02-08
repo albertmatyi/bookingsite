@@ -1,9 +1,23 @@
 'use strict';
 
+var prevClass;
+var $body = $('body');
+
+var setPageClass = function() {
+	var pageClass = 'page-' + this.route.getName();
+	if (!$body.hasClass(pageClass)) {
+		$body.removeClass(prevClass);
+		$body.addClass(pageClass) 9
+		console.log('adding class', pageClass);
+		prevClass = pageClass;
+	}
+};
+
 Router.configure({
 	layoutTemplate: 'layout',
 	notFoundTemplate: 'notFound',
 	loadingTemplate: 'loading',
+	onAfterAction: setPageClass,
 	yieldRegions: {
 		footer: {to: 'footer'},
 		header: {to: 'header'}
