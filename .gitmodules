@@ -1,0 +1,3 @@
+[submodule "DbConnector"]
+	path = packages/bootstrap3-less/bootstrap
+	url = https://github.com/twbs/bootstrap
