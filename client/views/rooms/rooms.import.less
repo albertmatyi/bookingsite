@@ -1,11 +1,37 @@
 .page-rooms {
-  .room {
-    background-color: white;
-    .title {
-      font-size: 2rem;
-    }
-    .description {
+  @separator-h: 21px;
 
+  .room-wrapper {
+    margin-top: @separator-h*2;
+    margin-bottom: @separator-h*2;
+    .room {
+      background-image: url(/images/content_bg.png);
+
+      .title {
+        font-size: 2rem;
+      }
+      .description {
+
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: @separator-h;
+      .position(auto, 0, @separator-h, 0);
+      background-image: url(/images/content_footer.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:before {
+      content: '';
+      display: block;
+      height: @separator-h;
+      .scale(1, -1);
+      .position(@separator-h, 0, auto, 0);
+      background-image: url(/images/content_footer.png);
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }

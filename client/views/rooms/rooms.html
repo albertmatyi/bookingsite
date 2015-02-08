@@ -7,14 +7,19 @@
 </template>
 
 <template name="room">
-    <div class="room">
-        <div class="title">
-					{{{ i18n this 'title' }}}
+    <div class="room-wrapper">
+        <div class="room row">
+            <div class="title col-xs-12">
+							{{{ i18n this 'title' }}}
+            </div>
+            <div class="album col-xs-12 col-md-6">
+            </div>
+            <div class="description col-xs-12 col-md-6">
+							{{{ i18n this 'description' }}}
+            </div>
+					{{>bookingTrigger}}
         </div>
-        <div class="description">
-					{{{ i18n this 'description' }}}
-        </div>
-			{{>bookingTrigger}}
+
     </div>
 </template>
 
