@@ -8,7 +8,7 @@
 
 <template name="room">
     <div class="room-wrapper">
-        <div class="room row">
+        <div class="room">
             <div class="title col-xs-12">
 							{{{ i18n this 'title' }}}
             </div>
@@ -17,12 +17,13 @@
             <div class="description col-xs-12 col-md-6">
 							{{{ i18n this 'description' }}}
             </div>
-					{{>bookingTrigger}}
+            <div class="col-xs-12">
+							{{>bookingTrigger}}
+            </div>
         </div>
 
     </div>
 </template>
-
 
 <template name="bookingTrigger">
     <button class="booking btn btn-primary">
