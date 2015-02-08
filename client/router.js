@@ -1,14 +1,14 @@
 'use strict';
 
 var prevClass;
-var $body = $('body');
 
 var setPageClass = function() {
+	var $body = $('body');
 	var pageClass = 'page-' + this.route.getName();
 	if (!$body.hasClass(pageClass)) {
 		$body.removeClass(prevClass);
-		$body.addClass(pageClass);
 		console.log('adding class', pageClass);
+		$body.addClass(pageClass);
 		prevClass = pageClass;
 	}
 };
