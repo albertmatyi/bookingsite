@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7709316-5bee-4c36-9d85-1c1751e866d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/layout/header/header.js" />
+    <list default="true" id="e7709316-5bee-4c36-9d85-1c1751e866d5" name="Default" comment="fixed routes &amp; added headr &amp; footer">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/migrations/data/site_data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/header/header.html" afterPath="$PROJECT_DIR$/client/views/layout/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/home/home.html" afterPath="$PROJECT_DIR$/client/views/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/home/home_routes.js" afterPath="$PROJECT_DIR$/client/views/home/home_routes.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/footer/footer.html" afterPath="$PROJECT_DIR$/client/views/layout/footer/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/layout.html" afterPath="$PROJECT_DIR$/client/views/layout/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style/variables.import.less" afterPath="$PROJECT_DIR$/client/style/variables.import.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ferdinand.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.07584269" vertical-offset="0" max-vertical-offset="856">
-                  <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+                <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="856">
+                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -48,8 +44,8 @@
           <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/layout/layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1036">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="1054">
+                  <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -58,8 +54,8 @@
           <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/layout/header/header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.6666665" vertical-offset="36" max-vertical-offset="1612">
-                  <caret line="9" column="58" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1612">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +65,7 @@
             <entry file="file://$PROJECT_DIR$/client/views/layout/footer/footer.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="761">
-                  <caret line="3" column="42" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <caret line="3" column="53" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -78,8 +74,18 @@
           <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="869">
-                  <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+                <state vertical-scroll-proportion="-0.6666667" vertical-offset="144" max-vertical-offset="869">
+                  <caret line="9" column="26" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="770">
+                  <caret line="1" column="35" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -166,32 +172,22 @@
           <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/layout/layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1049">
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1067">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding>
-                    <marker date="1423402938495" expanded="true" signature="55:511" placeholder="..." />
-                    <marker date="1423402938495" expanded="true" signature="113:491" placeholder="..." />
-                    <marker date="1423402938495" expanded="true" signature="424:465" placeholder="..." />
+                    <marker date="1423405000322" expanded="true" signature="55:512" placeholder="..." />
+                    <marker date="1423405000322" expanded="true" signature="113:492" placeholder="..." />
+                    <marker date="1423405000322" expanded="true" signature="425:466" placeholder="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/layout/header/header.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1454">
+                <state vertical-scroll-proportion="0.28723404" vertical-offset="0" max-vertical-offset="1454">
                   <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="site_data.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/server/migrations/data/site_data.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.4614344" vertical-offset="2646" max-vertical-offset="27217">
-                  <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -210,26 +206,26 @@
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/packages/bootstrap3-less/.gitignore" />
         <option value="$PROJECT_DIR$/packages/font-awesome-4-less/font-awesome.import.less" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/client/layout/layout.html" />
         <option value="$PROJECT_DIR$/client/views/home/home.import.less" />
         <option value="$PROJECT_DIR$/client/views/home/home.js" />
         <option value="$PROJECT_DIR$/client/views/layout/dude.html" />
         <option value="$PROJECT_DIR$/.jshintrc" />
-        <option value="$PROJECT_DIR$/client/views/layout/footer/footer.html" />
         <option value="$PROJECT_DIR$/client/views/layout/layout.js" />
         <option value="$PROJECT_DIR$/client/views/home/home_helpers.js" />
         <option value="$PROJECT_DIR$/client/views/home/home_events.js" />
         <option value="$PROJECT_DIR$/client/style/main.less" />
         <option value="$PROJECT_DIR$/client/views/layout/layout.import.less" />
         <option value="$PROJECT_DIR$/client/views/home/home_routes.js" />
-        <option value="$PROJECT_DIR$/client/views/layout/layout.html" />
         <option value="$PROJECT_DIR$/client/views/home/home.html" />
         <option value="$PROJECT_DIR$/client/style/variables.import.less" />
         <option value="$PROJECT_DIR$/client/views/layout/header/header.js" />
         <option value="$PROJECT_DIR$/client/views/layout/header/header.html" />
         <option value="$PROJECT_DIR$/server/migrations/data/site_data.js" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/views/layout/layout.html" />
+        <option value="$PROJECT_DIR$/client/views/layout/footer/footer.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -583,7 +579,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423402525759</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed routes &amp; added headr &amp; footer">
+      <created>1423404838632</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1423404838632</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +638,8 @@
     <MESSAGE value="added route" />
     <MESSAGE value="added layout stuff" />
     <MESSAGE value="added basic famo.us layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added basic famo.us layout" />
+    <MESSAGE value="fixed routes &amp; added headr &amp; footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed routes &amp; added headr &amp; footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -679,14 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07180851" vertical-offset="0" max-vertical-offset="806">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047872342" vertical-offset="0" max-vertical-offset="770">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -773,9 +768,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="856">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/migrations/data/site_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46278754" vertical-offset="0" max-vertical-offset="27217">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/layout/header/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/layout/footer/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="761">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/layout/header/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1454">
+        <state vertical-scroll-proportion="0.28723404" vertical-offset="0" max-vertical-offset="1454">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding />
         </state>
@@ -783,54 +818,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="72" max-vertical-offset="869">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1423402954071" expanded="true" signature="65:162" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/layout/footer/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="761">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.6666667" vertical-offset="144" max-vertical-offset="869">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/layout/header/header.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665" vertical-offset="36" max-vertical-offset="1612">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1049">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1423402938495" expanded="true" signature="55:511" placeholder="..." />
-            <marker date="1423402938495" expanded="true" signature="113:491" placeholder="..." />
-            <marker date="1423402938495" expanded="true" signature="424:465" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07584269" vertical-offset="0" max-vertical-offset="856">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/migrations/data/site_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4614344" vertical-offset="2646" max-vertical-offset="27217">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="770">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 <template name="layout">
 	{{#famousContext id="mainCtx"}}
-		{{#HeaderFooterLayout headerSize="100" footerSize="0"}}
+		{{#HeaderFooterLayout headerSize="50" footerSize="50"}}
 			{{#Surface target="header"}}
 				{{> yield 'header'}}
 			{{/Surface}}
@@ -11,6 +11,7 @@
 			{{#RenderController target="content" transition="opacity"}}
 				{{>yield}}
 			{{/RenderController}}
+
 			{{#Surface target="footer"}}
 				{{> yield 'footer'}}
 			{{/Surface}}
