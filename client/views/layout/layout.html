@@ -1,7 +1,20 @@
 <template name="layout">
 	{{#famousContext id="mainCtx"}}
-		{{#Surface}}
-			{{> yield}}
-		{{/Surface}}
+		{{#HeaderFooterLayout headerSize="100" footerSize="0"}}
+
+			{{#Surface target="header"}}
+				{{> yield 'header'}}
+			{{/Surface}}
+
+			{{!-- try some other transition (or build your own):
+				slideWindowLeft, slideWindowRight
+			--}}
+			{{#RenderController target="content" transition="opacity"}}
+				{{>yield}}
+			{{/RenderController}}
+			{{#Surface target="footer"}}
+				{{> yield 'footer'}}
+			{{/Surface}}
+		{{/HeaderFooterLayout}}
 	{{/famousContext}}
 </template>

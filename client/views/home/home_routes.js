@@ -1,20 +1,10 @@
 'use strict';
 
-Router.map(function() {
-	this.route('home', {
-		name: 'home',
-		path: '/home',
-		waitOn: function() {
-			return [];
-		},
-		onBeforeAction: function() {
-			this.next();
-		},
+Router.route('/home', function() {
+	this.layout('layout');
+	this.render('home', {
 		data: function() {
-			return [];
-		},
-		onAfterAction: function() {
-			console.log('went home');
+			return {};
 		}
 	});
 });

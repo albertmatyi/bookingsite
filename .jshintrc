@@ -90,10 +90,11 @@
 	"UI",
 	"Npm",
 	"_",
-	// mrt/meteor packages
+	// meteor packages
 	"Router",
 	"FastClick",
 	"Accounts",
+	"FView",
 	"moment",
 	// app globals
 	"App",
