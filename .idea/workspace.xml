@@ -4,9 +4,6 @@
     <list default="true" id="e7709316-5bee-4c36-9d85-1c1751e866d5" name="Default" comment="fixed routes &amp; added headr &amp; footer">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/migrations/data/site_data.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/footer/footer.html" afterPath="$PROJECT_DIR$/client/views/layout/footer/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/layout.html" afterPath="$PROJECT_DIR$/client/views/layout/layout.html" />
     </list>
     <ignored path="ferdinand.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +82,7 @@
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="770">
-                  <caret line="1" column="35" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+                  <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -585,7 +582,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423404838632</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ignored workspace xml &amp; fixed footer">
+      <created>1423405208794</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1423405208794</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -639,7 +642,8 @@
     <MESSAGE value="added layout stuff" />
     <MESSAGE value="added basic famo.us layout" />
     <MESSAGE value="fixed routes &amp; added headr &amp; footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed routes &amp; added headr &amp; footer" />
+    <MESSAGE value="ignored workspace xml &amp; fixed footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignored workspace xml &amp; fixed footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -827,7 +831,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023936171" vertical-offset="0" max-vertical-offset="770">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>
