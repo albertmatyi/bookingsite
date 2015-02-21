@@ -1,8 +1,7 @@
 'use strict';
 
-Template.pageHead.events({
-	'click .pageHead': function() {
-		console.log('handle');
-		alert('hey');
+Template.pageHead.helpers({
+	'data': function() {
+		return App.pages[this.type];
 	}
 });

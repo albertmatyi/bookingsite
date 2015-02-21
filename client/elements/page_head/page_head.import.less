@@ -1,3 +1,32 @@
-.pageHead {
-
+.page-head {
+  .icon-wrapper {
+    @size: 50px;
+    height: @size;
+    width: @size;
+    left: 50%;
+    margin-top: @padding-base-vertical;
+    margin-bottom: @padding-base-vertical;
+    position: relative;
+    margin-left: -@size/2;
+    background-color: @brand-primary;
+    @shadow: 0 0 0 1px @brand-bg, 0 0 0 3px @brand-primary;
+    .box-shadow(@shadow);
+    .icon {
+      .position(@padding-base-vertical);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: @padding-base-vertical;
+    margin-bottom: @padding-base-vertical;
+  }
+  .description {
+    margin-top: @padding-base-vertical;
+    margin-bottom: @padding-base-vertical;
+  }
 }

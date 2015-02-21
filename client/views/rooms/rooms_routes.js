@@ -13,3 +13,12 @@ Router.route('/rooms', {
 		};
 	}
 });
+
+App.component('pages.rooms').expose({
+	title: function() {
+		return App.i18n.translate('rooms.title');
+	},
+	icon: function() {
+		return '/images/page_rooms_icon.png'
+	}
+});

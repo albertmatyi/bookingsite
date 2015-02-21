@@ -10,7 +10,7 @@ var extractDotNotationKey = function(obj, field) {
 	_.each(keys, function(key) {
 		var psfx = (prekey ? prekey + '.' : '');
 		if (obj[psfx + key]) {
-			obj = obj[key]
+			obj = obj[psfx + key]
 		} else {
 			prekey = psfx + key;
 		}
