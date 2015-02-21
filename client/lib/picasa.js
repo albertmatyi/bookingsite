@@ -39,7 +39,7 @@ var setup = function($) {
 				}
 			});
 		},
-
+		
 		images: function(user, album, callback) {
 			var url = 'http://picasaweb.google.com/' +
 				'data/feed/base/' +
@@ -69,7 +69,7 @@ var setup = function($) {
 			});
 		}
 	};
-
+	
 	$.fn.picasaAlbums = function(user, callback) {
 		$.picasa.albums(user, function(images) {
 			if (callback) {
@@ -79,7 +79,20 @@ var setup = function($) {
 	};
 
 //	$.picasa.images(user, album, function(images)
-
+	
 };
 
 setup(jQuery);
+
+App.component('picasa').expose({
+	images: function(user, album) {
+		var id = 'picasa.' + user + '.' + album;
+		var data = Session.get(id);
+		if (!data) {
+			$.picasa.images(user, album, function (images) {
+				Session.set(id, images);
+			});
+		}
+		return data;
+	}
+});
