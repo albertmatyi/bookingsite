@@ -13,3 +13,15 @@ Router.route('/rooms', {
 		};
 	}
 });
+
+App.component('pages.rooms').expose({
+	title: function() {
+		return App.i18n.translate('rooms.title');
+	},
+	description: function() {
+		return App.i18n.translate('rooms.description');
+	},
+	icon: function() {
+		return '/images/page_rooms_icon.png';
+	}
+});

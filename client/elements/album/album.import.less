@@ -3,12 +3,20 @@
   width: 100%;
   height: 100%;
   background-color: @brand-primary;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    border: solid @padding-base-horizontal @brand-primary;
+    .position(0, 0, 0, 0);
+    z-index: 1;
+  }
   .album-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     .position(@padding-base-horizontal, @padding-base-horizontal);
-    &.album-image-preloader-0, &.album-image-preloader-0 {
+    &.album-image-preloader-0, &.album-image-preloader-1 {
       height: 0;
       width: 0;
     }
@@ -23,6 +31,7 @@
     .opacity(.5);
     font-size: 2em;
     margin-top: -1em;
+    z-index: 2;
     &.next {
       right: 0;
     }

@@ -3,4 +3,4 @@
  */
 'use strict';
 
-Logger.setLevel("famous-views", "info");
+Logger.setLevel('famous-views', 'info');

@@ -1,0 +1,17 @@
+<template name="pageHead">
+	{{#content type="page-head"}}
+		{{#with data}}
+        <div class="icon-wrapper">
+            <div class="icon"
+                 style="background-image: url({{icon}});">
+
+            </div>
+        </div>
+        <div class="title col-xs-12">{{title}}</div>
+			{{#with description}}
+          <div class="description col-xs-12">{{this}}</div>
+			{{/with}}
+		{{/with}}
+	{{/content}}
+
+</template>

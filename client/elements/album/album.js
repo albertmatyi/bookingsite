@@ -7,7 +7,9 @@ var getId = function() {
 };
 
 var preloadImage = function($container, data, next) {
-	var img = data.images[(data.idx - 1 + 2 * next + data.images.length) % data.images.length];
+	var idx = (data.idx - 1 + 2 * next + data.images.length) %
+		data.images.length;
+	var img = data.images[idx];
 	$container.find('.album-image-preloader-' + next).css({
 		'background-image': 'url(' + img.url + ')'
 	});
@@ -57,7 +59,6 @@ Template.album.events({
 });
 
 Template.album.rendered = function() {
-	var $container = $(this.firstNode);
 	var id = getId.call(this.data);
 	App.picasa.images(this.data.user, this.data.id, function(images) {
 		albumData[id] = {images: images, target: 0, idx: 0};

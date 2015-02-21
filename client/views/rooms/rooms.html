@@ -1,5 +1,8 @@
 <template name="rooms">
 	{{#Scrollview }}
+		{{#with type="rooms"}}
+			{{>Surface template="pageHead"  size="[undefined,true]"}}
+		{{/with}}
 		{{#famousEach rooms}}
 			{{>Surface template='room' size="[undefined, true]"}}
 		{{/famousEach}}
@@ -7,35 +10,27 @@
 </template>
 
 <template name="room">
-    <div class="room-wrapper">
-        <div class="top-border">
-            <div class="center-element"></div>
-        </div>
-        <div class="room clearfix">
-            <div class="title col-xs-12">
-							{{{ i18n this 'title' }}}
-            </div>
-            <div class="album-wrapper col-xs-12 col-md-6">
-							{{#with album}}
-								{{> album}}
-							{{/with}}
-            </div>
-            <div class="description col-xs-12 col-md-6">
-							{{{ i18n this 'description' }}}
-            </div>
-            <div class="col-xs-12">
-							{{>bookingTrigger}}
-            </div>
-        </div>
-        <div class="bottom-border">
-            <div class="center-element"></div>
-        </div>
-    </div>
+	{{#content type="room"}}
+      <div class="content-title col-xs-12">
+				{{{ i18n this 'title' }}}
+      </div>
+      <div class="album-wrapper col-xs-12 col-md-6">
+				{{#with album}}
+					{{> album}}
+				{{/with}}
+      </div>
+      <div class="description col-xs-12 col-md-6">
+				{{{ i18n this 'description' }}}
+      </div>
+      <div class="booking-wrapper col-xs-12">
+				{{>bookingTrigger}}
+      </div>
+	{{/content}}
 </template>
 
 <template name="bookingTrigger">
     <button class="book btn btn-primary">
         <span class="fa fa-edit"></span>
-			{{i18n 'Book'}}
+			{{i18n 'booking.button.label'}}
     </button>
 </template>
