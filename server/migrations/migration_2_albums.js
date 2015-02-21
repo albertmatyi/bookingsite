@@ -8,14 +8,14 @@ Migrations.add({
 		App.rooms.collection.find({}).forEach(function(room) {
 			var match = room.album_url.match(/\/(\d{8,})\/(.+)$/);// jshint ignore:line
 			var user = match[1];
-			var album = match[2];
-			console.log('Updating room album user/album', user, album);
+			var albumId = match[2];
+			console.log('Updating room album user/album', user, albumId);
 			App.rooms.collection.update(room._id,
 				{
 					$set: {
 						'album': {
 							user: user,
-							albumId: album
+							id: albumId
 						}
 					}
 				});
