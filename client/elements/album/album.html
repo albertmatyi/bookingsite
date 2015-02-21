@@ -1,0 +1,19 @@
+<template name="album">
+    <div class="album album-{{albumId}}">
+			{{>albumImage id='preloader-0'}}
+			{{>albumImage id='preloader-1'}}
+			{{>albumImage id=0}}
+			{{>albumImage id=1}}
+        <div class="control next">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+        <div class="control prev">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+    </div>
+</template>
+
+<template name="albumImage">
+    <div class="album-image album-image-{{id}} animated">
+    </div>
+</template>

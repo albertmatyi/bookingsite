@@ -7,13 +7,9 @@ Template.header.helpers({
 	pages: function() {
 		return [
 			{
-				routeName: 'home',
-				title: 'Home'
+				routeName: 'rooms',
+				title: 'Rooms'
 			}
-//			, {
-//				routeName: 'rooms',
-//				title: 'Rooms'
-//			}
 //			, {
 //				routeName: 'rooms',
 //				title: 'Rooms'

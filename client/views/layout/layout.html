@@ -5,9 +5,6 @@
 				{{> yield 'header'}}
 			{{/Surface}}
 
-			{{!-- try some other transition (or build your own):
-				slideWindowLeft, slideWindowRight
-			--}}
 			{{#RenderController target="content" transition="opacity"}}
 				{{>yield}}
 			{{/RenderController}}
