@@ -77,22 +77,27 @@ var setup = function($) {
 			}
 		});
 	};
-
-//	$.picasa.images(user, album, function(images)
-	
 };
-
 setup(jQuery);
 
 App.component('picasa').expose({
-	images: function(user, album) {
+	images: function(user, album, callback) {
 		var id = 'picasa.' + user + '.' + album;
-		var data = Session.get(id);
-		if (!data) {
-			$.picasa.images(user, album, function (images) {
+		var sessionImages = Session.get(id);
+
+		if (!sessionImages) {
+			$.picasa.images(user, album, function(images) {
 				Session.set(id, images);
+				if (callback) {
+					callback(images);
+				}
 			});
+		} else if (callback) {
+			Meteor.defer(function() {
+				callback(sessionImages);
+			});
+		} else {
+			return sessionImages;
 		}
-		return data;
 	}
 });

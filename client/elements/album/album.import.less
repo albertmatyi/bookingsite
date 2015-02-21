@@ -7,5 +7,26 @@
     background-repeat: no-repeat;
     background-position: center;
     .position(0, 0, 0, 0);
+    &.album-image-preloader-0, &.album-image-preloader-0 {
+      height: 0;
+      width: 0;
+    }
+    &.animated {
+      .animation-duration(.5s);
+    }
+  }
+  .control {
+    position: absolute;
+    top: 50%;
+    color: white;
+    .opacity(.5);
+    font-size: 2em;
+    margin-top: -1em;
+    &.next {
+      right: 0;
+    }
+    &.prev {
+      left: 0;
+    }
   }
 }
