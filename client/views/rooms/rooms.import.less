@@ -1,28 +1,6 @@
 .page-rooms {
-  @separator-h: 21px;
-  @container-dist: 5px;
-
   .room-wrapper {
-    margin-top: @separator-h + @container-dist;
-    margin-bottom: @separator-h + @container-dist;
     .room {
-      background-image: url(/images/content_bg.png);
-      padding-top: @padding-base-vertical;
-      padding-bottom: @padding-base-vertical;
-      .title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: @padding-base-vertical;
-        padding-bottom: @padding-base-vertical;
-        &:before, &:after {
-          content: '';
-          display: block;
-          height: 1px;
-          width: 100%;
-          #gradient.horizontal-three-colors(@brand-bg, @brand-primary, 50%, @brand-bg);
-        }
-      }
       .album-wrapper {
         height: 300px;
         margin: @padding-base-vertical 0;
@@ -38,50 +16,6 @@
       .booking-wrapper {
         margin: @padding-base-vertical 0;
         text-align: center;
-      }
-    }
-    .top-border, .bottom-border {
-      @center-w: 54px;
-      height: @separator-h;
-      width: 100%;
-      &:before, &:after {
-        content: '';
-        display: block;
-        background-image: url(/images/content_footer_bg.png);
-        background-repeat: repeat-x;
-        background-position: center;
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-      }
-      &:before {
-        left: -@center-w/2;
-      }
-      &:after {
-        right: -@center-w/2;
-      }
-      .center-element {
-        background-image: url(/images/content_footer_bg_center.png);
-        .position(0, auto, auto, 50%);
-        width: @center-w;
-        height: 100%;
-        margin-left: -@center-w/2;
-      }
-    }
-    .top-border {
-      .position(@container-dist, 0, auto, 0);
-      .scale(1, -1);
-    }
-    .bottom-border {
-      .position(auto, 0, @container-dist, 0);
-      .center-element:after {
-        content: '';
-        display: block;
-        height: 22px;
-        width: 39px;
-        .position(15px, 7px, auto, auto);
-        background-image: url(/images/content_separator_rombus.png);
       }
     }
   }
