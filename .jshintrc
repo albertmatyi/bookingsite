@@ -93,6 +93,7 @@
 	// meteor packages
 	"Router",
 	"FastClick",
+	"Migrations",
 	"Accounts",
 	"FView",
 	"moment",

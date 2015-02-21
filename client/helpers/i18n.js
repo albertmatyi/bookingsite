@@ -5,17 +5,17 @@
 
 var extractDotNotationKey = function(obj, field) {
 	var keys = field.split('.');
-	var value = field;
+	var value = obj;
 	var prekey = '';
 	_.each(keys, function(key) {
 		var psfx = (prekey ? prekey + '.' : '');
-		if (obj[psfx + key]) {
-			obj = obj[psfx + key]
+		if (value[psfx + key]) {
+			value = value[psfx + key];
 		} else {
 			prekey = psfx + key;
 		}
 	});
-	return obj || value;
+	return typeof value === 'undefined' || _.isObject(value) ? field : value;
 };
 var getTranslation = function(translations, field) {
 	if (!translations) {
