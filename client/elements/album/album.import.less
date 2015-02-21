@@ -2,11 +2,12 @@
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: @brand-primary;
   .album-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    .position(0, 0, 0, 0);
+    .position(@padding-base-horizontal, @padding-base-horizontal);
     &.album-image-preloader-0, &.album-image-preloader-0 {
       height: 0;
       width: 0;
