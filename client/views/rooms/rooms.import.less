@@ -11,16 +11,33 @@
       padding-bottom: @padding-base-vertical;
       .title {
         font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: @padding-base-vertical;
+        padding-bottom: @padding-base-vertical;
+        &:before, &:after {
+          content: '';
+          display: block;
+          height: 1px;
+          width: 100%;
+          #gradient.horizontal-three-colors(@brand-bg, @brand-primary, 50%, @brand-bg);
+        }
       }
       .album-wrapper {
         height: 300px;
+        margin: @padding-base-vertical 0;
       }
       .description {
-
+        padding-top: @padding-base-vertical;
+        padding-bottom: @padding-base-vertical;
       }
       .book.btn {
         border: solid 1px @brand-bg;
         .box-shadow(0px 0px 0px 2px @brand-primary);
+      }
+      .booking-wrapper {
+        margin: @padding-base-vertical 0;
+        text-align: center;
       }
     }
     .top-border, .bottom-border {
