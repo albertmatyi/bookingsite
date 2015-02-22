@@ -1,8 +1,6 @@
 <template name="rooms">
 	{{#Scrollview }}
-		{{#with type="rooms"}}
-			{{>Surface template="pageHead"  size="[undefined,true]"}}
-		{{/with}}
+		{{>pageHead type="rooms"}}
 		{{#famousEach rooms}}
 			{{>Surface template='room' size="[undefined, true]"}}
 		{{/famousEach}}

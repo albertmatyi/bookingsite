@@ -1,10 +1,9 @@
 <template name="book">
 	{{#Scrollview}}
-		{{#with type="booking"}}
-			{{>Surface template="pageHead"  size="[undefined,true]"}}
-		{{/with}}
+		{{>pageHead type="book"}}
+
 		{{#Surface class="booking-wrapper" size="[undefined,true]"}}
-			{{#content type="booking"}}
+			{{#content type="book"}}
 				{{> bookingForm}}
 			{{/content}}
 		{{/Surface}}
