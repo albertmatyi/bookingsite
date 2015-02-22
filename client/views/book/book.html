@@ -2,20 +2,20 @@
 	{{#Scrollview}}
 		{{>pageHead type="book"}}
 
-		{{#Surface class="booking-wrapper" size="[undefined,true]"}}
+		{{#Surface class="book-wrapper" size="[undefined,true]"}}
 			{{#content type="book"}}
-				{{> bookingForm}}
+				{{> bookForm}}
 			{{/content}}
 		{{/Surface}}
 	{{/Scrollview}}
 </template>
 
-<template name="bookingForm">
-    <form class="booking-form">
+<template name="bookForm">
+    <form class="book-form">
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-group">
                 <label for="user.full_name">
-									{{ i18n 'booking.Full Name' }}
+									{{ i18n 'book.form.Full Name' }}
                 </label>
 
                 <div class="input-group">
@@ -26,13 +26,13 @@
                            name="user.full_name"
                            data-toggle="tooltip"
                            class="form-control"
-                           data-title="{{ i18n 'booking.Specify a valid full name' }}"
+                           data-title="{{ i18n 'book.form.Specify a valid full name' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.email">
-									{{ i18n 'booking.Email' }}
+									{{ i18n 'book.form.Email' }}
                 </label>
 
                 <div class="input-group">
@@ -40,13 +40,13 @@
                             class="fa fa-envelope"></span></div>
                     <input type="email" id="user.email" name="user.email"
                            class="form-control email" data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.Specify a valid email address' }}"
+                           data-title="{{ i18n 'book.form.Specify a valid email address' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.phone">
-									{{ i18n 'booking.Phone' }}
+									{{ i18n 'book.form.Phone' }}
                 </label>
 
                 <div class="input-group">
@@ -55,13 +55,13 @@
                     <input type="text" class="form-control phone"
                            id="user.phone"
                            name="user.phone" data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.Specify a valid phone number' }}"
+                           data-title="{{ i18n 'book.form.Specify a valid phone number' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.citizenship">
-									{{ i18n 'booking.Citizenship' }}
+									{{ i18n 'book.form.Citizenship' }}
                 </label>
 
                 <div class="input-group">
@@ -71,20 +71,20 @@
                     <input type="text" class="form-control citizenship"
                            id="user.citizenship"
                            name="user.citizenship" data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.Specify your citizenship' }}"
+                           data-title="{{ i18n 'book.form.Specify your citizenship' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
-                <label for="booking.message">
-									{{ i18n 'booking.Custom message' }}
+                <label for="book.message">
+									{{ i18n 'book.form.Custom message' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">
                         <span class="fa fa-comment"></span>
                     </div>
-                <textarea id="booking.message" name="booking.message"
+                <textarea id="book.message" name="book.message"
                           class="form-control"></textarea>
                 </div>
             </div>
@@ -92,32 +92,32 @@
         <div class="col-xs-12 col-sm-6 col-lg-4">
 
             <div class="form-group">
-                <label for="booking.quantity">
-									{{ i18n 'booking.Quantity' }}
+                <label for="book.quantity">
+									{{ i18n 'book.form.Quantity' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">#</div>
-                    <select class="form-control" id="booking.quantity"
-                            name="booking.quantity">
+                    <select class="form-control" id="book.quantity"
+                            name="book.quantity">
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label for="booking.guests">
-									{{ i18n 'booking.Number of guests' }}
+                <label for="book.guests">
+									{{ i18n 'book.form.Number of guests' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">#</div>
-                    <select class="form-control" id="booking.guests"
-                            name="booking.guests">
+                    <select class="form-control" id="book.guests"
+                            name="book.guests">
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label for="booking.start">
-									{{ i18n 'booking.Arrival date' }}
+                <label for="book.start">
+									{{ i18n 'book.form.Arrival date' }}
                 </label>
 
                 <div class="input-group">
@@ -125,29 +125,29 @@
                         <span class="fa fa-calendar"></span>
                     </div>
                     <input type="text" class="form-control datepicker"
-                           id="booking.start"
-                           name="booking.start"
+                           id="book.start"
+                           name="book.start"
                            data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.Specify a valid date (dd-mm-yyyy)' }}"
+                           data-title="{{ i18n 'book.form.Specify a valid date (dd-mm-yyyy)' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <span data-toggle="tooltip"
-                  data-title="{{ i18n 'booking.The selected range contains overbooked days. Consider a different selection. ' }}"
+                  data-title="{{ i18n 'book.form.The selected range contains overbooked days. Consider a different selection. ' }}"
                   data-placement="right"></span>
 
             <div class="form-group">
-                <label for="booking.end">
-									{{ i18n 'booking.Departure date' }}
+                <label for="book.end">
+									{{ i18n 'book.form.Departure date' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon"><span
                             class="fa fa-calendar"></span></div>
                     <input type="text" class="form-control datepicker"
-                           id="booking.end"
-                           name="booking.end" data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.Specify a valid date (dd-mm-yyyy)' }}"
+                           id="book.end"
+                           name="book.end" data-toggle="tooltip"
+                           data-title="{{ i18n 'book.form.Specify a valid date (dd-mm-yyyy)' }}"
                            data-placement="right"/>
                 </div>
             </div>
@@ -157,23 +157,23 @@
             <table class="prices table table-striped">
                 <thead>
                 <tr>
-                    <th> {{ i18n 'booking.Price' }}
+                    <th> {{ i18n 'book.form.Price' }}
                     </th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td> {{ i18n 'booking.Per night' }}
+                    <td> {{ i18n 'book.form.Per night' }}
                     </td>
                     <td class="pricePerNight">50</td>
                 </tr>
                 <tr class="total">
                     <td>
-											{{ i18n 'booking.Total' }}
+											{{ i18n 'book.form.Total' }}
                         (
                         <span class="nrOfNights"></span>
-											{{ i18n 'booking.Nights' }}
+											{{ i18n 'book.form.Nights' }}
                         )
                     </td>
                     <td class="priceTotal">
@@ -187,22 +187,22 @@
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-actions">
                 <button type="button"
-                        class="btn btn-primary btn-large booking-btn"
+                        class="btn btn-primary btn-large book-btn"
                         id="submitBookingButton" data-toggle="tooltip"
-                        data-title="{{ i18n 'booking.Invalid data! See fields above.' }}"
+                        data-title="{{ i18n 'book.form.Invalid data! See fields above.' }}"
                         data-placement="left">
-									{{ i18n 'booking.Book' }}
+									{{ i18n 'book.form.Book' }}
                 </button>
                 <button type="button" class="btn btn-link"
-                        id="cancelBookingButton"> {{ i18n 'booking.Cancel' }}
+                        id="cancelBookingButton"> {{ i18n 'book.form.Cancel' }}
                 </button>
             </div>
         </div>
     </form>
 </template>
-<template name="bookingButton">
+<template name="bookButton">
     <button class="book btn btn-primary">
         <span class="fa fa-edit"></span>
-			{{i18n 'booking.button.label'}}
+			{{i18n 'book.form.button.label'}}
     </button>
 </template>

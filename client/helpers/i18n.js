@@ -15,7 +15,13 @@ var extractDotNotationKey = function(obj, field) {
 			prekey = psfx + key;
 		}
 	});
-	return typeof value === 'undefined' || _.isObject(value) ? field : value;
+	if (typeof value === 'undefined' || _.isObject(value)) {
+		App.i18n.missing[prekey] = field.
+			return
+		field;
+	} else {
+		return value;
+	}
 };
 var getTranslation = function(translations, field) {
 	if (!translations) {
@@ -39,6 +45,7 @@ var translate = function(obj, field) {
 Blaze.registerHelper('i18n', translate);
 
 App.component('i18n').expose({
+	missing: {},
 	getLocale: function() {
 		return 'en';
 	},
