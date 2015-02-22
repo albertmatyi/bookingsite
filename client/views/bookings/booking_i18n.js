@@ -1,4 +1,4 @@
-App.component('i18n.translations.en.book').expose({
+App.component('i18n.translations.en.booking').expose({
 	title: 'Book',
 	form: {
 		'Full Name': 'Full Name',

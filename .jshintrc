@@ -94,6 +94,7 @@
 	"Router",
 	"FastClick",
 	"Migrations",
+	"Logger",
 	"Accounts",
 	"FView",
 	"moment",

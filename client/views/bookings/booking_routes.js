@@ -1,8 +1,8 @@
 'use strict';
 
-Router.route('/book/:_id', {
-	name: 'book',
-	template: 'book',
+Router.route('/booking/:_id', {
+	name: 'booking',
+	template: 'booking',
 	waitOn: function() {
 		return [
 			Meteor.subscribe('room', this.params._id),
@@ -20,7 +20,7 @@ Router.route('/book/:_id', {
 	}
 });
 
-App.component('pages.book').expose({
+App.component('pages.booking').expose({
 	title: function() {
 		return App.i18n.translate('book.title');
 	},

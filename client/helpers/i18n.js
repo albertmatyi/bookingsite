@@ -16,9 +16,8 @@ var extractDotNotationKey = function(obj, field) {
 		}
 	});
 	if (typeof value === 'undefined' || _.isObject(value)) {
-		App.i18n.missing[prekey] = field.
-			return
-		field;
+		App.i18n.missing[prekey] = field;
+		return field;
 	} else {
 		return value;
 	}

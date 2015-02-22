@@ -1,38 +1,38 @@
-<template name="book">
+<template name="booking">
 	{{#Scrollview}}
-		{{>pageHead type="book"}}
+		{{>pageHead type="booking"}}
 
-		{{#Surface class="book-wrapper" size="[undefined,true]"}}
-			{{#content type="book"}}
-				{{> bookForm}}
+		{{#Surface class="booking-wrapper" size="[undefined,true]"}}
+			{{#content type="booking"}}
+				{{> bookingForm}}
 			{{/content}}
 		{{/Surface}}
 	{{/Scrollview}}
 </template>
 
-<template name="bookForm">
-    <form class="book-form">
+<template name="bookingForm">
+    <form action="#" class="booking-form">
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-group">
-                <label for="user.full_name">
-									{{ i18n 'book.form.Full Name' }}
+                <label for="user.full-name">
+									{{ i18n 'booking.form.Full Name' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon"><span
                             class="fa fa-user"></span>
                     </div>
-                    <input type="text" id="user.full_name"
-                           name="user.full_name"
+                    <input type="text" id="user.full-name"
+                           name="user.fullName"
                            data-toggle="tooltip"
                            class="form-control"
-                           data-title="{{ i18n 'book.form.Specify a valid full name' }}"
+                           data-title="{{ i18n 'booking.form.Specify a valid full name' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.email">
-									{{ i18n 'book.form.Email' }}
+									{{ i18n 'booking.form.Email' }}
                 </label>
 
                 <div class="input-group">
@@ -40,13 +40,13 @@
                             class="fa fa-envelope"></span></div>
                     <input type="email" id="user.email" name="user.email"
                            class="form-control email" data-toggle="tooltip"
-                           data-title="{{ i18n 'book.form.Specify a valid email address' }}"
+                           data-title="{{ i18n 'booking.form.Specify a valid email address' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.phone">
-									{{ i18n 'book.form.Phone' }}
+									{{ i18n 'booking.form.Phone' }}
                 </label>
 
                 <div class="input-group">
@@ -55,36 +55,37 @@
                     <input type="text" class="form-control phone"
                            id="user.phone"
                            name="user.phone" data-toggle="tooltip"
-                           data-title="{{ i18n 'book.form.Specify a valid phone number' }}"
+                           data-title="{{ i18n 'booking.form.Specify a valid phone number' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="user.citizenship">
-									{{ i18n 'book.form.Citizenship' }}
+									{{ i18n 'booking.form.Citizenship' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon"><span
                             class="fa fa-flag"></span>
                     </div>
-                    <input type="text" class="form-control citizenship"
-                           id="user.citizenship"
-                           name="user.citizenship" data-toggle="tooltip"
-                           data-title="{{ i18n 'book.form.Specify your citizenship' }}"
+                    <input type="text" id="user.citizenship"
+                           name="user.citizenship"
+                           class="form-control citizenship"
+                           data-toggle="tooltip"
+                           data-title="{{ i18n 'booking.form.Specify your citizenship' }}"
                            data-placement="right"/>
                 </div>
             </div>
             <div class="form-group">
-                <label for="book.message">
-									{{ i18n 'book.form.Custom message' }}
+                <label for="booking.message">
+									{{ i18n 'booking.form.Custom message' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">
                         <span class="fa fa-comment"></span>
                     </div>
-                <textarea id="book.message" name="book.message"
+                <textarea id="booking.message" name="booking.message"
                           class="form-control"></textarea>
                 </div>
             </div>
@@ -92,93 +93,92 @@
         <div class="col-xs-12 col-sm-6 col-lg-4">
 
             <div class="form-group">
-                <label for="book.quantity">
-									{{ i18n 'book.form.Quantity' }}
+                <label for="booking.quantity">
+									{{ i18n 'booking.form.Quantity' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">#</div>
-                    <select class="form-control" id="book.quantity"
-                            name="book.quantity">
+                    <select id="booking.quantity" name="booking.quantity"
+                            class="form-control">
+											{{>bookingFormNumberOptions n=maxQuantity}}
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label for="book.guests">
-									{{ i18n 'book.form.Number of guests' }}
+                <label for="booking.guests">
+									{{ i18n 'booking.form.Number of guests' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">#</div>
-                    <select class="form-control" id="book.guests"
-                            name="book.guests">
+                    <select id="booking.guests" name="booking.guests"
+                            class="form-control">
+											{{>bookingFormNumberOptions n=maxGuests}}
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label for="book.start">
-									{{ i18n 'book.form.Arrival date' }}
+                <label for="booking.start">
+									{{ i18n 'booking.form.Arrival date' }}
                 </label>
 
                 <div class="input-group">
                     <div class="input-group-addon">
                         <span class="fa fa-calendar"></span>
                     </div>
-                    <input type="text" class="form-control datepicker"
-                           id="book.start"
-                           name="book.start"
+                    <input type="text" id="booking.start" name="booking.start"
+                           class="form-control datepicker"
                            data-toggle="tooltip"
-                           data-title="{{ i18n 'book.form.Specify a valid date (dd-mm-yyyy)' }}"
+                           data-title="{{ i18n 'booking.form.Specify a valid date (dd-mm-yyyy)' }}"
                            data-placement="right"/>
                 </div>
             </div>
-            <span data-toggle="tooltip"
-                  data-title="{{ i18n 'book.form.The selected range contains overbooked days. Consider a different selection. ' }}"
-                  data-placement="right"></span>
 
             <div class="form-group">
-                <label for="book.end">
-									{{ i18n 'book.form.Departure date' }}
+                <label for="booking.end">
+									{{ i18n 'booking.form.Departure date' }}
                 </label>
 
                 <div class="input-group">
-                    <div class="input-group-addon"><span
-                            class="fa fa-calendar"></span></div>
-                    <input type="text" class="form-control datepicker"
-                           id="book.end"
-                           name="book.end" data-toggle="tooltip"
-                           data-title="{{ i18n 'book.form.Specify a valid date (dd-mm-yyyy)' }}"
+                    <div class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                    </div>
+                    <input type="text" id="booking.end" name="booking.end"
+                           class="form-control datepicker"
+                           data-toggle="tooltip"
+                           data-title="{{ i18n 'booking.form.Specify a valid date (dd-mm-yyyy)' }}"
                            data-placement="right"/>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-4">
-
             <table class="prices table table-striped">
                 <thead>
                 <tr>
-                    <th> {{ i18n 'book.form.Price' }}
+                    <th> {{ i18n 'booking.form.Price' }}
                     </th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td> {{ i18n 'book.form.Per night' }}
+                    <td>
+											{{ i18n 'booking.form.Per night' }}
                     </td>
-                    <td class="pricePerNight">50</td>
+                    <td class="price-per-night">{{pricePerNight}}</td>
                 </tr>
                 <tr class="total">
                     <td>
-											{{ i18n 'book.form.Total' }}
+											{{ i18n 'booking.form.Total' }}
                         (
-                        <span class="nrOfNights"></span>
-											{{ i18n 'book.form.Nights' }}
+                        <span class="nr-of-nights">{{nrOfNights}}</span>
+											{{ i18n 'booking.form.Nights' }}
                         )
                     </td>
-                    <td class="priceTotal">
-                        <span class="value"></span>
-                        <select class="form-control currency"></select>
+                    <td class="price-total">
+                        <span class="value">{{priceTotal}}</span>
+											{{>currencySelector}}
                     </td>
                 </tr>
                 </tbody>
@@ -187,24 +187,31 @@
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-actions">
                 <button type="button" class="cancel btn btn-link"
-                        id="cancelBookingButton"> {{ i18n 'book.form.Cancel' }}
+                        id="cancelBookingButton"> {{ i18n 'booking.form.Cancel' }}
                 </button>
-                <button type="button"
-                        class="book btn btn-primary btn-large book-btn"
+                <button type="submit"
+                        class="book btn btn-primary"
                         id="submitBookingButton"
+                        name="booking.button"
                         data-toggle="tooltip"
-                        data-title="{{ i18n 'book.form.Invalid data! See fields above.' }}"
-                        data-placement="left">
-									{{ i18n 'book.form.Book' }}
+                        data-title="{{ i18n 'booking.form.Invalid data! See fields above.' }}"
+                        data-placement="top">
+									{{ i18n 'booking.form.Book' }}
                 </button>
             </div>
         </div>
     </form>
 </template>
 
-<template name="bookButton">
+<template name="bookingButton">
     <button class="book btn btn-primary">
         <span class="fa fa-edit"></span>
-			{{i18n 'book.form.button.label'}}
+			{{i18n 'booking.form.Book'}}
     </button>
+</template>
+
+<template name="bookingFormNumberOptions">
+	{{#each numbers}}
+      <option value="{{number}}">{{number}}</option>
+	{{/each}}
 </template>
