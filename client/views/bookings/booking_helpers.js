@@ -55,3 +55,27 @@ Template.bookingForm.rendered = function() {
 		beforeShowDay: beforeShowDay
 	});
 };
+
+Template.bookingForm.helpers({
+	maxQuantity: function() {
+		return this.room.quantity || 1;
+	},
+	maxGuests: function() {
+		var quantity = Session.get('booking.form.booking.quantity') || 1;
+		return quantity * this.room.places;
+	}
+});
+
+Template.bookingFormNumberOptions.helpers({
+	numbers: function() {
+		var nrs = [];
+		var n = this.n + 1;
+		while (--n > 0) {
+			nrs.push({
+				number: n
+			});
+		}
+		return nrs;
+	}
+});
+

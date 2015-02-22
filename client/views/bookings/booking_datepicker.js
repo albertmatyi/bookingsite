@@ -31,7 +31,8 @@ var getAvailabilityData = function(room, date, quantity) {
 
 var validateQuantitiesInRange = function(data, startDate, endDate) {
 	var retVal = true;
-	var room = App.rooms.collection.findOne(data.booking.roomId);
+	var roomId = Router.current().params._id;
+	var room = App.rooms.collection.findOne(roomId);
 	App.date.iterateBetweenDates(startDate, endDate, 'date',
 		function(date) {
 			var availability = getAvailabilityData(room, date, data.booking.quantity);
