@@ -69,10 +69,9 @@ Template.bookingForm.helpers({
 Template.bookingFormNumberOptions.helpers({
 	numbers: function() {
 		var nrs = [];
-		var n = this.n + 1;
-		while (--n > 0) {
+		for (var i = 1; i <= this.n; i++) {
 			nrs.push({
-				number: n
+				number: i
 			});
 		}
 		return nrs;
