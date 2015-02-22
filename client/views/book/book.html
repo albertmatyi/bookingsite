@@ -186,20 +186,22 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-actions">
+                <button type="button" class="cancel btn btn-link"
+                        id="cancelBookingButton"> {{ i18n 'book.form.Cancel' }}
+                </button>
                 <button type="button"
-                        class="btn btn-primary btn-large book-btn"
-                        id="submitBookingButton" data-toggle="tooltip"
+                        class="book btn btn-primary btn-large book-btn"
+                        id="submitBookingButton"
+                        data-toggle="tooltip"
                         data-title="{{ i18n 'book.form.Invalid data! See fields above.' }}"
                         data-placement="left">
 									{{ i18n 'book.form.Book' }}
-                </button>
-                <button type="button" class="btn btn-link"
-                        id="cancelBookingButton"> {{ i18n 'book.form.Cancel' }}
                 </button>
             </div>
         </div>
     </form>
 </template>
+
 <template name="bookButton">
     <button class="book btn btn-primary">
         <span class="fa fa-edit"></span>
