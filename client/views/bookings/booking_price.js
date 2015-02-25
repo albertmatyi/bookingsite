@@ -10,12 +10,14 @@ var getPricePerNight = function() {
 	var start = Session.get('booking.form.booking.start');
 	var room = Session.get('booking.room');
 	var perNight = App.prices.calcPerNight(
-		room.prices, quantity, guests, room.places, start, end);
+		room.prices, room.places,
+		quantity, guests, start, end);
 	return perNight;
 };
 Template.bookingPrice.helpers({
 	pricePerNight: function() {
 		var pricePerNight = getPricePerNight();
+		pricePerNight = App.currency.convertDefaultTo(pricePerNight);
 		Session.set('booking.form.pricePerNight', pricePerNight);
 		return pricePerNight;
 	},

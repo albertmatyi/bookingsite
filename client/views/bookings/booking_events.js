@@ -1,11 +1,13 @@
 'use strict';
 
 
-var invalidate = function(field, invalid) {
-//	Session.set('booking.validation.' + field, invalid * new Date());
+var invalidate = function(field, invalid, msg) {
 	var $input = $('*[name="' + field + '"]');
-
-	$input.tooltip(invalid ? 'show' : 'hide');
+	if (msg) {
+		$input.attr('title', msg).tooltip('fixTitle');
+	}
+	$input
+		.tooltip(invalid ? 'show' : 'hide');
 	var $group = $input.parents('.form-group');
 	if (invalid) {
 		$group.addClass('has-error');
@@ -59,7 +61,7 @@ Template.bookingForm.events({
 		e.preventDefault();
 		var data = getData(e);
 		data.booking.roomId = this.room._id;
-		console.log(data);
+		data.booking.currency = App.currency.selected();
 		var isValid = App.bookings.isValid(data, invalidate);
 		if (isValid) {
 			Meteor.call('bookings.book', data, function(err) {

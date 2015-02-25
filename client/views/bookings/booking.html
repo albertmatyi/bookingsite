@@ -27,7 +27,7 @@
                            data-toggle="tooltip"
                            class="form-control"
                            data-title="{{ i18n 'booking.form.Specify a valid full name' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
             <div class="form-group">
@@ -41,7 +41,7 @@
                     <input type="email" id="user.email" name="user.email"
                            class="form-control email" data-toggle="tooltip"
                            data-title="{{ i18n 'booking.form.Specify a valid email address' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
             <div class="form-group">
@@ -56,7 +56,7 @@
                            id="user.phone"
                            name="user.phone" data-toggle="tooltip"
                            data-title="{{ i18n 'booking.form.Specify a valid phone number' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
             <div class="form-group">
@@ -73,7 +73,7 @@
                            class="form-control citizenship"
                            data-toggle="tooltip"
                            data-title="{{ i18n 'booking.form.Specify your citizenship' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
             <div class="form-group">
@@ -131,8 +131,7 @@
                            class="form-control datepicker"
                            value="{{bookingStart}}"
                            data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.form.Specify a valid date (dd-mm-yyyy)' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
 
@@ -149,13 +148,12 @@
                            class="form-control datepicker"
                            value="{{bookingEnd}}"
                            data-toggle="tooltip"
-                           data-title="{{ i18n 'booking.form.Specify a valid date (dd-mm-yyyy)' }}"
-                           data-placement="right"/>
+                           data-placement="bottom"/>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-4">
-            {{>bookingPrice}}
+					{{>bookingPrice}}
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="form-actions">
