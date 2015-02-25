@@ -55,6 +55,17 @@ var getData = function(e) {
 	return data;
 };
 Template.bookingForm.events({
+	'click .btn': function(e) {
+		if (e.originalEvent && e.originalEvent.detail) {
+			// famous click bugfix
+			// http://stackoverflow.com/questions/24020535/famo-us-fastclick-firing-two-clicks-on-mobile
+			e.preventDefault();
+			e.stopPropagation();
+			return false;
+		} else {
+			console.log('normal-click');
+		}
+	},
 	'submit .booking-form': function(e) {
 		e.preventDefault();
 		var data = getData(e);
