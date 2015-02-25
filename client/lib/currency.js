@@ -25,6 +25,20 @@ var convertDefaultTo = function(basePrice, currency, rates) {
 	return Math.ceil(basePrice / rate.val) * rate.multiplier;
 };
 
+var getAllCurrencies = function() {
+	return _.map(data.all, function(el) {
+		return {
+			_id: el,
+			name: el
+		};
+	});
+};
+var select = function(val) {
+	Session.set('currency.selected', val);
+};
 App.component('currency').expose({
-	convertDefaultTo: convertDefaultTo
+	convertDefaultTo: convertDefaultTo,
+	currencies: getAllCurrencies,
+	selected: selected,
+	select: select
 });

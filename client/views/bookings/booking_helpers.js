@@ -5,7 +5,12 @@ Template.bookingForm.helpers({});
 
 Template.bookingForm.rendered = function() {
 	App.booking.datepicker.initDatePickers(this.firstNode);
-	$('.form-control', this.firstNode).trigger('change');
+	var $controls = $('.form-control', this.firstNode);
+	$controls.trigger('change');
+	var $firstField = $controls.first();
+	setTimeout(function() {
+		$firstField.focus();
+	}, 50);
 };
 
 Template.bookingForm.helpers({
@@ -15,6 +20,12 @@ Template.bookingForm.helpers({
 	maxGuests: function() {
 		var quantity = Session.get('booking.form.booking.quantity') || 1;
 		return quantity * this.room.places;
+	},
+	bookingStart: function() {
+		return App.date.toStr(+new Date() + 1000 * 60 * 60 * 24);
+	},
+	bookingEnd: function() {
+		return App.date.toStr(+new Date() + 1000 * 60 * 60 * 24 * 2);
 	}
 });
 
