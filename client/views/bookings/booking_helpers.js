@@ -4,7 +4,7 @@ Template.bookingForm.helpers({});
 
 
 Template.bookingForm.rendered = function() {
-	App.booking.datepicker.initDatePickers(this.firstNode);
+	App.bookings.datepicker.initDatePickers(this.firstNode);
 	var $controls = $('.form-control', this.firstNode);
 	$controls.trigger('change');
 	var $firstField = $controls.first();

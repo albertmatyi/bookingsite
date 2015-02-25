@@ -3,7 +3,10 @@
 App.component('error').expose({
 	handle: function(err) {
 		console.log(err);
-		Alerts.add(err.reason + '\n' + err.details,
-			'danger', {autoHide: false});
+		var msg = err.reason || 'Error';
+		if (err.details) {
+			msg += '\n' + err.details
+		}
+		Alerts.add(msg, 'danger', {autoHide: false});
 	}
 });

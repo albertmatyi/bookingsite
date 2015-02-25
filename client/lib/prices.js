@@ -18,7 +18,9 @@ var specialRepeat = [
 		}
 	}, {
 		'value': 'year',
-		'converter': App.date.getDayOfYear
+		'converter': function(date) {
+			return App.date.getDayOfYear(date);
+		}
 	}
 ];
 var specialMap = {};

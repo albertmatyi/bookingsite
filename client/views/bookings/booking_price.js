@@ -20,7 +20,7 @@ Template.bookingPrice.helpers({
 		return pricePerNight;
 	},
 	nrOfNights: function() {
-		var nights = App.booking.datepicker.getNights();
+		var nights = App.bookings.datepicker.getNights();
 		Session.set('booking.form.nights', nights);
 		return nights;
 	},
