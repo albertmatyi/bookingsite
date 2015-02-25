@@ -29,9 +29,8 @@ var beforeShowDay = function(date) {
 		}
 	}
 	if (!ret) {
-		var roomId = Router.current().params._id;
 		var quantity = Session.get('booking.form.booking.quantity') || 1;
-		var room = App.rooms.collection.findOne(roomId);
+		var room = Session.get('booking.room');
 		ret = App.booking.datepicker.getAvailabilityData(room, date, quantity);
 	}
 	if (inRange) {

@@ -31,8 +31,7 @@ var getAvailabilityData = function(room, date, quantity) {
 
 var validateQuantitiesInRange = function(data, startDate, endDate) {
 	var retVal = true;
-	var roomId = Router.current().params._id;
-	var room = App.rooms.collection.findOne(roomId);
+	var room = Session.get('booking.room');
 	App.date.iterateBetweenDates(startDate, endDate, 'date',
 		function(date) {
 			var availability = getAvailabilityData(room, date, data.booking.quantity);
@@ -45,36 +44,46 @@ var validateQuantitiesInRange = function(data, startDate, endDate) {
 	return retVal;
 };
 
-App.component('booking.datepicker').expose({
-	isValid: function(data) {
-		var DATE_VALIDATOR = {
-			'isValid': function(key) {
-				var valid = App.date.isValid(data.booking[key]);
-				App.booking.form.invalidate('booking.' + key, !valid);
-				return valid;
-			}
-		};
+var getNights = function() {
+	var start = Session.get('booking.form.start');
+	var end = Session.get('booking.form.end');
+	// have to round to avoid DST problems
+	return Math.round(new Date(end - start) / (1000 * 60 * 60 * 24));
+};
 
-		if (!DATE_VALIDATOR.isValid('start') || !DATE_VALIDATOR.isValid('end')) {
-			return false;
+var isValid = function(data) {
+	var DATE_VALIDATOR = {
+		'isValid': function(key) {
+			var valid = App.date.isValid(data.booking[key]);
+			App.booking.form.invalidate('booking.' + key, !valid);
+			return valid;
 		}
-		var startD = App.date.toDate(data.booking.start);
-		var endD = App.date.toDate(data.booking.end);
+	};
 
-		var validRange = startD < endD;
-		App.booking.form.invalidate('booking.end', !validRange,
-			App.i18n.translate('End date must be greater than start date'));
+	if (!DATE_VALIDATOR.isValid('start') || !DATE_VALIDATOR.isValid('end')) {
+		return false;
+	}
+	var startD = App.date.toDate(data.booking.start);
+	var endD = App.date.toDate(data.booking.end);
 
-		var validStart = App.date.yesterday < startD;
-		App.booking.form.invalidate('booking.start', !validStart,
-			App.i18n.translate('Start date can\'t be in the past.'));
+	var validRange = startD < endD;
+	App.booking.form.invalidate('booking.end', !validRange,
+		App.i18n.translate('End date must be greater than start date'));
 
-		var validQRange = validateQuantitiesInRange(data, startD, endD);
-		App.booking.form.invalidate('booking.start', !validQRange,
-			App.i18n.translate('Range can\'t contain overbooked days'));
+	var validStart = App.date.yesterday < startD;
+	App.booking.form.invalidate('booking.start', !validStart,
+		App.i18n.translate('Start date can\'t be in the past.'));
 
-		return validRange && validStart && validQRange;
-	},
+	var validQRange = validateQuantitiesInRange(data, startD, endD);
+	App.booking.form.invalidate('booking.start', !validQRange,
+		App.i18n.translate('Range can\'t contain overbooked days'));
+
+	return validRange && validStart && validQRange;
+};
+
+App.component('booking.datepicker').expose({
+	isValid: isValid,
+	getNights: getNights,
 	getAvailabilityData: getAvailabilityData
 });
 

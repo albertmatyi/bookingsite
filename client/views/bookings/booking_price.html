@@ -1,0 +1,32 @@
+<template name="bookingPrice">
+    <table class="prices table table-striped">
+        <thead>
+        <tr>
+            <th> {{ i18n 'booking.form.Price' }}
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+							{{ i18n 'booking.form.Per night' }}
+            </td>
+            <td class="price-per-night">{{pricePerNight}}{{currency}}</td>
+        </tr>
+        <tr class="total">
+            <td>
+							{{ i18n 'booking.form.Total' }}
+                (
+                <span class="nr-of-nights">{{nrOfNights}}</span>
+							{{ i18n 'booking.form.Nights' }}
+                )
+            </td>
+            <td class="price-total">
+                <span class="value">{{priceTotal}}</span>
+							{{>currencySelector}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</template>

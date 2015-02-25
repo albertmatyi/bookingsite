@@ -13,16 +13,18 @@ Router.route('/booking/:_id', {
 		this.next();
 	},
 	data: function() {
+		var room = App.rooms.collection.findOne(this.params._id);
+		Session.set('booking.room', room);
 		return {
 			bookings: App.bookings.collection.find(),
-			room: App.rooms.collection.findOne(this.params._id)
+			room: room
 		};
 	}
 });
 
 App.component('pages.booking').expose({
 	title: function() {
-		return App.i18n.translate('book.title');
+		return App.i18n.translate('booking.title');
 	},
 	description: function() {
 		return App.i18n.translate(this.room, 'title');
