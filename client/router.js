@@ -26,3 +26,9 @@ Router.configure({
 
 // http://stackoverflow.com/questions/23575826/meteorjs-iron-router-waiton-and-using-as-data-on-rendered
 Router.onBeforeAction('loading');
+
+Router.route('/', {
+	onBeforeAction: function() {
+		Router.go('/rooms');
+	}
+});
