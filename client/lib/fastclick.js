@@ -1,3 +1,3 @@
-Meteor.startup(function() {
-	FastClick.attach(document.body);
-});
+//Meteor.startup(function() {
+//	FastClick.attach(document.body);
+//});
