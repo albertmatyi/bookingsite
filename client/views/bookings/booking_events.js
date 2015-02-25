@@ -71,9 +71,19 @@ Template.bookingForm.events({
 			});
 		}
 	},
-	'blur .datepicker': function(e) {
-//		setTimeout(function() {
-//			$(e.currentTarget).datepicker('hide');
-//		}, 350);
+	'change .form-control': function(e) {
+		var $el = $(e.currentTarget);
+		var fieldName = $el.attr('name');
+		var strVal = $el.val();
+		if (fieldName === 'booking.guests' ||
+			fieldName === 'booking.quantity') {
+			Session.set('booking.form.' + fieldName, parseInt(strVal, 10));
+		} else {
+			Session.set('booking.form.' + fieldName, strVal);
+		}
+		if (fieldName === 'booking.start' || fieldName === 'booking.end') {
+			var date = App.date.toDate(strVal);
+			Session.set('booking.form.' + fieldName + 'Date', date);
+		}
 	}
 });

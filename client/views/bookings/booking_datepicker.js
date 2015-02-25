@@ -45,8 +45,8 @@ var validateQuantitiesInRange = function(data, startDate, endDate) {
 };
 
 var getNights = function() {
-	var start = Session.get('booking.form.start');
-	var end = Session.get('booking.form.end');
+	var start = Session.get('booking.form.booking.startDate');
+	var end = Session.get('booking.form.booking.endDate');
 	// have to round to avoid DST problems
 	return Math.round(new Date(end - start) / (1000 * 60 * 60 * 24));
 };

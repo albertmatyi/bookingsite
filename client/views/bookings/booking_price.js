@@ -4,10 +4,10 @@
 'use strict';
 
 var getPricePerNight = function() {
-	var quantity = Session.get('booking.form.quantity');
-	var guests = Session.get('booking.form.guests');
-	var end = Session.get('booking.form.end');
-	var start = Session.get('booking.form.start');
+	var quantity = Session.get('booking.form.booking.quantity');
+	var guests = Session.get('booking.form.booking.guests');
+	var end = Session.get('booking.form.booking.endDate');
+	var start = Session.get('booking.form.booking.start');
 	var room = Session.get('booking.room');
 	var perNight = App.prices.calcPerNight(
 		room.prices, quantity, guests, room.places, start, end);
