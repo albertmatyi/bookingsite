@@ -2,13 +2,15 @@
 
 var book = function(data) {
 	data.booking.guestId = App.guests.save(data.user);
+
+	data.booking.created = +new Date();
+
+	data.booking._id = App.bookings.collection.insert(data.booking);
+
+	var guest = data.user;
+	guest._id = data.booking.guestId;
 	var booking = data.booking;
-
-	booking.created = +new Date();
-
-	App.bookings.collection.insert(booking);
-
-	App.bookings.sendNewBookingMails(data);
+	App.bookings.notifications.sendNewBookingMails(lang, guest, booking);
 };
 
 var addDaysAndPrice = function(data) {
@@ -38,6 +40,10 @@ var validate = function(data) {
 	}
 	if (data.booking.price < 1) {
 		msg += ' Invalid price: ' + data.booking.price
+		valid = false;
+	}
+	if (!data.booking.language) {
+		msg += ' No language selected';
 		valid = false;
 	}
 

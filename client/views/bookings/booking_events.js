@@ -62,6 +62,7 @@ Template.bookingForm.events({
 		var data = getData(e);
 		data.booking.roomId = this.room._id;
 		data.booking.currency = App.currency.selected();
+		data.booking.language = App.i18n.getLocale();
 		var isValid = App.bookings.isValid(data, invalidate);
 		if (isValid) {
 			Meteor.call('bookings.book', data, function(err) {
