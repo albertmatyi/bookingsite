@@ -96,7 +96,8 @@
 	"Migrations",
 	"Logger",
 	"Accounts",
-  "Mailgun",
+	"Mailgun",
+	"SSR",
 	"FView",
 	"moment",
 	// app globals

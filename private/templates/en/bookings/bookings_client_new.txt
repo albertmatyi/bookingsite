@@ -1,0 +1,35 @@
+ Dear {{guest.fullName}}, 
+
+ We've received the following reservation request:
+
+ Booking details
+		{{guest.email}}
+    {{guest.phone}}
+
+  Room
+    {{room.i18n.en.title}}
+
+  Quantity
+    {{booking.quantity}}
+
+  Guests
+    {{booking.guests}}
+
+  Arrival date
+    {{booking.start}}
+
+  Departure date
+    {{booking.end}} ({{booking.days}} nights)
+
+
+  Price
+      {{priceData.price}} {{priceData.currency}}
+      ({{priceData.pricePerNight}} {{priceData.currency}} Per night )
+
+
+  Please stand by while we process it.
+
+
+  Best regards,
+  Ferdinand Motel
+

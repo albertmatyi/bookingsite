@@ -10,7 +10,7 @@ var book = function(data) {
 	var guest = data.user;
 	guest._id = data.booking.guestId;
 	var booking = data.booking;
-	App.bookings.notifications.sendNewBookingMails(lang, guest, booking);
+	App.bookings.notifications.sendNewBookingMails(guest, booking);
 };
 
 var addDaysAndPrice = function(data) {
@@ -18,10 +18,11 @@ var addDaysAndPrice = function(data) {
 	data.booking.days = App.date.getDateDiff(
 		data.booking.start, data.booking.end);
 	var room = App.rooms.collection.findOne(data.booking.roomId);
-	data.booking.price = App.prices.calcPerNight(
+	var pricePerNight = App.prices.calcPerNight(
 		room.prices, room.places,
 		data.booking.quantity, data.booking.guests,
-		data.booking.start, data.booking.end) * data.booking.days;
+		data.booking.start, data.booking.end);
+	data.booking.price = pricePerNight * data.booking.days;
 };
 
 var validate = function(data) {
@@ -35,11 +36,11 @@ var validate = function(data) {
 
 	addDaysAndPrice(data);
 	if (data.booking.days < 1) {
-		msg += ' Invalid stay length: ' + data.booking.days
+		msg += ' Invalid stay length: ' + data.booking.days;
 		valid = false;
 	}
 	if (data.booking.price < 1) {
-		msg += ' Invalid price: ' + data.booking.price
+		msg += ' Invalid price: ' + data.booking.price;
 		valid = false;
 	}
 	if (!data.booking.language) {
@@ -53,9 +54,13 @@ var validate = function(data) {
 	}
 };
 
+var addRates = function(data) {
+	data.booking.exchangeRates = App.currency.getRates();
+};
 Meteor.methods({
 	'bookings.book': function(data) {
 		validate(data);
+		addRates(data);
 		book(data);
 	}
 });
