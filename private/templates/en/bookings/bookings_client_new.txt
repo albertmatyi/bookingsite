@@ -6,6 +6,12 @@
 		{{guest.email}}
     {{guest.phone}}
 
+	Id
+	  {{booking._id}}
+
+	Status
+		Waiting for approval
+
   Room
     {{room.i18n.en.title}}
 
@@ -33,3 +39,26 @@
   Best regards,
   Ferdinand Motel
 
+
+Contact
+     Street address
+     Strada 1 Decembrie 1918 nr. 10 ( Yard )
+
+     Locality/City
+     Sfântu Gheorghe
+
+     Region/State
+     Covasna
+
+     Country
+     Romania
+
+     Postal code
+     520008
+
+    Phone
+    +40 740 180 502
+
+    Fax
+    +40 367 800 449
+    
