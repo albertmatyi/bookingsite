@@ -18,3 +18,4 @@ percolate:migrations
 natestrauser:animate-css
 gfk:mailgun-api
 meteorhacks:ssr
+fastclick

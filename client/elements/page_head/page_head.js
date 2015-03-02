@@ -11,7 +11,7 @@ var getterFor = function(key) {
 	return function() {
 		var helper = getPageInfoHelper.call(this, key);
 		if (helper) {
-			return helper.call(Template.parentData(3));
+			return helper.call(Template.parentData(1));
 		}
 	};
 };
