@@ -33,28 +33,29 @@ var getData = function(e) {
 Template.bookingForm.events({
 	'change .form-control': function(e) {
 		var $el = $(e.currentTarget);
+
 		var fieldName = $el.attr('name');
 		var strVal = $el.val();
-		if (fieldName === 'booking.guests' ||
-			fieldName === 'booking.quantity') {
-			Session.set('booking.form.' + fieldName, parseInt(strVal, 10));
-		} else {
-			Session.set('booking.form.' + fieldName, strVal);
-		}
-		if (fieldName === 'booking.start' || fieldName === 'booking.end') {
-			var date = App.date.toDate(strVal);
-			Session.set('booking.form.' + fieldName + 'Date', date);
-		}
-	},
-	'click .btn': function(e) {
-		if (e.originalEvent && e.originalEvent.detail) {
-			// famous click bugfix
-			// http://stackoverflow.com/questions/24020535/famo-us-fastclick-firing-two-clicks-on-mobile
-			e.preventDefault();
-			e.stopPropagation();
-			return false;
-		} else {
-			console.log('normal-click');
+		switch (fieldName) {
+			case 'booking.guests':
+			case 'booking.quantity':
+				Session.set('booking.form.' + fieldName, parseInt(strVal, 10));
+				break;
+			case 'booking.start':
+				var date = App.date.toDate(strVal);
+				var endDate = Session.get('booking.form.booking.endDate');
+				var endIsAfter = endDate > date;
+				if (!endIsAfter) {
+					var newDate = App.date.toStr(+date + App.date.DAY);
+					$('input[name="booking.end"]')
+						.val(newDate)
+						.trigger('change');
+				}
+			case 'booking.end':
+				date = date || App.date.toDate(strVal);
+				Session.set('booking.form.' + fieldName + 'Date', date);
+			default:
+				Session.set('booking.form.' + fieldName, strVal);
 		}
 	},
 	'submit .booking-form': function(e) {
