@@ -9,6 +9,9 @@
 	Id
 	  {{booking._id}}
 
+	Status
+		Waiting for approval
+
   Room
     {{room.i18n.en.title}}
 

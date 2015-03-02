@@ -13,18 +13,21 @@
       "addressRegion" : "Covasna",
       "addressCountry" : "Romania",
       "postalCode" : "520008"
-    }
+    },
+		"telephone": "+40 740 180 502"
   },
   "underName" : {
     "@type" : "Person",
     "name" : "{{guest.fullName}}",
     "email" : "{{guest.email}}"
   },
+  "reservationStatus": "http://schema.org/ReservationPending",
   "price" : "{{priceData.price}} {{priceData.currency}}",
-  "checkinTime" : "{{booking.start}}",
-  "checkoutTime" : "{{booking.end}}",
+  "checkinDate" : "{{booking.start}}",
+  "checkoutDate" : "{{booking.end}}",
   "numAdults" : "{{booking.guests}}"
 }
+
 </script>
 <h3> Dear {{guest.fullName}}, </h3>
 
@@ -46,6 +49,10 @@
             <tr>
                 <td>Id</td>
                 <td>{{booking._id}}</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>Waiting for approval</td>
             </tr>
             <tr>
                 <td>
