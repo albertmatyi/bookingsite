@@ -1,7 +1,7 @@
 'use strict';
 
 Migrations.add({
-	name: 'Add rooms',
+	name: 'Parse album urls & int values',
 	version: 2,
 
 	up: function() {
@@ -13,6 +13,9 @@ Migrations.add({
 			App.rooms.collection.update(room._id,
 				{
 					$set: {
+						places: parseInt(room.places),
+						quantity: parseInt(room.quantity),
+						weight: parseInt(room.weight),
 						'album': {
 							user: user,
 							id: albumId

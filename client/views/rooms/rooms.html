@@ -1,16 +1,12 @@
 <template name="rooms">
-	{{#Scrollview }}
-		{{#with type="rooms"}}
-			{{>Surface template="pageHead"  size="[undefined,true]"}}
-		{{/with}}
-		{{#famousEach rooms}}
-			{{>Surface template='room' size="[undefined, true]"}}
-		{{/famousEach}}
-	{{/Scrollview}}
+	{{>pageHead type="rooms" classes="col-xs-12 col-sm-12 col-md-4"}}
+	{{#each rooms}}
+		{{>room}}
+	{{/each}}
 </template>
 
 <template name="room">
-	{{#content type="room"}}
+	{{#content type="room" classes="col-xs-12 col-sm-12 col-md-8"}}
       <div class="content-title col-xs-12">
 				{{{ i18n this 'title' }}}
       </div>
@@ -23,14 +19,7 @@
 				{{{ i18n this 'description' }}}
       </div>
       <div class="booking-wrapper col-xs-12">
-				{{>bookingTrigger}}
+				{{>bookingButton}}
       </div>
 	{{/content}}
-</template>
-
-<template name="bookingTrigger">
-    <button class="book btn btn-primary">
-        <span class="fa fa-edit"></span>
-			{{i18n 'booking.button.label'}}
-    </button>
 </template>

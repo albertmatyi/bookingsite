@@ -1,0 +1,186 @@
+<template name="booking">
+	{{>pageHead type="booking" classes="col-xs-12 col-sm-12 col-md-4"}}
+
+    <div class="booking-wrapper">
+			{{#content type="booking" classes="col-xs-12 col-sm-12 col-md-8"}}
+				{{> bookingForm}}
+			{{/content}}
+    </div>
+</template>
+
+<template name="bookingForm">
+    <form action="#" class="booking-form">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="form-group">
+                <label for="user.full-name">
+									{{ i18n 'booking.form.Full Name' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon"><span
+                            class="fa fa-user"></span>
+                    </div>
+                    <input type="text" id="user.full-name"
+                           name="user.fullName"
+                           data-toggle="tooltip"
+                           class="form-control"
+                           data-title="{{ i18n 'booking.form.Specify a valid full name' }}"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user.email">
+									{{ i18n 'booking.form.Email' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon"><span
+                            class="fa fa-envelope"></span></div>
+                    <input type="email" id="user.email" name="user.email"
+                           class="form-control email" data-toggle="tooltip"
+                           data-title="{{ i18n 'booking.form.Specify a valid email address' }}"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user.phone">
+									{{ i18n 'booking.form.Phone' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon"><span
+                            class="fa fa-signal"></span></div>
+                    <input type="text" class="form-control phone"
+                           id="user.phone"
+                           name="user.phone" data-toggle="tooltip"
+                           data-title="{{ i18n 'booking.form.Specify a valid phone number' }}"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user.citizenship">
+									{{ i18n 'booking.form.Citizenship' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon"><span
+                            class="fa fa-flag"></span>
+                    </div>
+                    <input type="text" id="user.citizenship"
+                           name="user.citizenship"
+                           class="form-control citizenship"
+                           data-toggle="tooltip"
+                           data-title="{{ i18n 'booking.form.Specify your citizenship' }}"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="booking.message">
+									{{ i18n 'booking.form.Custom message' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="fa fa-comment"></span>
+                    </div>
+                <textarea id="booking.message" name="booking.message"
+                          class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+
+            <div class="form-group">
+                <label for="booking.quantity">
+									{{ i18n 'booking.form.Quantity' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">#</div>
+                    <select id="booking.quantity" name="booking.quantity"
+                            class="form-control">
+											{{>bookingFormNumberOptions n=maxQuantity}}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="booking.guests">
+									{{ i18n 'booking.form.Number of guests' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">#</div>
+                    <select id="booking.guests" name="booking.guests"
+                            class="form-control">
+											{{>bookingFormNumberOptions n=maxGuests}}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="booking.start">
+									{{ i18n 'booking.form.Arrival date' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                    </div>
+                    <input type="text" id="booking.start" name="booking.start"
+                           class="form-control datepicker"
+                           value="{{bookingStart}}"
+                           data-toggle="tooltip"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="booking.end">
+									{{ i18n 'booking.form.Departure date' }}
+                </label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                    </div>
+                    <input type="text" id="booking.end" name="booking.end"
+                           class="form-control datepicker"
+                           value="{{bookingEnd}}"
+                           data-toggle="tooltip"
+                           data-placement="bottom"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+					{{>bookingPrice}}
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="form-actions">
+                <button type="button" class="cancel btn btn-link"
+                        id="cancelBookingButton"> {{ i18n 'booking.form.Cancel' }}
+                </button>
+                <button type="submit"
+                        class="book btn btn-primary"
+                        id="submitBookingButton"
+                        name="booking.button"
+                        data-toggle="tooltip"
+                        data-title="{{ i18n 'booking.form.Invalid data! See fields above.' }}"
+                        data-placement="top">
+									{{ i18n 'booking.form.Book' }}
+                </button>
+            </div>
+        </div>
+    </form>
+</template>
+
+<template name="bookingButton">
+    <button class="book btn btn-primary">
+        <span class="fa fa-edit"></span>
+			{{i18n 'booking.form.Book'}}
+    </button>
+</template>
+
+<template name="bookingFormNumberOptions">
+	{{#each numbers}}
+      <option value="{{number}}">{{number}}</option>
+	{{/each}}
+</template>

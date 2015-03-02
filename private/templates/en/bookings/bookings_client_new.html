@@ -1,0 +1,74 @@
+<h3> Dear {{guest.fullName}}, </h3>
+
+<p>
+    We've received the following reservation request:
+</p>
+
+<div>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="2">
+                    <span>Booking details</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i></i> <span>{{guest.email}}</span>
+                </td>
+                <td>
+                    <i></i> <span>{{guest.phone}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Room</td>
+                <td>{{room.i18n.en.title}}</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>{{booking.quantity}}</td>
+            </tr>
+            <tr>
+                <td>Guests</td>
+                <td>{{booking.guests}}</td>
+            </tr>
+            <tr>
+                <td>Arrival date</td>
+                <td>{{booking.start}}</td>
+            </tr>
+            <tr>
+                <td>Departure date</td>
+                <td>
+                    <span>{{booking.end}}</span>
+                    <small>
+                        ( <span>{{booking.nrOfNights}}</span>
+                        nights )
+                    </small>
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <span>{{priceData.price}}</span>
+                    <span>{{priceData.currency}}</span>
+                    <small>
+                        ( <span>{{priceData.pricePerNight}}</span>
+                        <span>{{priceData.currency}}</span>
+                        Per night )
+                    </small>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<p>
+    Please stand by while we process it.
+</p>
+<p>
+    Best regards, <br/>
+    Ferdinand Motel
+</p>

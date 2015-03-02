@@ -2,8 +2,12 @@
 @content-container-dist: 5px;
 
 .content-wrapper {
-  margin-top: @content-separator-h + @content-container-dist;
-  margin-bottom: @content-separator-h + @content-container-dist;
+  padding-top: @content-separator-h + @content-container-dist;
+  padding-bottom: @content-separator-h *2 + @content-container-dist;
+  margin-top: -@content-separator-h;
+  position: relative;
+  overflow: hidden;
+
   .content {
     background-image: url(/images/content_bg.png);
     padding-top: @padding-base-vertical;
@@ -22,43 +26,31 @@
         #gradient.horizontal-three-colors(@brand-bg, @brand-primary, 50%, @brand-bg);
       }
     }
-    .album-wrapper {
-      height: 300px;
-      margin: @padding-base-vertical 0;
-    }
-    .description {
-      padding-top: @padding-base-vertical;
-      padding-bottom: @padding-base-vertical;
-    }
-    .book.btn {
-      border: solid 1px @brand-bg;
-      .box-shadow(0px 0px 0px 2px @brand-primary);
-    }
-    .booking-wrapper {
-      margin: @padding-base-vertical 0;
-      text-align: center;
-    }
   }
   .top-border, .bottom-border {
     @center-w: 54px;
     height: @content-separator-h;
     width: 100%;
+
     &:before, &:after {
       content: '';
       display: block;
       background-image: url(/images/content_footer_bg.png);
       background-repeat: repeat-x;
       background-position: center;
-      width: 50%;
       height: 100%;
       position: absolute;
       top: 0;
     }
     &:before {
-      left: -@center-w/2;
+      margin-right: @center-w/2;
+      left: @grid-gutter-width/2;
+      right: 50%;
     }
     &:after {
-      right: -@center-w/2;
+      margin-left: @center-w/2;
+      right: @grid-gutter-width/2;
+      left: 50%;
     }
     .center-element {
       background-image: url(/images/content_footer_bg_center.png);
@@ -73,7 +65,7 @@
     .scale(1, -1);
   }
   .bottom-border {
-    .position(auto, 0, @content-container-dist, 0);
+    .position(auto, 0, @content-separator-h + @content-container-dist, 0);
     .center-element:after {
       content: '';
       display: block;

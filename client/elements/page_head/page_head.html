@@ -1,17 +1,18 @@
 <template name="pageHead">
-	{{#content type="page-head"}}
-		{{#with data}}
+	{{#content type="page-head" classes=classes }}
+		{{# if icon }}
         <div class="icon-wrapper">
             <div class="icon"
                  style="background-image: url({{icon}});">
 
             </div>
         </div>
+		{{/if}}
+		{{# if title }}
         <div class="title col-xs-12">{{title}}</div>
-			{{#with description}}
-          <div class="description col-xs-12">{{this}}</div>
-			{{/with}}
-		{{/with}}
+		{{/if}}
+		{{#if description}}
+        <div class="description col-xs-12">{{description}}</div>
+		{{/if}}
 	{{/content}}
-
 </template>

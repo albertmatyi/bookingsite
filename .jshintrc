@@ -94,7 +94,10 @@
 	"Router",
 	"FastClick",
 	"Migrations",
+	"Logger",
 	"Accounts",
+	"Mailgun",
+	"SSR",
 	"FView",
 	"moment",
 	// app globals

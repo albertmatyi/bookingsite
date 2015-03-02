@@ -1,0 +1,7 @@
+<template name="currencySelector">
+    <select class="currency form-control">
+			{{#each currencies}}
+          <option value="{{_id}}" {{selected}}>{{name}}</option>
+			{{/each}}
+    </select>
+</template>

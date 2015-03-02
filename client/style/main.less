@@ -1,18 +1,21 @@
+.red {
+  background-color: @brand-primary;
+}
+
 // external libs
 @import "/packages/bootstrap3-less/bootstrap.import.less";
 @import "/packages/font-awesome-4-less/font-awesome.import.less";
 // app general
 @import "mixins.import.less";
 @import "variables.import.less";
+@import "elements/form.import.less";
 //elements
 @import "/client/views/layout/header/header.import.less";
 @import "/client/elements/content/content.import.less";
 @import "/client/elements/album/album.import.less";
 @import "/client/elements/page_head/page_head.import.less";
+@import "/client/elements/alerts/alerts.import.less";
 // view specific
 @import "/client/views/layout/layout.import.less";
 @import "/client/views/rooms/rooms.import.less";
-
-.red {
-  background-color: @brand-primary;
-}
+@import "/client/views/bookings/booking.import.less";
