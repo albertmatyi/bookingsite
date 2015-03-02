@@ -41,7 +41,6 @@ var getPriceData = function(booking) {
 };
 App.component('bookings.notifications').expose({
 	'sendNewBookingMails': function(guest, booking) {
-		App.bookings.collection.remove({});
 		var room = App.rooms.collection.findOne(booking.roomId);
 		var priceData = getPriceData(booking);
 		var templateData = {
@@ -61,9 +60,7 @@ App.component('bookings.notifications').expose({
 				templateData, booking.language),
 			'tags': ['booking']
 		};
-		console.log(mailData);
-		console.log(booking);
-//		NigerianPrinceGun.send(mailData);
+		NigerianPrinceGun.send(mailData);
 	}
 });
 
