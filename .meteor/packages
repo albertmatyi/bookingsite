@@ -13,9 +13,8 @@ momentjs:moment
 accounts-google
 rajit:bootstrap3-datepicker
 ian:accounts-ui-bootstrap-3
-gadicohen:famous-views
-mjn:famous
 mrt:bootstrap-alerts
 percolate:migrations
 natestrauser:animate-css
 gfk:mailgun-api
+meteorhacks:ssr
