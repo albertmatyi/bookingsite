@@ -2,3 +2,10 @@ body {
   background-image: url(/images/bg.png);
   background-repeat: repeat;
 }
+
+@media (max-width: @screen-sm-min) {
+  .container {
+    margin-left: -@grid-gutter-width;
+    margin-right: -@grid-gutter-width;
+  }
+}
