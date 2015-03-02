@@ -2,19 +2,9 @@
     <div class="alerts">
 			{{> bootstrapAlerts}}
     </div>
-	{{#famousContext id="mainCtx"}}
-		{{#HeaderFooterLayout headerSize="50" footerSize="50"}}
-			{{#Surface target="header"}}
-				{{> yield 'header'}}
-			{{/Surface}}
-
-			{{#RenderController target="content" transition="opacity"}}
-				{{>yield}}
-			{{/RenderController}}
-
-			{{#Surface target="footer"}}
-				{{> yield 'footer'}}
-			{{/Surface}}
-		{{/HeaderFooterLayout}}
-	{{/famousContext}}
+	{{>header}}
+    <div class="container">
+			{{> yield}}
+    </div>
+	{{>footer}}
 </template>

@@ -1,20 +1,18 @@
 <template name="pageHead">
-	{{# Surface size="[undefined,true]"}}
-		{{#content type="page-head"}}
-			{{# if icon }}
-          <div class="icon-wrapper">
-              <div class="icon"
-                   style="background-image: url({{icon}});">
+	{{#content type="page-head" classes=classes }}
+		{{# if icon }}
+        <div class="icon-wrapper">
+            <div class="icon"
+                 style="background-image: url({{icon}});">
 
-              </div>
-          </div>
-			{{/if}}
-			{{# if title }}
-          <div class="title col-xs-12">{{title}}</div>
-			{{/if}}
-			{{#if description}}
-          <div class="description col-xs-12">{{description}}</div>
-			{{/if}}
-		{{/content}}
-	{{/Surface}}
+            </div>
+        </div>
+		{{/if}}
+		{{# if title }}
+        <div class="title col-xs-12">{{title}}</div>
+		{{/if}}
+		{{#if description}}
+        <div class="description col-xs-12">{{description}}</div>
+		{{/if}}
+	{{/content}}
 </template>

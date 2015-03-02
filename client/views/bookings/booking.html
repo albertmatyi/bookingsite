@@ -1,13 +1,11 @@
 <template name="booking">
-	{{#Scrollview}}
-		{{>pageHead type="booking"}}
+	{{>pageHead type="booking"}}
 
-		{{#Surface class="booking-wrapper" size="[undefined,true]"}}
+    <div class="booking-wrapper">
 			{{#content type="booking"}}
 				{{> bookingForm}}
 			{{/content}}
-		{{/Surface}}
-	{{/Scrollview}}
+    </div>
 </template>
 
 <template name="bookingForm">
