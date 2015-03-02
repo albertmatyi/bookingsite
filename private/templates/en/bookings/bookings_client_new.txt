@@ -6,6 +6,9 @@
 		{{guest.email}}
     {{guest.phone}}
 
+	Id
+	  {{booking._id}}
+
   Room
     {{room.i18n.en.title}}
 
