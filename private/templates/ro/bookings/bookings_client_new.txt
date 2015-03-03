@@ -1,0 +1,65 @@
+ Stimate {{guest.fullName}}, 
+
+Am primit urmatoarea cerere de rezervare
+
+  Detalii de rezervare
+
+  Id
+  {{booking._id}}
+
+  Status
+  In aprobare...
+       {{guest.email}}
+       {{guest.phone}}
+
+  Camera inchiriata
+  {{room.i18n.ro.title}}
+
+  Cantitate
+  {{booking.quantity}}
+
+  Oaspeti
+  {{booking.guests}}
+
+  Data sosirii
+  {{booking.start}}
+
+  Data plecarii
+      {{booking.end}} ({{booking.days}} nopti)
+
+  Pet
+      {{priceData.price}} {{priceData.currency}} ({{priceData.pricePerNight}} {{priceData.currency}} per noapte )
+
+
+
+    Va rugam sa asteptati sa procesam cererea
+
+    Cu Stima, 
+    Pensiunea Ferdinand
+
+
+
+
+  Contact
+       Strada / Nr
+       Strada 1 Decembrie 1918 nr. 10 ( Curte )
+
+       Localitate
+       Sfântu Gheorghe
+
+       Judet
+       Covasna
+
+       Tara
+       Romania
+
+       Cod Postal
+       520008
+
+      Telefon
+      +40 740 180 502
+
+      Fax
+      +40 367 800 449
+
+
