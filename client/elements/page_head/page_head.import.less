@@ -1,32 +1,62 @@
-.page-head {
-  .icon-wrapper {
-    @size: 50px;
-    height: @size;
-    width: @size;
-    left: 50%;
-    margin-top: @padding-base-vertical;
-    margin-bottom: @padding-base-vertical;
-    position: relative;
-    margin-left: -@size/2;
-    background-color: @brand-primary;
-    @shadow: 0 0 0 1px @brand-bg, 0 0 0 3px @brand-primary;
-    .box-shadow(@shadow);
-    .icon {
-      .position(@padding-base-vertical);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+.page-head-wrapper {
+  clear: left;
+  &:first-child {
+    @center-w: 175px;
+    @content-separator-h: 60px;
+    @rel-top-pos: -20px;
+    padding-top: @content-separator-h + @content-container-dist;
+    .top-border {
+      .position(@content-container-dist, 0, auto, 0);
+      height: @content-separator-h;
+      &:before, &:after {
+        background-image: url(/images/content_footer_bg_lg.png);
+      }
+      .center-element {
+        background-image: url(/images/page_head_top.png);
+        .position(0, auto, auto, 50%);
+        width: @center-w;
+        height: 100%;
+        margin-left: -@center-w/2;
+        .scale(1, -1);
+      }
+      &:before {
+        margin-right: @center-w/2;
+      }
+      &:after {
+        margin-left: @center-w/2;
+      }
     }
   }
-  .title {
-    text-align: center;
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-top: @padding-base-vertical;
-    margin-bottom: @padding-base-vertical;
-  }
-  .description {
-    margin-top: @padding-base-vertical;
-    margin-bottom: @padding-base-vertical;
+  .page-head {
+    .icon-wrapper {
+      @size: 50px;
+      height: @size;
+      width: @size;
+      left: 50%;
+      margin-top: @padding-base-vertical;
+      margin-bottom: @padding-base-vertical;
+      position: relative;
+      margin-left: -@size/2;
+      background-color: @brand-primary;
+      @shadow: 0 0 0 1px @brand-bg, 0 0 0 3px @brand-primary;
+      .box-shadow(@shadow);
+      .icon {
+        .position(@padding-base-vertical);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .title {
+      text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-top: @padding-base-vertical;
+      margin-bottom: @padding-base-vertical;
+    }
+    .description {
+      margin-top: @padding-base-vertical;
+      margin-bottom: @padding-base-vertical;
+    }
   }
 }
