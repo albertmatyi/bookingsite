@@ -24,6 +24,7 @@
       .title {
         display: block;
         text-align: center;
+        text-transform: uppercase;
       }
     }
   }
@@ -67,9 +68,16 @@
           margin: 10px;
           height: 100%;
           width: 100%;
+          position: relative;
           background-color: lighten(@brand-bg, 0%);
           .icon-wrapper {
             .page-head-wrapper.page-head.icon-wrapper;
+            .position(50%, auto, auto, 50%);
+            margin-top: -31px;
+          }
+          .title {
+            .position(50%, 0, auto, 0);
+            margin-top: 25px;
           }
         }
       }
@@ -84,7 +92,6 @@
       @menu-w: 40px;
       margin: 16px @menu-w 10px;
       position: relative;
-      text-transform: uppercase;
       &:after {
         content: '';
         display: block;
