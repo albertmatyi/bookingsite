@@ -10,19 +10,31 @@
 		                    bread & breakfast
                     </span>
             </a>
-            <ul class="menu col-xs-12 col-sm-12 col-md-8 col-md-offest-4">
+            <ul class="menu">
 							{{#each pages}}
 								{{> headerPageLink}}
 							{{/each}}
             </ul>
+            <button type="button" class="menu-open btn btn-link">
+                <span class="fa fa-bars"></span>
+            </button>
+            <button class="menu-close btn btn-link">
+                <span class="fa fa-times"></span>
+            </button>
         </div>
     </nav>
 </template>
 
 <template name="headerPageLink">
     <li class="{{active}}">
-        <a href="{{urlFor routeName}}">
-					{{title}}
+        <a href="{{urlFor routeName}}" class="link">
+            <div class="icon-wrapper">
+            <span class="icon" style="background-image: url({{icon}});">
+            </span>
+            </div>
+	        <span class="title">
+		        {{title}}
+          </span>
         </a>
     </li>
 </template>

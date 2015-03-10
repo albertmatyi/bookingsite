@@ -5,18 +5,22 @@
 
 Template.header.helpers({
 	pages: function() {
-		return [
-			{
-				routeName: 'rooms',
-				title: 'Rooms'
-			}
-//			, {
-//				routeName: 'rooms',
-//				title: 'Rooms'
-//			}
-		];
+		return _.where(
+			_.map(App.pages, _.identity),
+			{includeInMenu: true}
+		);
 	}
 });
+
+Template.header.events({
+	'click .menu-open': function() {
+		$('.header .menu, .header .menu-close').addClass('active');
+	},
+	'click .menu-close, click .link': function() {
+		$('.header .menu, .header .menu-close').removeClass('active');
+	}
+});
+
 
 Template.headerPageLink.helpers({
 	active: function() {
