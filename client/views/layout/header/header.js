@@ -15,9 +15,11 @@ Template.header.helpers({
 Template.header.events({
 	'click .menu-open': function() {
 		$('.header .menu, .header .menu-close').addClass('active');
+		$('body').addClass('modal-open');
 	},
 	'click .menu-close, click .link': function() {
 		$('.header .menu, .header .menu-close').removeClass('active');
+		$('body').removeClass('modal-open');
 	}
 });
 
