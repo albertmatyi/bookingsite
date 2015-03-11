@@ -1,0 +1,36 @@
+<template name="modal">
+    <div class="{{id}} modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+									{{# if headerTemplate }}
+										{{> Template.dynamic template=headerTemplate}}
+									{{else}}
+                      <button type="button" class="close" data-dismiss="modal"
+                              aria-label="Close"><span
+                              aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">{{title}}</h4>
+									{{/if}}
+                </div>
+                <div class="modal-body">
+									{{# if bodyTemplate }}
+										{{> Template.dynamic template=bodyTemplate data=data}}
+									{{else}}
+										{{> Template.contentBlock }}
+									{{/if}}
+                </div>
+                <div class="modal-footer">
+									{{# if footerTemplate }}
+										{{> Template.dynamic template=footerTemplate}}
+									{{else}}
+                      <button type="button" class="btn btn-link"
+                              data-dismiss="modal">
+                          <span class="fa fa-times"></span>
+                          Close
+                      </button>
+									{{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
