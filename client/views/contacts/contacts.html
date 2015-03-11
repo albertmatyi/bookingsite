@@ -32,7 +32,7 @@
                   <tr>
                       <th></th>
                       <td>
-                          <button class="btn btn-primary show-send-message">
+                          <button class="show-send-message btn btn-primary">
                               Send message
                           </button>
                       </td>
@@ -53,4 +53,50 @@
           </div>
       </div>
 	{{/content}}
+</template>
+
+<template name="contactsSendMessage">
+    <div class="form-horizontal">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label class="col-xs-2" for="contact-name">
+									{{ i18n 'contacts.name' }}*
+                </label>
+
+                <div class="col-xs-10">
+                    <input class="form-control"
+                           id="contact-name"
+                           type="text"
+                           placeholder="{{ i18n 'contacts.Your full name'}}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2" for="contact-email">
+									{{ i18n 'contacts.email' }} *
+                </label>
+
+                <div class="col-xs-10">
+                    <input class="form-control"
+                           id="contact-email"
+                           type="text"
+                           placeholder="{{ i18n 'contacts.Your email address'}}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2" for="contact-message">
+									{{ i18n 'contacts.message' }}*
+                </label>
+
+                <div class="col-xs-10">
+                <textarea class="form-control"
+                          id="contact-message"
+                          placeholder="{{ i18n 'contacts.The body of the message'}}"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="contactsSendMessageFooter">
+    <button class="btn-primary">{{i18n 'contacts.sendMessage'}}</button>
 </template>
