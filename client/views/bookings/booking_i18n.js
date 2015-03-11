@@ -1,3 +1,6 @@
+/* jshint maxlen: false*/
+'use strict';
+
 App.component('i18n.translations.en.booking').expose({
 	title: 'Book',
 	form: {

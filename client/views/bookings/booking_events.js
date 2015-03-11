@@ -50,10 +50,10 @@ Template.bookingForm.events({
 					$('input[name="booking.end"]')
 						.val(newDate)
 						.trigger('change');
-				}
+				} // jshint ignore: line
 			case 'booking.end':
 				date = date || App.date.toDate(strVal);
-				Session.set('booking.form.' + fieldName + 'Date', date);
+				Session.set('booking.form.' + fieldName + 'Date', date);		 // jshint ignore: line
 			default:
 				Session.set('booking.form.' + fieldName, strVal);
 		}
@@ -68,9 +68,9 @@ Template.bookingForm.events({
 		if (isValid) {
 			Meteor.call('bookings.book', data, function(err) {
 				if (err) {
-					App.error.handle(err)
+					App.error.handle(err);
 				} else {
-					alert('booked')
+					alert('booked');
 				}
 			});
 		} else {

@@ -99,6 +99,8 @@
 	"Mailgun",
 	"SSR",
 	"FView",
+	"Alerts",
+	"Assets",
 	"moment",
 	// app globals
 	"App",
