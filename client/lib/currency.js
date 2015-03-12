@@ -13,3 +13,7 @@ App.component('currency').expose({
 	selected: selected,
 	select: select
 });
+
+Blaze.registerHelper('inSelectedCurrency', function(value) {
+	return App.currency.convertDefaultTo(value, App.currency.selected());
+});

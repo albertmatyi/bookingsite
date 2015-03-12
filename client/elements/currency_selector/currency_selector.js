@@ -17,4 +17,4 @@ Template.currencySelector.events({
 	}
 });
 
-UI.registerHelper('currency', App.currency.selected);
+Blaze.registerHelper('currency', App.currency.selected);
