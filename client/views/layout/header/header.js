@@ -6,7 +6,10 @@
 Template.header.helpers({
 	pages: function() {
 		return _.where(
-			_.map(App.pages, _.identity),
+			_.map(App.pages, function(el, key) {
+				el.routeName = el.routeName || key;
+				return el;
+			}),
 			{includeInMenu: true}
 		);
 	}

@@ -1,0 +1,24 @@
+<template name="contents">
+	{{>pageHead type=pageName classes="col-xs-12 col-sm-12 col-md-4"}}
+	{{#tile type=pageName classes="col-xs-12 col-sm-12 col-md-8"}}
+		{{#each contents}}
+			{{> content}}
+		{{/each}}
+	{{/tile}}
+</template>
+
+<template name="content">
+    <div class="content col-xs-12">
+        <div class="tile-title">
+					{{i18n this 'title'}}
+        </div>
+        <div class="album-wrapper {{albumSize}}">
+					{{#with album}}
+						{{> album}}
+					{{/with}}
+        </div>
+        <div class="description {{descriptionSize}}">
+					{{{ i18n this 'description' }}}
+        </div>
+    </div>
+</template>
