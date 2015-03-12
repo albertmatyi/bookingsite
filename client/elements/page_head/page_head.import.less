@@ -2,14 +2,14 @@
   clear: left;
   &:first-child {
     @center-w: 174px;
-    @content-separator-h: 60px;
+    @tile-separator-h: 60px;
     @rel-top-pos: -20px;
-    padding-top: @content-separator-h + @content-container-dist;
+    padding-top: @tile-separator-h + @tile-container-dist;
     .top-border {
-      .position(@content-container-dist, 0, auto, 0);
-      height: @content-separator-h;
+      .position(@tile-container-dist, 0, auto, 0);
+      height: @tile-separator-h;
       &:before, &:after {
-        background-image: url(/images/content_footer_bg_lg.png);
+        background-image: url(/images/tile_footer_bg_lg.png);
       }
       .center-element {
         background-image: url(/images/page_head_top.png);

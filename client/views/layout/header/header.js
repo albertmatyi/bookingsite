@@ -5,10 +5,15 @@
 
 Template.header.helpers({
 	pages: function() {
-		return _.where(
-			_.map(App.pages, _.identity),
+		var menuArr = _.map(App.pages, function(el, key) {
+			el.routeName = el.routeName || key;
+			return el;
+		});
+		var filteredArr = _.where(
+			menuArr,
 			{includeInMenu: true}
 		);
+		return _.sortBy(filteredArr, 'weight');
 	}
 });
 

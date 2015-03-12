@@ -6,8 +6,8 @@ Migrations.add({
 
 	up: function() {
 		App.rooms.collection.remove({});
-		_.map(App.migrations.data.all.categories, function(cat) {
-			_.map(cat.bookables, function(room) {
+		_.each(App.migrations.data.all.categories, function(cat) {
+			_.each(cat.bookables, function(room) {
 				var cleanRoom = _.omit(room, 'id', 'category');
 				App.rooms.collection.insert(cleanRoom);
 			});
