@@ -34,8 +34,10 @@ Migrations.add({
 		App.contents.collection.remove({});
 		_.each(App.migrations.data.all.categories, function(cat) {
 			var parentId = idToRoot[cat.id];
-			_.each(cat.contents, function(content) {
+			_.each(cat.contents, function(content, idx) {
 				content = _.pick(content, 'i18n', 'weight');
+				content.weight = parseInt(content.weight);
+				content.weight = content.weight ? content.weight + 1 : idx + 1;
 				processAlbumInfo(content);
 				trimDescriptions(content);
 				content.parentId = parentId;

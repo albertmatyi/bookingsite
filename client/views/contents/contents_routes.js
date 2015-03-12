@@ -11,7 +11,10 @@ Router.route('/contents/:pageName', {
 	data: function() {
 		return {
 			pageName: this.params.pageName,
-			contents: App.contents.collection.find()
+			contents: App.contents.collection.find(
+				{parentId: this.params.pageName},
+				{sort: {weight: -1}}
+			)
 		};
 	}
 });
