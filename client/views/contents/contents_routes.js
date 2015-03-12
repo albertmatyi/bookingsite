@@ -1,7 +1,6 @@
 'use strict';
 
-
-var definePage = function(pageName, weight) {
+var defineContentPage = function(pageName, weight) {
 	Router.route('/' + pageName, {
 		template: 'contents',
 		waitOn: function() {
@@ -32,4 +31,9 @@ var definePage = function(pageName, weight) {
 	});
 };
 
-definePage('presso', 4);
+var w = 3;
+defineContentPage('presso', w++);
+defineContentPage('location', w++);
+defineContentPage('about', w++);
+//defineContentPage('partners', w++);
+defineContentPage('guestbook', w++);
