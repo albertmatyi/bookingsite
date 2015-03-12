@@ -3,7 +3,7 @@
 Router.route('/contacts', {});
 
 App.component('pages.contacts').expose({
-	routeName: 'contacts',
+	weight: 10,
 	includeInMenu: true,
 	title: function() {
 		return App.i18n.translate('contacts.title');

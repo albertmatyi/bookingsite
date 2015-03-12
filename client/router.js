@@ -7,7 +7,6 @@ var setPageClass = function() {
 	var pageClass = 'page-' + this.route.getName();
 	if (!$body.hasClass(pageClass)) {
 		$body.removeClass(prevClass);
-		console.log('adding class', pageClass);
 		$body.addClass(pageClass);
 		prevClass = pageClass;
 	}

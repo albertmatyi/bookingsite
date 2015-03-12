@@ -15,7 +15,7 @@ Router.route('/rooms', {
 });
 
 App.component('pages.rooms').expose({
-	routeName: 'rooms',
+	weight: 2,
 	includeInMenu: true,
 	title: function() {
 		return App.i18n.translate('rooms.title');
