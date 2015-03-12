@@ -7,7 +7,8 @@ var idToRoot = {
 	64035: 'guestbook'
 };
 var ALBUM_REGEX = /<div.*username="(\w+)".*albumid="(\w+)"[^>]*>.*<\/div>/gi;
-var ALBUM_REGEX_ALT = /<div.*albumid="(\w+)".*username="(\w+)"[^>]*>.*<\/div>/gi;
+var ALBUM_REGEX_ALT =
+	/<div.*albumid="(\w+)".*username="(\w+)"[^>]*>.*<\/div>/gi;
 var processAlbumInfo = function(content) {
 	_.each(content.i18n, function(local) {
 		local.description = local.description.replace(ALBUM_REGEX, function() {
