@@ -8,7 +8,8 @@ App.component('i18n.translations.en.contacts').expose({
 	'message': 'Message',
 	'The body of the message': 'The body of the message',
 	sendMessageTitle: 'Send a message',
-	sendMessage: 'Send'
+	sendMessage: 'Send',
+	messageSuccess: 'Message successfully sent'
 });
 App.component('i18n.translations.ro.contacts').expose({
 	title: 'Contact',
@@ -19,7 +20,8 @@ App.component('i18n.translations.ro.contacts').expose({
 	'message': 'Message',
 	'The body of the message': 'The body of the message',
 	sendMessageTitle: 'Send a message',
-	sendMessage: 'Send'
+	sendMessage: 'Send',
+	messageSuccess: 'Message successfully sent'
 });
 App.component('i18n.translations.hu.contacts').expose({
 	title: 'Elerhetoseg',
@@ -30,5 +32,6 @@ App.component('i18n.translations.hu.contacts').expose({
 	'message': 'Message',
 	'The body of the message': 'The body of the message',
 	sendMessageTitle: 'Send a message',
-	sendMessage: 'Send'
+	sendMessage: 'Send',
+	messageSuccess: 'Message successfully sent'
 });

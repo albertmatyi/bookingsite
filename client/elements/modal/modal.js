@@ -15,6 +15,9 @@ App.component('modal').expose({
 		);
 		options.view = Blaze.renderWithData(Template.modal, options, document.body);
 		$('body > .modal').last().modal('show');
+	},
+	hide: function($modal) {
+		$modal.modal('hide');
 	}
 });
 

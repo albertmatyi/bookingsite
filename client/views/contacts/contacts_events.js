@@ -7,3 +7,22 @@ Template.contacts.events({
 		});
 	}
 });
+
+Template.contactsSendMessageFooter.events({
+	'click .send-message.btn': function(e) {
+		e.preventDefault();
+		var data = {
+			name: $('.modal #contact-name').val(),
+			email: $('.modal #contact-email').val(),
+			message: $('.modal #contact-message').val()
+		};
+		Meteor.call('sendContactMessage', data, function(err) {
+			if (err) {
+				App.error.handle(err);
+			} else {
+				Alerts.add(App.i18n.translate('contacts.messageSuccess'), 'success');
+				App.modal.hide($(e.currentTarget).parents('.modal'));
+			}
+		});
+	}
+});
