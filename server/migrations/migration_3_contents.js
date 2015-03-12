@@ -18,6 +18,14 @@ var processAlbumInfo = function(content) {
 		});
 	});
 };
+var trimDescriptions = function(content) {
+	_.each(content.i18n, function(local) {
+		local.description = local.description
+			.replace(/&nbsp;/g, '')
+			.replace(/^(?:\s*<[^>]+>\s*)+$/, '')
+			.trim();
+	});
+};
 Migrations.add({
 	name: 'Import site content data',
 	version: 3,
@@ -29,6 +37,7 @@ Migrations.add({
 			_.each(cat.contents, function(content) {
 				content = _.pick(content, 'i18n', 'weight');
 				processAlbumInfo(content);
+				trimDescriptions(content);
 				content.parentId = parentId;
 				App.contents.collection.insert(content);
 			});
