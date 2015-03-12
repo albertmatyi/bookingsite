@@ -1,0 +1,39 @@
+.footer {
+  background-color: @brand-bg;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+  .info-label, .info {
+    display: block;
+  }
+  .info-label {
+    font-weight: bold;
+  }
+  .footer-image {
+    display: inline-block;
+    margin-top: @padding-base-vertical*2;
+  }
+  .partners {
+    margin-top: @padding-base-vertical*2;
+    .partner {
+      font-weight: bold;
+      display: block;
+      margin-top: @padding-base-vertical;
+    }
+  }
+  .social {
+    float: right;
+    .icon {
+      @size: 3em;
+      font-size: @size;
+      padding: @padding-base-horizontal;
+      svg {
+        position: relative;
+        top: @padding-base-horizontal/2;
+        left: -@padding-base-horizontal/2;
+        max-height: @size * .6;
+        max-width: @size * .6;
+      }
+    }
+  }
+}
