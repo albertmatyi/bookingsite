@@ -1,13 +1,13 @@
 <template name="footer">
     <div class="footer">
         <div class="container">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
 							{{> footerPhone}}
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
 							{{> footerAddress}}
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
 							{{>footerSocialIcons}}
 							{{>footerPartners}}
             </div>
@@ -16,7 +16,7 @@
 </template>
 
 <template name="footerSocialIcons">
-    <div class="col-xs-4 col-xs-offset-2 ">
+    <div class="col-xs-3 col-xs-offset-1">
         <table class="social">
             <tr>
                 <td>
@@ -60,7 +60,7 @@
 </template>
 
 <template name="footerPartners">
-    <div class="col-xs-6 partners">
+    <div class="col-xs-8 partners">
         <a class="partner"
            href="https://www.tourist-informator.info/ro/Pensiune-Sfantu-Gheorghe/Pensiunea-Ferdinand-Panzio-8121.html">
             Tourist-Informator.info
@@ -77,12 +77,12 @@
 </template>
 
 <template name="footerPhone">
-    <div class="col-xs-4 col-xs-offset-2">
+    <div class="col-xs-3 col-xs-offset-1">
         <a href="{{pathFor 'contacts'}}" class="footer-image">
             <img src="/images/footer_phone.png" alt=""/>
         </a>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-8">
         <span class="info-label"> Mobile</span>
         <span class="info"> +40 740 180 502</span>
         <span class="info-label"> Fax</span>
@@ -94,14 +94,14 @@
 </template>
 
 <template name="footerAddress">
-    <div class="col-xs-4 col-xs-offset-2">
+    <div class="col-xs-3 col-xs-offset-1">
         <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=ferdinand+panzio,+sepsiszentgyorgy&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=43.528905,79.013672&amp;ie=UTF8&amp;hq=ferdinand+panzio,+sepsiszentgyorgy&amp;hnear=&amp;radius=15000&amp;ll=45.863611,25.7875&amp;spn=0.009384,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=15223128748669782681"
            class="footer-image"
            target="_blank">
             <img src="/images/footer_map.png" alt=""/>
         </a>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-8">
         <span class="info-label">Address</span>
         <span class="info">Strada 1 Decembrie 1918 </span>
         <span class="info">nr. 10 ( Yard )</span>
