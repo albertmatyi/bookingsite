@@ -1,6 +1,7 @@
 body {
   background-image: url(/images/bg.png);
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 @media (max-width: @screen-sm-min) {
@@ -8,4 +9,8 @@ body {
     margin-left: -@grid-gutter-width;
     margin-right: -@grid-gutter-width;
   }
+}
+
+.layout-container {
+  min-height: 80vh; // to make footer stick to bottom on > 720px
 }

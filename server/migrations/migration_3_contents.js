@@ -61,4 +61,4 @@ Migrations.add({
 	}
 });
 
-Migrations.migrateTo('3,rerun');
+//Migrations.migrateTo('3,rerun');
