@@ -1,5 +1,11 @@
 <template name="bookingSuccess">
-	{{>pageHead type="booking.success" classes="col-xs-12 col-sm-12 col-md-4"}}
+	{{#pageHead type="booking.success" classes="col-xs-12 col-sm-12 col-md-4"}}
+      <p>
+          <a class="return-home btn btn-primary" href="{{pathFor "/"}}">
+						{{ i18n 'booking.success.returnToHomepage'}}
+          </a>
+      </p>
+	{{/pageHead}}
 
 	{{#with room}}
 		{{> room}}
