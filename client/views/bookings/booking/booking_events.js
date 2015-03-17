@@ -61,7 +61,8 @@ Template.bookingForm.events({
 	'submit .booking-form': function(e) {
 		e.preventDefault();
 		var data = getData(e);
-		data.booking.roomId = this.room._id;
+		var roomId = this.room._id;
+		data.booking.roomId = roomId;
 		data.booking.currency = App.currency.selected();
 		data.booking.language = App.i18n.getLocale();
 		var isValid = App.bookings.isValid(data, invalidate);
@@ -70,7 +71,7 @@ Template.bookingForm.events({
 				if (err) {
 					App.error.handle(err);
 				} else {
-					alert('booked');
+					Router.go('bookings.success', {_id: roomId});
 				}
 			});
 		} else {
