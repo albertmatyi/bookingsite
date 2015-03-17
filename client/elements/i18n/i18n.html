@@ -1,0 +1,23 @@
+<template name="i18nLanguageSelector">
+    <div class="btn-group i18n-language-selector">
+        <button type="button"
+                class="selected-language btn btn-link dropdown-toggle"
+                data-toggle="dropdown" aria-expanded="false">
+            <img src="/images/flags/{{language}}.svg" alt="{{language}}"/>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+					{{#each languages}}
+						{{> i18nLanguageSelectorLanguage}}
+					{{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="i18nLanguageSelectorLanguage">
+    <li class="language">
+        <a href="#">
+            <img src="/images/flags/{{_id}}.svg" alt="{{_id}}"/>
+        </a>
+    </li>
+</template>

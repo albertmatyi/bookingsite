@@ -7,10 +7,10 @@ App.component('i18n.translations.en.contents.presso').expose({
 });
 
 App.component('i18n.translations.ro.contents.presso').expose({
-	'description': '<span>După\r\naproape 6 luni de construcţii şi remodelare pe 23 aprilie 2014 cafeneaua PRESSO\r\nsa deschis în faţa publicului. Pe lângă un sortiment mai larg de cafea va\r\noferim și prăjituri de casă făcute cu grijă la fața locului. Suntem sechiși de\r\nluni până sâmbătă între orele 10 și 22</span><br><br><br><br>',
+	'description': 'După\r\naproape 6 luni de construcţii şi remodelare pe 23 aprilie 2014 cafeneaua PRESSO\r\nsa deschis în faţa publicului. Pe lângă un sortiment mai larg de cafea va\r\noferim și prăjituri de casă făcute cu grijă la fața locului. Suntem sechiși de\r\nluni până sâmbătă între orele 10 și 22',
 	'title': 'Presso'
 });
 App.component('i18n.translations.hu.contents.presso').expose({
-	'description': '2014 áprilisában 23.-án megnyitotta kapuit a Ferdinand\r\nPRESSÓ. Almás pite, tehéntúrós pite, csokis meggyes muffin, sonkás és zöldséges\r\nkiflik! ezeket lehet élvezni a kávék és italok mellett hetfőtől-szombatig\r\n10-től 22-ig.\r\n\r\n<br><br><br><br>',
-	'title': 'Ferdinánd Presso'
+	'description': '2014 áprilisában 23.-án megnyitotta kapuit a Ferdinand\r\nPRESSÓ. Almás pite, tehéntúrós pite, csokis meggyes muffin, sonkás és zöldséges\r\nkiflik! ezeket lehet élvezni a kávék és italok mellett hetfőtől-szombatig\r\n10-től 22-ig.\r\n\r\n',
+	'title': 'Presso'
 });
