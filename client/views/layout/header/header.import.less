@@ -32,10 +32,20 @@
       }
     }
   }
+  .i18n-language-selector {
+    .language, .selected-language {
+      font-size: 1.5em;
+    }
+    .position(@padding-base-vertical*3, 0, auto, auto);
+  }
   @media (max-width: @screen-md-min) {
+    .navbar-brand {
+      background-image: url(/images/logo_mobile.png);
+    }
+
     .menu-open, .menu-close {
-      font-size: 2em;
-      .position(@padding-base-vertical, @padding-base-horizontal, auto, auto);
+      font-size: 2.5em;
+      .position(@padding-base-horizontal, auto, auto, @padding-base-horizontal);
     }
 
     .menu-close {
