@@ -101,6 +101,7 @@
 	"FView",
 	"Alerts",
 	"Assets",
+	"Cookie",
 	"moment",
 	// app globals
 	"App",

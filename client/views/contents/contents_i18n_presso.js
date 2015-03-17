@@ -7,7 +7,7 @@ App.component('i18n.translations.en.contents.presso').expose({
 });
 
 App.component('i18n.translations.ro.contents.presso').expose({
-	'description': '<span>După\r\naproape 6 luni de construcţii şi remodelare pe 23 aprilie 2014 cafeneaua PRESSO\r\nsa deschis în faţa publicului. Pe lângă un sortiment mai larg de cafea va\r\noferim și prăjituri de casă făcute cu grijă la fața locului. Suntem sechiși de\r\nluni până sâmbătă între orele 10 și 22</span>',
+	'description': 'După\r\naproape 6 luni de construcţii şi remodelare pe 23 aprilie 2014 cafeneaua PRESSO\r\nsa deschis în faţa publicului. Pe lângă un sortiment mai larg de cafea va\r\noferim și prăjituri de casă făcute cu grijă la fața locului. Suntem sechiși de\r\nluni până sâmbătă între orele 10 și 22',
 	'title': 'Presso'
 });
 App.component('i18n.translations.hu.contents.presso').expose({

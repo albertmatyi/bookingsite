@@ -3,7 +3,10 @@
  */
 'use strict';
 
-Session.set('i18n.language', 'en');
+var EXP = {years: 1};
+if (!Cookie.get('i18n.language')) {
+	Cookie.set('i18n.language', 'en', EXP);
+}
 Blaze.registerHelper('i18n', App.i18n.translate);
 
 Template.i18nLanguageSelector.helpers({
@@ -25,13 +28,13 @@ App.component('i18n').expose({
 		return ['en', 'hu', 'ro'];
 	},
 	selected: function() {
-		return Session.get('i18n.language');
+		return Cookie.get('i18n.language');
 	}
 });
 
 Template.i18nLanguageSelectorLanguage.events({
 	'click .language': function(e) {
 		e.preventDefault();
-		Session.set('i18n.language', this._id);
+		Cookie.set('i18n.language', this._id, EXP);
 	}
 });
