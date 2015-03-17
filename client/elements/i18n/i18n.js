@@ -11,9 +11,12 @@ Template.i18nLanguageSelector.helpers({
 		return App.i18n.selected();
 	},
 	languages: function() {
-		return _.map(App.i18n.languages(), function(lang) {
-			return {_id: lang};
-		});
+		return _.filter(
+			_.map(App.i18n.languages(), function(lang) {
+				return {_id: lang};
+			}), function(e) {
+				return e._id !== App.i18n.selected();
+			});
 	}
 });
 
