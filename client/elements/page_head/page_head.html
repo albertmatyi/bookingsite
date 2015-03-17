@@ -12,7 +12,10 @@
         <div class="title col-xs-12">{{title}}</div>
 		{{/if}}
 		{{#if description}}
-        <div class="description col-xs-12">{{description}}</div>
+        <div class="description col-xs-12">
+					{{description}}
+					{{>Template.contentBlock}}
+        </div>
 		{{/if}}
 	{{/tile}}
 </template>

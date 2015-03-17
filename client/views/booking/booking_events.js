@@ -61,16 +61,17 @@ Template.bookingForm.events({
 	'submit .booking-form': function(e) {
 		e.preventDefault();
 		var data = getData(e);
-		data.booking.roomId = this.room._id;
+		var roomId = this.room._id;
+		data.booking.roomId = roomId;
 		data.booking.currency = App.currency.selected();
-		data.booking.language = App.i18n.getLocale();
+		data.booking.language = App.i18n.selected();
 		var isValid = App.bookings.isValid(data, invalidate);
 		if (isValid) {
 			Meteor.call('bookings.book', data, function(err) {
 				if (err) {
 					App.error.handle(err);
 				} else {
-					alert('booked');
+					Router.go('booking.success', {_id: roomId});
 				}
 			});
 		} else {

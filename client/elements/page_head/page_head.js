@@ -1,7 +1,15 @@
 'use strict';
 
 var getPageInfoHelper = function(key) {
-	var pageInfo = App.pages[this.type];
+	var pageInfo = App.pages;
+	var parts = this.type.split('.');
+	var pageInfo = App.pages;
+	_.each(parts, function(part) {
+		if (typeof pageInfo[part] === 'undefined') {
+			pageInfo[part] = {};
+		}
+		pageInfo = pageInfo[part];
+	});
 	if (pageInfo) {
 		return pageInfo[key];
 	}

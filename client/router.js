@@ -23,6 +23,7 @@ Router.configure({
 Router.onBeforeAction('loading');
 
 Router.route('/', {
+	name: 'home',
 	onBeforeAction: function() {
 		Router.go('/rooms');
 	}
