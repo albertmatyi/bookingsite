@@ -14,7 +14,6 @@ Router.route('/booking/success/:_id', {
 });
 
 
-
 App.component('pages.booking.success').expose({
 	title: function() {
 		return App.i18n.translate('booking.success.title');

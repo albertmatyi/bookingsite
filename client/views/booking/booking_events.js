@@ -71,7 +71,7 @@ Template.bookingForm.events({
 				if (err) {
 					App.error.handle(err);
 				} else {
-					Router.go('bookings.success', {_id: roomId});
+					Router.go('booking.success', {_id: roomId});
 				}
 			});
 		} else {
