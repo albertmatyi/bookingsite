@@ -1,0 +1,21 @@
+<template name="login">
+	{{#pageHead  type="login" classes="col-xs-12 col-sm-12 col-md-4"}}
+      <form action="" class="col-xs-12">
+          <div class="form-group">
+              <label for="login.username">{{i18n 'login.username'}}</label>
+              <input type="text" id="login.username" name="username"
+                     class="form-control"/>
+          </div>
+          <div class="form-group">
+              <label for="login.password">{{i18n 'login.password'}}</label>
+              <input type="password" id="login.password" name="password"
+                     class="form-control"/>
+          </div>
+          <div class="form-group">
+              <button class="btn btn-primary">
+								{{{i18n 'login.login'}}}
+              </button>
+          </div>
+      </form>
+	{{/pageHead}}
+</template>

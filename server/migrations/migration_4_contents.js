@@ -1,13 +1,18 @@
 'use strict';
-//Migrations.add({
-//	name: 'Fix & Update content',
-//	version: 4,
-//
-//	up: function() {
-//
-//	},
-//	down: function() {
-//	}
-//});
-//
-////Migrations.migrateTo('4,rerun');
+Migrations.add({
+	name: 'Create admin user',
+	version: 4,
+
+	up: function() {
+		Accounts.createUser({
+			username: 'admin',
+			email: 'albertmatyi@gmail.com',
+			password: 'asdasd',
+			profile: {}
+		});
+	},
+	down: function() {
+	}
+});
+
+//Migrations.migrateTo('4,rerun');
