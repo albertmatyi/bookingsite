@@ -1,0 +1,12 @@
+<template name="admins">
+	Stuff to do in {{adminData}} with a {{i18n 'admin.title'}}
+	{{#each admins}}
+		{{> admin}}
+	{{/each}}
+</template>
+
+<template name="admin">
+	<div class="admin">
+	    {{this}}
+	</div>
+</template>
