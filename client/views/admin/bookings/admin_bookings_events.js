@@ -1,6 +1,6 @@
 'use strict';
 
-Template.admin.events({
+Template.adminBookings.events({
 	'click .booking-row': function() {
 		Router.go('adminBooking', this);
 	}

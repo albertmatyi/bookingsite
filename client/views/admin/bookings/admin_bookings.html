@@ -1,64 +1,72 @@
-<template name="admin">
+<template name="adminBookings">
+	{{>adminBookingsFilters}}
     <div class="row">
         <div class="col-xs-12">
-					{{>adminBookingsList}}
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th data-sort-by="guest.full_name">{{ i18n 'admin.Name'}}</th>
+                    <th data-sort-by="guest.email">{{ i18n 'admin.Email'}}</th>
+                    <th data-sort-by="guest.phone">{{ i18n 'admin.Phone'}}</th>
+                    <th data-sort-by="room">{{ i18n 'admin.Room'}}</th>
+                    <th data-sort-by="created">{{ i18n 'admin.Date'}}</th>
+                    <th data-sort-by="state">{{ i18n 'admin.State'}}</th>
+                </tr>
+                </thead>
+                <tbody>
+								{{#each bookings}}
+									{{> adminBookingsRow}}
+								{{/each}}
+                </tbody>
+            </table>
         </div>
     </div>
 </template>
+<template name="adminBookingsFilters">
+    <nav class="navbar navbar-default filters">
+        <div class="container-fluid">
+            <div class="navbar-form navbar-left">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">{{ i18n 'admin.Booking between'}}</span>
+                        <input type="text" class="form-control start"
+                               id="booking-between-start"
+                               placeholder="{{ i18n 'admin.Start (yyyy-mm-dd)'}}"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control end"
+                               id="booking-between-end"
+                               placeholder="{{ i18n 'admin.End (yyyy-mm-dd)'}}"/>
 
-<template name="adminBookingsList">
-    <div class="col-xs-12">
-			{{>adminBookingFilters}}
-    </div>
-    <div class="col-xs-12">
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th data-sort-by="guest.full_name">{{ i18n 'admin.Name'}}</th>
-                <th data-sort-by="guest.email">{{ i18n 'admin.Email'}}</th>
-                <th data-sort-by="guest.phone">{{ i18n 'admin.Phone'}}</th>
-                <th data-sort-by="room">{{ i18n 'admin.Room'}}</th>
-                <th data-sort-by="created">{{ i18n 'admin.Date'}}</th>
-                <th data-sort-by="state">{{ i18n 'admin.State'}}</th>
-            </tr>
-            </thead>
-            <tbody>
-						{{#each bookings}}
-							{{> adminBookingsListRow}}
-						{{/each}}
-            </tbody>
-        </table>
-    </div>
-</template>
-<template name="adminBookingFilters">
-    <div class="filters">
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon">{{ i18n 'admin.Booking between'}}</span>
-                <input type="text" class="start"
-                       id="booking-between-start"
-                       placeholder="{{ i18n 'admin.Start (dd-mm-yyyy)'}}"/>
-                <input type="text" class="end"
-                       id="booking-between-end"
-                       placeholder="{{ i18n 'admin.End (dd-mm-yyyy)'}}"/>
-                <button class="btn btn-primary load-bookings">
-									{{ i18n 'admin.Load'}}
-                </button>
+                        <div class="input-group-btn">
+                            <button class="load-bookings btn btn-primary">
+															{{ i18n 'admin.Load'}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control quicksearch"
+                               id="booking-quicksearch"
+                               placeholder="{{ i18n 'admin.Quicksearch'}}"/>
+
+                        <div class="input-group-btn">
+                            <button class="search btn"
+                                    disabled="disabled">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            <div class="input-group">
-                <input type="text" class="quicksearch" id="booking-quicksearch"
-                       placeholder="{{ i18n 'admin.Quicksearch'}}"/>
-                <button class="btn" disabled="disabled">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </div>
-    </div>
+    </nav>
 </template>
 
-<template name="adminBookingsListRow">
+<template name="adminBookingsRow">
     <tr class="booking-row">
         <td>{{guest.fullName}}</td>
         <td>{{guest.email}}</td>

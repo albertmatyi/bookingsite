@@ -9,7 +9,7 @@ var STATE_ICONS = {
 var getState = function(booking) {
 	return booking.state || 'new';
 };
-Template.adminBookingsListRow.helpers({
+Template.adminBookingsRow.helpers({
 	guest: function() {
 		return App.guests.collection.findOne(this.guestId);
 	},
