@@ -12,7 +12,7 @@
                 <tbody>
                 <tr>
                     <td>{{ i18n 'admin.State' }}</td>
-                    <td class="state">
+                    <td class="state state-{{booking.state}}">
                         <span class="fa fa-{{booking.stateIcon}}"></span>
 											{{booking.stateName}}
                     </td>
@@ -142,7 +142,8 @@
         </th>
         <td>
             <div class="input-append">
-                <input type="text" value="{{booking.discount}}"
+                <input type="number" value="{{booking.discount}}"
+                       {{discountDisabled}}
                        class="discount-input"/>
                 <span class="add-on currency">{{booking.currency}}</span>
             </div>
