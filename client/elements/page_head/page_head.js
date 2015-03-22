@@ -3,7 +3,6 @@
 var getPageInfoHelper = function(key) {
 	var pageInfo = App.pages;
 	var parts = this.type.split('.');
-	var pageInfo = App.pages;
 	_.each(parts, function(part) {
 		if (typeof pageInfo[part] === 'undefined') {
 			pageInfo[part] = {};
