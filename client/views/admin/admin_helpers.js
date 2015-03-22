@@ -1,12 +1,27 @@
 'use strict';
 
-Template.admins.helpers({
-	admins: function() {
-		return ['wow', 'doge'];
+var STATE_ICONS = {
+	'new': 'asterisk',
+	accepted: 'check-circle',
+	denied: 'minus-circle'
+};
+
+var getState = function(booking) {
+	return booking.state || 'new';
+};
+Template.adminBookingsListRow.helpers({
+	guest: function() {
+		return App.guests.collection.findOne(this.guestId);
 	},
-	adminData: function() {
-		console.log('help');
-		return 'hawaii';
+	room: function() {
+		return App.rooms.collection.findOne(this.roomId);
+	},
+	state: function() {
+		var state = getState(this);
+		return App.i18n.translate('admin.state.' + state);
+	},
+	stateIcon: function() {
+		return STATE_ICONS[getState(this)];
 	}
 });
 

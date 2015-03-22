@@ -1,8 +1,6 @@
 'use strict';
 
-Template.admins.events({
+Template.admin.events({
 	'click .admin': function() {
-		console.log('handle');
-		alert('hey');
 	}
 });

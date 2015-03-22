@@ -4,7 +4,7 @@ Router.route('/login', {
 	name: 'login',
 	onBeforeAction: function() {
 		if (Meteor.userId()) {
-			Router.go('admin')
+			Router.go('admin');
 		} else {
 			this.next();
 		}
