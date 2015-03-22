@@ -1,0 +1,32 @@
+<template name="adminMessage">
+    <div class="email-fields">
+        <div class="form-group">
+            <label for="mail-to">{{i18n 'admin.to'}}</label>
+            <input class="form-control" id="mail-to"
+                   disabled="disabled"
+                   value="{{guest.fullName}} <{{guest.email}}>"
+                   name="mailsubject">
+        </div>
+        <div class="form-group">
+            <label for="mail-subject">{{i18n 'admin.Subject'}}</label>
+            <input class="form-control" id="mail-subject"
+                   name="mailsubject">
+        </div>
+        <div class="form-group">
+            <label for="mail-textarea">{{i18n 'admin.Body'}}</label>
+                <textarea class="form-control" name="mail-textarea"
+                          id="mail-textarea"></textarea>
+        </div>
+    </div>
+</template>
+
+<template name="adminMessageFooter">
+    <button class="send btn btn-primary">
+        <span class="fa fa-mail"></span>
+			{{i18n 'admin.send'}}
+    </button>
+    <button class="cancel btn btn-link">
+        <span class="fa fa-times"></span>
+			{{i18n 'admin.cancel'}}
+    </button>
+</template>
