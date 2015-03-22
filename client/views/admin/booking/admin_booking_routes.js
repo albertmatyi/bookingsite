@@ -1,6 +1,5 @@
 'use strict';
 
-
 var calculatePrices = function(booking) {
 	booking.pricePerNight = Math.round(booking.price * 100 / booking.days) / 100;
 	booking.discount = booking.discount || 0;

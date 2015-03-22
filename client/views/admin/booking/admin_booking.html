@@ -136,7 +136,9 @@
         </td>
     </tr>
     <tr>
-        <th>{{ i18n 'admin.Discount' }}</th>
+        <th>{{ i18n 'admin.Discount' }}
+          <small>({{i18n 'admin.instant update'}})</small>
+        </th>
         <td>
             <div class="input-append">
                 <input type="text" value="{{booking.discount}}"
@@ -170,7 +172,7 @@
 </template>
 
 <template name="adminBookingButtons">
-    <div class="row">
+    <div class="row booking-buttons">
         <div class="col-xs-12">
             <button type="button" class="btn btn-link" id="delete-booking">
                 <span class="fa fa-trash-o"></span>
@@ -189,21 +191,19 @@
                         data-bind="acceptance-button">
 									{{ i18n 'admin.Deny' }}
                 </button>
-                <button type="button" class="btn" disabled="disabled"
-                        id="update-booking" data-bind="update-button">
-									{{ i18n 'admin.Update' }}
-                </button>
-                <button type="button" class="btn" id="mark-as-paid"
-                        data-bind="paid-button">
-									{{ i18n 'admin.Mark as paid' }}
-                </button>
-                <button type="button" class="btn btn-disabled"
+                <!--<button type="button" class="btn" disabled="disabled"-->
+                <!--id="update-booking" data-bind="update-button">-->
+                <!--{{ i18n 'admin.Update' }}-->
+                <!--</button>-->
+                <!--<button type="button" class="btn {{paidDisabled}}" id="mark-as-paid">-->
+                <!--{{ i18n 'admin.Mark as paid' }}-->
+                <!--</button>-->
+                <button type="button" class="send-message btn btn-disabled"
                         id="show-send-message">
 									{{ i18n 'admin.Send message' }}
                 </button>
 
             </div>
-
         </div>
     </div>
 </template>

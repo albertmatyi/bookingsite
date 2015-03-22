@@ -39,6 +39,7 @@ App.component('i18n.translations.en.admin').expose({
 		'Deny': 'Deny',
 		'Update': 'Update',
 		'Mark as paid': 'Mark as paid',
-		'Send message': 'Send message'
+		'Send message': 'Send message',
+		'instant update': 'instant update'
 	}
 );
