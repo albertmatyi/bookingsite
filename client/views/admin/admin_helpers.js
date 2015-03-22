@@ -25,3 +25,7 @@ Template.adminBookingsListRow.helpers({
 	}
 });
 
+App.component('admin.booking').expose({
+	getState: getState,
+	STATE_ICONS: STATE_ICONS
+});
