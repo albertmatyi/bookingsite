@@ -3,10 +3,16 @@
 var getPriceData = function(booking) {
 	var price = App.currency.convertDefaultTo(
 		booking.price, booking.currency, booking.exchangeRates);
+	var discount = App.currency.convertDefaultTo(
+		booking.discount || 0, booking.currency, booking.exchangeRates);
+	var total = price - discount;
 	return {
 		price: price,
-		pricePerDay: Math.round(price / booking.days * 100) / 100,
-		currency: booking.currency
+		pricePerNight: Math.round(price / booking.days * 100) / 100,
+		currency: booking.currency,
+		discount: discount,
+		total: total,
+		totalPricePerNight: Math.round(total / booking.days * 100) / 100
 	};
 };
 App.component('bookings.notifications').expose({

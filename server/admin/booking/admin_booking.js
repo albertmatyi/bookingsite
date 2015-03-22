@@ -23,18 +23,17 @@ var getFunctionFor = function(action, newState) {
 			'to': guest.email,
 			'from': App.mail.getOptions().addresses.noreply,
 			'html': App.mail.renderTemplate(
-				'bookings/bookings_' + action + '.html',
+				'bookings/booking_' + action + '.html',
 				templateData, booking.language),
 			'text': App.mail.renderTemplate(
-				'bookings/bookings_' + action + '.txt',
+				'bookings/booking_' + action + '.txt',
 				templateData, booking.language),
 			'subject': App.mail.renderTemplate(
-				'bookings/bookings_' + action + '.subj',
+				'bookings/booking_' + action + '.subj',
 				templateData, booking.language),
 			'tags': ['booking-' + action]
 		};
-		console.log(templateData, mailData);
-		// App.mail.send(mailData);
+		App.mail.send(mailData);
 
 		// update booking
 		App.bookings.collection.update(bookingId, {
