@@ -4,7 +4,6 @@
 'use strict';
 
 App.component('guests').expose({
-	collection: new Meteor.Collection('guests'),
 	save: function(guestData) {
 		var id;
 		var guest = App.guests.collection.findOne(
@@ -19,6 +18,5 @@ App.component('guests').expose({
 			id = App.guests.collection.insert(guestData);
 		}
 		return id;
-
 	}
 });
