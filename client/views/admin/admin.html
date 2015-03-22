@@ -1,11 +1,7 @@
 <template name="admin">
     <div class="row">
         <div class="col-xs-12">
-					{{# if selectedBookingId }}
-						{{>adminBooking bookingId=selectedBookingId}}
-					{{else}}
-						{{>adminBookingsList}}
-					{{/if}}
+					{{>adminBookingsList}}
         </div>
     </div>
 </template>

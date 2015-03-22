@@ -1,0 +1,206 @@
+<template name="adminBooking">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th colspan="2" class="guest-name panel-title">
+											{{guest.fullName}}
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="state">
+                    <td>{{ i18n 'admin.State' }}</td>
+                    <td data-bind="state">
+                        <span class="fa fa-{{stateIcon}}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fa fa-envelope"></span>
+											{{guest.email}}
+                    </td>
+                    <td>
+                        <span class="fa fa-signal"></span>
+											{{guest.phone}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{ i18n 'admin.Preferred language' }}</td>
+                    <td>{{booking.language}}</td>
+                </tr>
+                <tr>
+                    <td>{{ i18n 'admin.Citizenship' }}</td>
+                    <td>{{guest.citizenship}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+													<span>
+														{{ i18n 'admin.Attached message' }}
+                          </span>
+                        <em>
+													{{booking.message}}
+                        </em>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="date">
+                <span class="fa fa-clock-o"
+                      title="{{ i18n 'admin.Modified' }}"></span>
+                <span title="{{ i18n 'admin.Modified' }}">
+	                {{moment booking.created}}
+                </span>
+            </p>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>{{ i18n 'admin.Room' }}</td>
+                    <td colspan="2">
+											{{i18n room 'title'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{ i18n 'admin.Quantity' }}</td>
+                    <td colspan="2">
+											{{booking.quantity}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{ i18n 'admin.Guests' }}</td>
+                    <td colspan="2">{{booking.guests}}</td>
+                </tr>
+                <tr>
+                    <td>
+											{{ i18n 'admin.Arrival date' }}
+                    </td>
+                    <td colspan="2">{{booking.start}}</td>
+                </tr>
+                <tr>
+                    <td>{{ i18n 'admin.Departure date' }}</td>
+                    <td colspan="2">
+											{{booking.end}}
+                        <small>
+                            ( {{booking.nrOfNights}}
+													{{ i18n 'admin.nights' }} )
+                        </small>
+                    </td>
+                </tr>
+								{{>adminBookingPrices}}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+	{{>adminBookingButtons}}
+</template>
+
+<template name="adminBookingPrices">
+    <tr>
+        <td></td>
+        <th>{{ i18n 'admin.Client' }}
+            <a data-toggle="tooltip"
+               title="{{ i18n 'admin.Prices displayed in the currency the client chose. The price of the bookable and exchange rates are the ones from the day of the booking.' }}">
+                <span class="fa fa-question-circle"></span>
+            </a>
+        </th>
+        <th>{{ i18n 'admin.Admin' }}
+            <a data-toggle="tooltip"
+               title="{{ i18n 'admin.Prices in the currently selected currency. The price of the bookable and exchange rates are the ones from the day of the booking.' }}">
+                <span class="fa fa-question-circle"></span>
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <th>{{ i18n 'admin.Price' }}</th>
+        <td>
+					{{booking.price}}{{currency}}
+            <small>
+                (
+							{{booking.pricePerNight}}{{currency}}
+							{{ i18n 'admin.Per night' }} )
+            </small>
+        </td>
+        <td>
+					{{booking.current.price}}{{booking.current.currency}}
+            <small>
+                (
+							{{booking.current.pricePerNight}}{{booking.current.currency}}
+							{{ i18n 'admin.Per night' }} )
+            </small>
+        </td>
+    </tr>
+    <tr>
+        <th>{{ i18n 'admin.Discount' }}</th>
+        <td>
+            <div class="input-append">
+                <input type="text" value="{{booking.discount}}"/>
+                <span class="add-on currency">{{booking.currency}}</span>
+            </div>
+        </td>
+        <td>
+            <span>{{booking.current.discount}}</span>
+            <span>{{booking.current.currency}}</span>
+        </td>
+    </tr>
+    <tr class="total">
+        <th>{{ i18n 'admin.Total' }}</th>
+        <td>
+					{{booking.total}}{{booking.currency}}
+            <small>
+                ( {{booking.totalPricePerNight}} {{booking.currency}}
+							{{ i18n 'admin.Per night' }} )
+            </small>
+        </td>
+        <td>
+					{{booking.current.total}}
+					{{booking.current.currency}}
+            <small>
+                ( {{booking.current.totalPricePerNight}} {{booking.current.currency}}
+							{{ i18n 'admin.Per night' }} )
+            </small>
+        </td>
+    </tr>
+</template>
+
+<template name="adminBookingButtons">
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-link" id="delete-booking">
+                <span class="fa fa-trash-o"></span>
+							{{ i18n 'admin.Delete' }}
+            </button>
+
+            <button type="button" class="pull-right btn btn-link"
+                    id="close-booking-details">{{ i18n 'admin.Back' }}</button>
+            <div class="actions pull-right btn-group">
+                <button type="button" class="btn btn-primary"
+                        id="show-accept-booking" data-bind="acceptance-button">
+                    <!-- <i class="icon-white icon-exclamation-sign"></i> -->
+									{{ i18n 'admin.Accept' }}
+                </button>
+                <button type="button" class="btn" id="show-deny-booking"
+                        data-bind="acceptance-button">
+									{{ i18n 'admin.Deny' }}
+                </button>
+                <button type="button" class="btn" disabled="disabled"
+                        id="update-booking" data-bind="update-button">
+									{{ i18n 'admin.Update' }}
+                </button>
+                <button type="button" class="btn" id="mark-as-paid"
+                        data-bind="paid-button">
+									{{ i18n 'admin.Mark as paid' }}
+                </button>
+                <button type="button" class="btn btn-disabled"
+                        id="show-send-message">
+									{{ i18n 'admin.Send message' }}
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</template>

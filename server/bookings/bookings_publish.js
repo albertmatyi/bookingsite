@@ -10,7 +10,6 @@ var getBookingsInRange = function(startDate, endDate) {
 		qry.start = {$lt: endDate};
 	}
 	var cursor = App.bookings.collection.find(qry);
-	console.log(qry, cursor.count());
 	return cursor;
 };
 
@@ -19,3 +18,8 @@ App.auth.meteor.publish('future-bookings', function() {
 });
 
 App.auth.meteor.publish('bookings', getBookingsInRange);
+App.auth.meteor.publish('booking', function(id) {
+	var cursor = App.bookings.collection.find(id);
+	console.log(cursor.count());
+	return cursor;
+});
