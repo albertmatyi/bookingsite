@@ -24,7 +24,14 @@ App.auth.meteor.methods({
 			'tags': ['admin-message']
 		};
 		App.mail.send(mailData);
-		App.bookings.collection.update(bookingId, {$push: {messages: message}});
+		App.bookings.collection.update(bookingId, {
+			$push: {
+				messages: {
+					$each: [message],
+					$position: 0
+				}
+			}
+		});
 
 	}
 });
