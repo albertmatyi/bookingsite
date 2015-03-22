@@ -5,3 +5,48 @@
     cursor: pointer;
   }
 }
+
+.page-adminBooking {
+  .date {
+    float: right;
+    font-size: 1em;
+    color: #999999;
+  }
+  .table {
+    background: none;
+    td, th {
+      text-align: center;
+      &:first-child {
+        text-align: left;
+      }
+      small {
+        display: block;
+      }
+    }
+
+    .state {
+      td[data-bind="state"] {
+        background: #dd3333;
+        color: #ffffff;
+        &.ok {
+          background: #3399ff;
+        }
+      }
+    }
+  }
+  .contact {
+    padding: .5em;
+    .icon-signal {
+      margin-left: 2em;
+    }
+  }
+  .discount-input {
+    width: 4em;
+    text-align: right;
+  }
+  .table {
+    tr.total {
+      font-weight: bold;
+    }
+  }
+}
