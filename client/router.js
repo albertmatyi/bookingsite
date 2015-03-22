@@ -8,7 +8,7 @@ var setPageClass = function() {
 	pageClass = pageClass.replace(/[A-Z]/g, function(m) {
 		return '-' + m.toLowerCase();
 	});
-	var pageClass = 'page-' + pageClass;
+	pageClass = 'page-' + pageClass;
 	if (!$body.hasClass(pageClass)) {
 		$body.removeClass(prevClass);
 		$body.addClass(pageClass);
