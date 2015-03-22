@@ -1,7 +1,7 @@
 'use strict';
 
-
-var getFunctionFor = function(action) {
+var getFunctionFor = function(action, newState) {
+	// simply wraps the inner function, and parametrizes it (see usage)
 	return function(bookingId) {
 		// send out mail
 		var booking = App.bookings.collection.findOne(bookingId);
@@ -15,21 +15,25 @@ var getFunctionFor = function(action) {
 		var templateData = {
 			guest: guest,
 			room: room,
-			booking: booking
+			booking: booking,
+			priceData: App.bookings.notifications.getPriceData(booking)
 		};
 
 		var mailData = {
 			'to': guest.email,
 			'from': App.mail.getOptions().addresses.noreply,
-			'html': App.mail.renderTemplate('bookings/bookings_' + action + '.html',
+			'html': App.mail.renderTemplate(
+				'bookings/bookings_' + action + '.html',
 				templateData, booking.language),
-			'text': App.mail.renderTemplate('bookings/bookings_' + action + '.txt',
+			'text': App.mail.renderTemplate(
+				'bookings/bookings_' + action + '.txt',
 				templateData, booking.language),
-			'subject': App.mail.renderTemplate('bookings/bookings_' + action + '.subj',
+			'subject': App.mail.renderTemplate(
+				'bookings/bookings_' + action + '.subj',
 				templateData, booking.language),
 			'tags': ['booking-' + action]
 		};
-		console.log(mailData);
+		console.log(templateData, mailData);
 		// App.mail.send(mailData);
 
 		// update booking
@@ -41,6 +45,7 @@ var getFunctionFor = function(action) {
 		});
 	};
 };
+
 App.auth.meteor.methods({
 	'admin.booking.accept': getFunctionFor('accept', 'accepted'),
 	'admin.booking.deny': getFunctionFor('deny', 'denied')

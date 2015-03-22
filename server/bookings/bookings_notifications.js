@@ -33,3 +33,8 @@ App.component('bookings.notifications').expose({
 		App.mail.send(mailData);
 	}
 });
+
+
+App.component('bookings.notifications').expose({
+	getPriceData: getPriceData
+});
