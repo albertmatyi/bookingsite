@@ -40,11 +40,14 @@ App.component('i18n.translations.en.admin').expose({
 		'Update': 'Update',
 		'Mark as paid': 'Mark as paid',
 		'Send message': 'Send message',
+		'sending': 'Sending',
 		'instant update': 'instant update',
 		'Subject': 'Subject',
 		'send': 'Send',
 		'cancel': 'Cancel',
 		'to': 'To',
+		'messageSent': 'Message successfully sent!',
+		'sentOn': 'Message sent on',
 		'Body': 'Body'
 	}
 );

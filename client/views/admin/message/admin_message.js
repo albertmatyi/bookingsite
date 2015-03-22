@@ -1,25 +1,35 @@
 'use strict';
 
-Template.adminMessageFooter.events({
-	'click .send.btn': function(e) {
-		var message = $('.admin-message-modal .form-control').serializeObject();
-		var guest = this.data.guest;
-		message.to = guest.fullName + '<' + guest.email + '>';
-		console.log(message);
-		e.preventDefault();
-		Meteor.call('admin.sendMessage', message, function(err) {
-			if (err) {
-				App.error.handle(err);
-			} else {
-				Alerts.add(App.i18n.translate('admin.messageSent'), 'success');
-				$(e.currentTarget).parents('.modal').modal('hide');
-			}
-		});
+Template.adminMessageFooter.helpers({
+	sending: function() {
+		return Session.get('admin.message.sending');
 	}
 });
 
-Meteor.startup(function() {
-	Meteor.setTimeout(function() {
-		$('.send-message').click();
-	}, 1000);
+
+Template.adminMessageFooter.events({
+	'click .send.btn': function(e) {
+		e.preventDefault();
+		var $modal = $(e.currentTarget).parents('.modal');
+
+		var message = $('.admin-message-modal .form-control').serializeObject();
+		var guest = this.data.guest;
+		message.to = guest.fullName + '<' + guest.email + '>';
+
+		Session.set('admin.message.sending', true);
+
+		Meteor.call('admin.sendMessage',
+			message,
+			this.data.bookingId,
+			function(err) {
+				Session.set('admin.message.sending', false);
+
+				if (err) {
+					App.error.handle(err);
+				} else {
+					$modal.modal('hide');
+					Alerts.add(App.i18n.translate('admin.messageSent'), 'success');
+				}
+			});
+	}
 });

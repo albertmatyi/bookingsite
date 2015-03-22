@@ -11,7 +11,7 @@ Template.adminBookingPrices.events({
 Template.adminBookingButtons.events({
 	'click .send-message.btn': function() {
 		App.modal.show('adminMessage', {
-			data: {guest: this.guest},
+			data: {guest: this.guest, bookingId: this.booking._id},
 			title: App.i18n.translate('Send message'),
 			footerTemplate: 'adminMessageFooter'
 		});

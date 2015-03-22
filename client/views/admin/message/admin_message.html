@@ -21,10 +21,18 @@
 </template>
 
 <template name="adminMessageFooter">
-    <button class="send btn btn-primary">
-        <span class="fa fa-mail"></span>
-			{{i18n 'admin.send'}}
-    </button>
+	{{# if sending }}
+      <button class="sending btn btn-primary" disabled="disabled">
+          <span class="fa fa-refresh fa-spin"></span>
+				{{i18n 'admin.sending'}}
+      </button>
+	{{else}}
+      <button class="send btn btn-primary">
+          <span class="fa fa-envelope-o"></span>
+				{{i18n 'admin.send'}}
+      </button>
+	{{/if}}
+
     <button class="cancel btn btn-link">
         <span class="fa fa-times"></span>
 			{{i18n 'admin.cancel'}}

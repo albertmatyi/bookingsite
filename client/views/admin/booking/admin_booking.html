@@ -98,6 +98,7 @@
 
     </div>
 	{{>adminBookingButtons}}
+	{{>adminBookingMessages}}
 </template>
 
 <template name="adminBookingPrices">
@@ -137,7 +138,7 @@
     </tr>
     <tr>
         <th>{{ i18n 'admin.Discount' }}
-          <small>({{i18n 'admin.instant update'}})</small>
+            <small>({{i18n 'admin.instant update'}})</small>
         </th>
         <td>
             <div class="input-append">
@@ -182,13 +183,13 @@
             <button type="button" class="pull-right btn btn-link"
                     id="close-booking-details">{{ i18n 'admin.Back' }}</button>
             <div class="actions pull-right btn-group">
-                <button type="button" class="btn btn-primary"
-                        id="show-accept-booking" data-bind="acceptance-button">
-                    <!-- <i class="icon-white icon-exclamation-sign"></i> -->
+                <button type="button"
+                        class="accept {{acceptDisabled}}btn btn-primary">
+                    <span class="fa fa-check"></span>
 									{{ i18n 'admin.Accept' }}
                 </button>
-                <button type="button" class="btn" id="show-deny-booking"
-                        data-bind="acceptance-button">
+                <button type="button" class="deny {{denyDisabled}} btn">
+                    <span class="fa fa-minus-circle"></span>
 									{{ i18n 'admin.Deny' }}
                 </button>
                 <!--<button type="button" class="btn" disabled="disabled"-->
@@ -198,12 +199,31 @@
                 <!--<button type="button" class="btn {{paidDisabled}}" id="mark-as-paid">-->
                 <!--{{ i18n 'admin.Mark as paid' }}-->
                 <!--</button>-->
-                <button type="button" class="send-message btn btn-disabled"
-                        id="show-send-message">
+                <button type="button" class="send-message btn btn-disabled">
+                    <span class="fa fa-envelope-o"></span>
 									{{ i18n 'admin.Send message' }}
                 </button>
-
             </div>
         </div>
     </div>
+</template>
+
+<template name="adminBookingMessages">
+	{{# if booking.messages.length }}
+      <div class="row">
+          <h3 class="col-xs-12">{{i18n 'Sent messages'}}</h3>
+				{{#each booking.messages}}
+            <hr class="col-xs-12"/>
+            <div class="subject col-xs-12">
+                <b>{{i18n 'admin.Subject'}}:</b> {{subject}} -
+                <small>{{i18n 'admin.sentOn'}} {{moment created}}</small>
+            </div>
+
+            <div class="body col-xs-12">
+                <b>{{i18n 'admin.Body'}}:</b>
+							{{body}}
+            </div>
+				{{/each}}
+      </div>
+	{{/if}}
 </template>

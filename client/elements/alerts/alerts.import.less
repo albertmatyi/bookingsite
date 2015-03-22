@@ -1,14 +1,14 @@
 .alerts {
-  position: absolute;
+  position: fixed;
   top: 5rem;
   left: 0;
   width: 100%;
+  @z-alerts: 2030;
+  z-index: @z-alerts;
   .alert {
-    @z-alerts: 2030;
     @h: 30%;
     position: relative;
     max-height: @h;
-    z-index: @z-alerts;
 
     top: (100% - @h)/ 2;
     text-align: center;
