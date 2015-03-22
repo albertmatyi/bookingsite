@@ -17,7 +17,7 @@ var handlerFor = function(action) {
 				if (err) {
 					App.error.handle(err);
 				} else {
-					Alerts.add(App.i18n.translate('admin.booking.' + action + 'Success'),
+					Alerts.add(App.i18n.translate('admin.booking.actionSuccess'),
 						'success');
 				}
 			});
