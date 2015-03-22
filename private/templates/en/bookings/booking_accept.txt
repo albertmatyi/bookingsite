@@ -1,0 +1,76 @@
+ Dear {{guest.fullName}}, 
+
+Your reservation request has been **ACCEPTED**.
+
+ Booking details
+		{{guest.email}}
+    {{guest.phone}}
+
+	Id
+	  {{booking._id}}
+
+	Status
+		ACCEPTED
+
+  Room
+    {{room.i18n.en.title}}
+
+  Quantity
+    {{booking.quantity}}
+
+  Guests
+    {{booking.guests}}
+
+  Arrival date
+    {{booking.start}}
+
+  Departure date
+    {{booking.end}} ({{booking.days}} nights)
+
+
+  Price
+      {{priceData.price}} {{priceData.currency}}
+      ({{priceData.pricePerNight}} {{priceData.currency}} Per night )
+
+ {{# if priceData.discount }}
+  Discount
+      {{priceData.discount}} {{priceData.currency}}
+
+  Total
+      {{priceData.total}} {{priceData.currency}}
+      ( {{priceData.totalPricePerNight}} {{priceData.currency}} Per night )
+{{/if}}
+
+
+  Thank you for you choice, and looking forward to seeing you!
+
+
+  Best regards,
+  Ferdinand Motel
+
+
+Contact
+     Street address
+     Strada 1 Decembrie 1918 nr. 10 ( Yard )
+
+     Locality/City
+     Sfântu Gheorghe
+
+     Region/State
+     Covasna
+
+     Country
+     Romania
+
+     Postal code
+     520008
+
+     Email
+     fp@zoltur.ro
+
+		 Phone
+		 +40 740 180 502
+
+		 Fax
+		 +40 367 800 449
+    
