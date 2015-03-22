@@ -19,6 +19,8 @@ var calculatePrices = function(booking) {
 };
 var setState = function(booking) {
 	booking.state = booking.state || 'new';
+	booking.stateName = App.i18n.translate('admin.state.' + booking.state);
+
 	booking.stateIcon = App.admin.booking.STATE_ICONS[booking.state];
 };
 Router.route('/admin/booking/:_id', {

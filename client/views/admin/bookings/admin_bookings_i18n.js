@@ -49,8 +49,7 @@ App.component('i18n.translations.en.admin').expose({
 		'messageSent': 'Message successfully sent!',
 		'sentOn': 'Message sent on',
 		'Body': 'Body',
-		'new': 'New',
-		'admin.message.sentMessages': 'Sent messages',
+		'message.sentMessages': 'Sent messages',
 		'booking.acceptConfirm': 'Are you sure you would like to ACCEPT the booking? Note that this action will send out an email to the client, which is undoable.', //jshint ignore: line
 		'booking.denyConfirm': 'Are you sure you would like to DENY the booking? Note that this action will send out an email to the client, which is undoable.',     //jshint ignore: line
 		'booking.actionSuccess': 'Booking successfully updated!'
