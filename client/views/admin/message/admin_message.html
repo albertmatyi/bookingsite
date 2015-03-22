@@ -5,17 +5,17 @@
             <input class="form-control" id="mail-to"
                    disabled="disabled"
                    value="{{guest.fullName}} <{{guest.email}}>"
-                   name="mailsubject">
+                   name="to">
         </div>
         <div class="form-group">
             <label for="mail-subject">{{i18n 'admin.Subject'}}</label>
             <input class="form-control" id="mail-subject"
-                   name="mailsubject">
+                   name="subject">
         </div>
         <div class="form-group">
-            <label for="mail-textarea">{{i18n 'admin.Body'}}</label>
-                <textarea class="form-control" name="mail-textarea"
-                          id="mail-textarea"></textarea>
+            <label for="mail-body">{{i18n 'admin.Body'}}</label>
+                <textarea class="form-control" name="body"
+                          id="mail-body"></textarea>
         </div>
     </div>
 </template>
