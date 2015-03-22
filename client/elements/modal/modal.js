@@ -5,7 +5,12 @@ App.component('modal').expose({
 			Template[templateName + 'Footer'] ? templateName + 'Footer' : null;
 		var headerTemplateName =
 			Template[templateName + 'Header'] ? templateName + 'Header' : null;
+		var modalId = options.id || templateName;
 		options = _.extend({
+				id: modalId,
+				cssId: modalId.replace(/[A-Z]/g, function(m) {
+					return '-' + m.toLowerCase();
+				}),
 				bodyTemplate: templateName,
 				footerTemplate: footerTemplateName,
 				headerTemplate: headerTemplateName,
