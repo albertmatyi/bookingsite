@@ -184,12 +184,22 @@
                     id="close-booking-details">{{ i18n 'admin.Back' }}</button>
             <div class="actions pull-right btn-group">
                 <button type="button"
-                        class="accept {{acceptDisabled}}btn btn-primary">
-                    <span class="fa fa-check"></span>
+                        class="accept {{acceptDisabled}} btn btn-primary">
+									{{# if session 'admin.booking.actionInProgress'}}
+                      <span class="fa fa-refresh fa-spin"></span>
+									{{else}}
+                      <span class="fa fa-check"></span>
+									{{/if}}
+
 									{{ i18n 'admin.Accept' }}
                 </button>
                 <button type="button" class="deny {{denyDisabled}} btn">
-                    <span class="fa fa-minus-circle"></span>
+									{{# if session 'admin.booking.actionInProgress'}}
+                      <span class="fa fa-refresh fa-spin"></span>
+									{{else}}
+
+                      <span class="fa fa-minus-circle"></span>
+									{{/if}}
 									{{ i18n 'admin.Deny' }}
                 </button>
                 <!--<button type="button" class="btn" disabled="disabled"-->

@@ -1,12 +1,5 @@
 'use strict';
 
-Template.adminMessageFooter.helpers({
-	sending: function() {
-		return Session.get('admin.message.sending');
-	}
-});
-
-
 Template.adminMessageFooter.events({
 	'click .send.btn': function(e) {
 		e.preventDefault();

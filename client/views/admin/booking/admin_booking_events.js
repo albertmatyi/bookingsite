@@ -8,7 +8,26 @@ Template.adminBookingPrices.events({
 	}
 });
 
+var handlerFor = function(action) {
+	return function() {
+		if (confirm(App.i18n.translate('admin.booking.' + action + 'Confirm'))) {
+			Session.set('admin.booking.actionInProgress', true);
+			Meteor.call('admin.booking.' + action, this.booking._id, function(err) {
+				Session.set('admin.booking.actionInProgress', false);
+				if (err) {
+					App.error.handle(err);
+				} else {
+					Alerts.add(App.i18n.translate('admin.booking.' + action + 'Success'),
+						'success');
+				}
+			});
+		}
+	};
+};
+
 Template.adminBookingButtons.events({
+	'click .accept.btn': handlerFor('accept'),
+	'click .deny.btn': handlerFor('deny'),
 	'click .send-message.btn': function() {
 		App.modal.show('adminMessage', {
 			data: {guest: this.guest, bookingId: this.booking._id},

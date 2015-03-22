@@ -21,7 +21,7 @@
 </template>
 
 <template name="adminMessageFooter">
-	{{# if sending }}
+	{{# if session 'admin.message.sending'}}
       <button class="sending btn btn-primary" disabled="disabled">
           <span class="fa fa-refresh fa-spin"></span>
 				{{i18n 'admin.sending'}}
