@@ -16,6 +16,10 @@ var calculatePrices = function(booking) {
 		currency: App.currency.selected()
 	};
 };
+var setState = function(booking) {
+	booking.state = booking.state || 'new';
+	booking.stateIcon = App.admin.booking.STATE_ICONS[booking.state];
+};
 Router.route('/admin/booking/:_id', {
 	name: 'adminBooking',
 	template: 'adminBooking',
@@ -33,6 +37,7 @@ Router.route('/admin/booking/:_id', {
 			return {};
 		}
 		calculatePrices(booking);
+		setState(booking);
 		return {
 			booking: booking,
 			room: App.rooms.collection.findOne(booking.roomId),
