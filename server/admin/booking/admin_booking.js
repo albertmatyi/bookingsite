@@ -9,6 +9,10 @@ var getFunctionFor = function(action, newState) {
 			throw new Meteor.Error('MESSAGE_NO_BOOKING_ID',
 				'No booking id received. A message can be sent only with bookingId.');
 		}
+		if (booking.state) {
+			throw new Meteor.Error('BOOKING_ALREADY_HANDLED',
+				'Booking is already in state: ' + booking.state);
+		}
 		var guest = App.guests.collection.findOne(booking.guestId);
 		var room = App.rooms.collection.findOne(booking.roomId);
 
