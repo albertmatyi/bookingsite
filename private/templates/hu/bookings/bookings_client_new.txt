@@ -2,16 +2,15 @@
 
     A következő foglalást kaptuk Öntől
 
-Foglalás információk
+	Foglalás információk
+	  {{guest.email}}
+    {{guest.phone}}
 
     Id
     {{booking._id}}
 
     Státus
     Visszaigazolásra vár...
-
-	  {{guest.email}}
-    {{guest.phone}}
 
     Szoba
     {{room.i18n.en.title}}

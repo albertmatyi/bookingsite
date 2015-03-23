@@ -3,14 +3,14 @@
 Am primit urmatoarea cerere de rezervare
 
   Detalii de rezervare
+   {{guest.email}}
+   {{guest.phone}}
 
   Id
   {{booking._id}}
 
   Status
   In aprobare...
-       {{guest.email}}
-       {{guest.phone}}
 
   Camera inchiriata
   {{room.i18n.ro.title}}
