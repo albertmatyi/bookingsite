@@ -1,0 +1,67 @@
+ Kedves {{guest.fullName}}, 
+
+        Sajnalattal kozoljuk, hogy foglalasi kereset **NEM tudjuk kielegiteni**.
+
+	Foglalás információk
+	  {{guest.email}}
+    {{guest.phone}}
+
+    Id
+    {{booking._id}}
+
+    Státus
+    ELUTASITVA
+
+    Szoba
+    {{room.i18n.en.title}}
+
+    Mennyiség
+    {{booking.quantity}}
+
+    Vendégek
+    {{booking.guests}}
+
+    Érkezési időpont
+    {{booking.start}}
+
+    Távozási időpont
+        {{booking.end}} ( {{booking.days}} északa )
+
+    Ár
+        {{priceData.price}} {{priceData.currency}} ( {{priceData.pricePerNight}} {{priceData.currency}} per északa )
+
+
+   Elnezest az esetleges kellementlensegekert,
+
+
+    Üdvözlettel, 
+    Ferdinand Panzió
+
+
+Elérhetőség
+
+	 Utca / szám
+	 Strada 1 Decembrie 1918 nr. 10 ( Yard )
+
+	 Város
+	 Sfântu Gheorghe
+
+	 Megye
+	 Covasna
+
+	 Ország
+	 Romania
+
+	 Postakód
+	 520008
+
+	 Email
+	 fp@zoltur.ro
+
+	 Telefon
+	 +40 740 180 502
+
+	 Fax
+	 +40 367 800 449
+
+
