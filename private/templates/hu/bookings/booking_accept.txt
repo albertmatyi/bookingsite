@@ -3,6 +3,8 @@
     Az Ön foglalása **el lett fogadva**
 
 Foglalás információk
+	  {{guest.email}}
+    {{guest.phone}}
 
     Id
     {{booking._id}}
@@ -10,8 +12,6 @@ Foglalás információk
     Státus
     ELFOGADVA
 
-	  {{guest.email}}
-    {{guest.phone}}
 
     Szoba
     {{room.i18n.en.title}}
