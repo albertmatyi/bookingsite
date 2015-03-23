@@ -1,0 +1,68 @@
+ Stimate {{guest.fullName}}, 
+
+  Din nefericire **NU putem satisface** cererea Dvs. de rezervare
+
+
+  Detalii de rezervare
+   {{guest.email}}
+   {{guest.phone}}
+
+  Id
+  {{booking._id}}
+
+  Status
+  REFUZAT
+
+  Camera inchiriata
+  {{room.i18n.ro.title}}
+
+  Cantitate
+  {{booking.quantity}}
+
+  Oaspeti
+  {{booking.guests}}
+
+  Data sosirii
+  {{booking.start}}
+
+  Data plecarii
+      {{booking.end}} ({{booking.days}} nopti)
+
+  Pet
+      {{priceData.price}} {{priceData.currency}} ({{priceData.pricePerNight}} {{priceData.currency}} per noapte )
+
+
+    Ne cerem scuze pentru neplacerea cauzata,
+
+    Cu Stima, 
+    Pensiunea Ferdinand
+
+
+
+
+  Contact
+       Strada / Nr
+       Strada 1 Decembrie 1918 nr. 10 ( Curte )
+
+       Localitate
+       Sfântu Gheorghe
+
+       Judet
+       Covasna
+
+       Tara
+       Romania
+
+       Cod Postal
+       520008
+
+       Email
+       fp@zoltur.ro
+
+      Telefon
+      +40 740 180 502
+
+      Fax
+      +40 367 800 449
+
+
