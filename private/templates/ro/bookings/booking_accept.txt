@@ -28,9 +28,17 @@ Felicitari, Rezervarea Dvs. a fost <b>aprobata</b>.
   Data plecarii
       {{booking.end}} ({{booking.days}} nopti)
 
-  Pet
+  Pret
       {{priceData.price}} {{priceData.currency}} ({{priceData.pricePerNight}} {{priceData.currency}} per noapte )
 
+  {{# if priceData.discount }}
+  	  Discount
+  	      {{priceData.discount}} {{priceData.currency}}
+
+  	  Total
+  	      {{priceData.total}} {{priceData.currency}}
+  	      ( {{priceData.totalPricePerNight}} {{priceData.currency}} Per noapte )
+  {{/if}}
 
 
     Va rugam sa asteptati sa procesam cererea
