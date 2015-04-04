@@ -15,6 +15,22 @@ var getPriceData = function(booking) {
 		totalPricePerNight: Math.round(total / booking.days * 100) / 100
 	};
 };
+
+var sendMailTo = function (type, toAddress, data) {
+	var mailData = {
+		'to': toAddress,
+		'from': App.mail.getOptions().addresses.noreply,
+		'html': App.mail.renderTemplate('bookings/bookings_'+type+'_new.html',
+			data, data.booking.language),
+		'text': App.mail.renderTemplate('bookings/bookings_'+type+'_new.txt',
+			data, data.booking.language),
+		'subject': App.mail.renderTemplate('bookings/bookings_'+type+'_new.subj',
+			data, data.booking.language),
+		'tags': ['booking']
+	};
+	App.mail.send(mailData);
+};
+
 App.component('bookings.notifications').expose({
 	'sendNewBookingMails': function(guest, booking) {
 		var room = App.rooms.collection.findOne(booking.roomId);
@@ -23,20 +39,12 @@ App.component('bookings.notifications').expose({
 			guest: guest,
 			booking: booking,
 			room: room,
-			priceData: priceData
+			priceData: priceData,
+			ROOT_URL: process.env.ROOT_URL
 		};
-		var mailData = {
-			'to': guest.email,
-			'from': App.mail.getOptions().addresses.noreply,
-			'html': App.mail.renderTemplate('bookings/bookings_client_new.html',
-				templateData, booking.language),
-			'text': App.mail.renderTemplate('bookings/bookings_client_new.txt',
-				templateData, booking.language),
-			'subject': App.mail.renderTemplate('bookings/bookings_client_new.subj',
-				templateData, booking.language),
-			'tags': ['booking']
-		};
-		App.mail.send(mailData);
+		var adminMail = App.mail.getOptions().addresses.admin;
+		sendMailTo('client', guest.email, templateData, booking);
+		sendMailTo('admin', adminMail, templateData, booking);
 	}
 });
 

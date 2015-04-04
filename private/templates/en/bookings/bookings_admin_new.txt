@@ -1,0 +1,67 @@
+ Dear Administrator, 
+
+ We've received the following reservation request:
+
+ Booking details
+    {{guest.fullName}}
+		{{guest.email}}
+    {{guest.phone}}
+
+	Id
+	  {{booking._id}}
+
+	Status
+		Waiting for approval
+
+  Room
+    {{room.i18n.en.title}}
+
+  Quantity
+    {{booking.quantity}}
+
+  Guests
+    {{booking.guests}}
+
+  Arrival date
+    {{booking.start}}
+
+  Departure date
+    {{booking.end}} ({{booking.days}} nights)
+
+
+  Price
+      {{priceData.price}} {{priceData.currency}}
+      ({{priceData.pricePerNight}} {{priceData.currency}} Per night )
+
+
+  Please access the web application to accept or deny it.
+
+  Direct link: {{ROOT_URL}}admin/booking/{{booking._id}}
+
+
+  Best regards,
+  The Internet
+
+
+Contact
+     Street address
+     Strada 1 Decembrie 1918 nr. 10 ( Yard )
+
+     Locality/City
+     Sfântu Gheorghe
+
+     Region/State
+     Covasna
+
+     Country
+     Romania
+
+     Postal code
+     520008
+
+    Phone
+    +40 740 180 502
+
+    Fax
+    +40 367 800 449
+    
