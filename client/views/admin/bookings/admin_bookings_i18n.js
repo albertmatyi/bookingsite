@@ -52,6 +52,8 @@ App.component('i18n.translations.en.admin').expose({
 		'message.sentMessages': 'Sent messages',
 		'booking.acceptConfirm': 'Are you sure you would like to ACCEPT the booking? Note that this action will send out an email to the client, which is undoable.', //jshint ignore: line
 		'booking.denyConfirm': 'Are you sure you would like to DENY the booking? Note that this action will send out an email to the client, which is undoable.',     //jshint ignore: line
-		'booking.actionSuccess': 'Booking successfully updated!'
+		'booking.actionSuccess': 'Booking successfully updated!',
+		'confirmDelete': 'Are you sure you would like to delete this booking?',
+		'deleteSuccessMessage': 'Booking removed successfully'
 	}
 );

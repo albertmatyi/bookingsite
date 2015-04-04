@@ -176,13 +176,14 @@
 <template name="adminBookingButtons">
     <div class="row booking-buttons">
         <div class="col-xs-12">
-            <button type="button" class="btn btn-link" id="delete-booking">
+            <button type="button" class="delete btn btn-link">
                 <span class="fa fa-trash-o"></span>
 							{{ i18n 'admin.Delete' }}
             </button>
 
-            <button type="button" class="pull-right btn btn-link"
-                    id="close-booking-details">{{ i18n 'admin.Back' }}</button>
+            <button type="button" class="back btn btn-link pull-right">
+            	{{ i18n 'admin.Back' }}
+            </button>
             <div class="actions pull-right btn-group">
                 <button type="button"
                         class="accept {{acceptDisabled}} btn btn-primary">
@@ -202,13 +203,6 @@
 									{{/if}}
 									{{ i18n 'admin.Deny' }}
                 </button>
-                <!--<button type="button" class="btn" disabled="disabled"-->
-                <!--id="update-booking" data-bind="update-button">-->
-                <!--{{ i18n 'admin.Update' }}-->
-                <!--</button>-->
-                <!--<button type="button" class="btn {{paidDisabled}}" id="mark-as-paid">-->
-                <!--{{ i18n 'admin.Mark as paid' }}-->
-                <!--</button>-->
                 <button type="button" class="send-message btn btn-disabled">
                     <span class="fa fa-envelope-o"></span>
 									{{ i18n 'admin.Send message' }}

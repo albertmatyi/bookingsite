@@ -31,6 +31,19 @@ var handlerFor = function(action) {
 };
 
 Template.adminBookingButtons.events({
+	'click .delete.btn': function () {
+		if (confirm(App.i18n.translate('admin.confirmDelete')))	{
+			App.bookings.collection.remove(this.booking._id, function (err) {
+				if (!err) {
+					Router.go('adminBookings');
+					Alerts.add(App.i18n.translate('admin.deleteSuccessMessage', 'success'));
+				} else {
+					App.error.handle(err);
+				}
+			});
+
+		}
+	},
 	'click .accept.btn': handlerFor('accept'),
 	'click .deny.btn': handlerFor('deny'),
 	'click .send-message.btn': function() {
