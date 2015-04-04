@@ -1,0 +1,2097 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"repe",
+				"repeat-x"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"close",
+				"closeCategories"
+			],
+			[
+				"category",
+				"category-view"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"ope",
+				"openCategory"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"booka",
+				"bookable_variants"
+			],
+			[
+				"book",
+				"bookableVariant"
+			],
+			[
+				"bookabl",
+				"bookable_variant  (module)"
+			],
+			[
+				"bookable",
+				"bookableVariantAdmin"
+			],
+			[
+				"content",
+				"contentPositions  (variable)"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"img",
+				"imgIdx"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"get",
+				"getCatIdx"
+			],
+			[
+				"background-",
+				"background-repeat"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"cat",
+				"categoryDirective"
+			],
+			[
+				"scrol",
+				"scrollTop  (function)"
+			],
+			[
+				"has",
+				"hasClass  (function)"
+			],
+			[
+				"remov",
+				"removeClass  (function)"
+			],
+			[
+				"time",
+				"timedelta  (class)"
+			],
+			[
+				"spe",
+				"special"
+			],
+			[
+				"speci",
+				"specialRepeat"
+			],
+			[
+				"some",
+				"someDateToMillis"
+			],
+			[
+				"is",
+				"isValidRange"
+			],
+			[
+				"date",
+				"dateHelper"
+			],
+			[
+				"av",
+				"avgForGuest"
+			],
+			[
+				"gue",
+				"guestsIdx"
+			],
+			[
+				"getA",
+				"getAvgPricesForDays"
+			],
+			[
+				"price",
+				"pricesPerDay"
+			],
+			[
+				"spec",
+				"specialApplied"
+			],
+			[
+				"special",
+				"specialRepeat"
+			],
+			[
+				"specia",
+				"special"
+			],
+			[
+				"star",
+				"startDate"
+			],
+			[
+				"conver",
+				"converter"
+			],
+			[
+				"specialR",
+				"specialRepeat"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"getDa",
+				"getDate"
+			],
+			[
+				"year",
+				"yearStart"
+			],
+			[
+				"day",
+				"dayOfYear"
+			],
+			[
+				"endD",
+				"endDOW"
+			],
+			[
+				"da",
+				"dateDOW"
+			],
+			[
+				"ret",
+				"retVal"
+			],
+			[
+				"ite",
+				"iterateBetweenDates"
+			],
+			[
+				"re",
+				"returnType"
+			],
+			[
+				"curre",
+				"currencyHelper"
+			],
+			[
+				"cal",
+				"calcPerNight"
+			],
+			[
+				"h",
+				"helpers"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"lis",
+				"list-style-position"
+			],
+			[
+				"mus",
+				"mustBeFilledWithFloat"
+			],
+			[
+				"spei",
+				"specialPricesRow"
+			],
+			[
+				"form",
+				"formModal"
+			],
+			[
+				"show",
+				"showHeader"
+			],
+			[
+				"head",
+				"header  (function)"
+			],
+			[
+				"popu",
+				"populateFields"
+			],
+			[
+				"prices",
+				"pricesTable"
+			],
+			[
+				"select",
+				"selectorFor"
+			],
+			[
+				"selec",
+				"selectorFor"
+			],
+			[
+				"header",
+				"headerRow"
+			],
+			[
+				"se",
+				"setForPlaces"
+			],
+			[
+				"ga",
+				"gatherValues"
+			],
+			[
+				"ser",
+				"serialize  (function)"
+			],
+			[
+				"specialPrices",
+				"specialPricesTable"
+			],
+			[
+				"render",
+				"renderCells"
+			],
+			[
+				"commo",
+				"commonDirectives"
+			],
+			[
+				"set",
+				"setNotificationsContainerWidth"
+			],
+			[
+				"modal",
+				"modalHeader"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"cl",
+				"closeEditor"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"sho",
+				"showSettings"
+			],
+			[
+				"load",
+				"loadBody"
+			],
+			[
+				"Booking",
+				"BookingDictBuilder"
+			],
+			[
+				"bookin",
+				"bookingModel"
+			],
+			[
+				"hand",
+				"handleException"
+			],
+			[
+				"update",
+				"updateBooking"
+			],
+			[
+				"boo",
+				"booking"
+			],
+			[
+				"upda",
+				"updateButtonStatesFor"
+			],
+			[
+				"db",
+				"dbooking"
+			],
+			[
+				"accept",
+				"acceptButton"
+			],
+			[
+				"booking",
+				"bookingModel"
+			],
+			[
+				"disc",
+				"discount"
+			],
+			[
+				"handle",
+				"handleDiscountChange"
+			],
+			[
+				"bookings",
+				"bookingsModal"
+			],
+			[
+				"curren",
+				"currencyClient"
+			],
+			[
+				"bo",
+				"booking"
+			],
+			[
+				"currenc",
+				"currencyHelper"
+			],
+			[
+				"pricePer",
+				"pricePerNightAdmin"
+			],
+			[
+				"curr",
+				"currencyClient"
+			],
+			[
+				"currency",
+				"currency_helper"
+			],
+			[
+				"ARROW",
+				"ARROW_WIDTH"
+			],
+			[
+				"arrow",
+				"ARROW_HEIGHT"
+			],
+			[
+				"svh",
+				"svgH"
+			],
+			[
+				"svg",
+				"svgH"
+			],
+			[
+				"icon",
+				"iconsMiddle"
+			],
+			[
+				"out",
+				"outerWidth"
+			],
+			[
+				"icons",
+				"iconsPos"
+			],
+			[
+				"brand",
+				"brandMiddle"
+			],
+			[
+				"bra",
+				"brandMiddle"
+			],
+			[
+				"bran",
+				"brandPos"
+			],
+			[
+				"scr",
+				"scrollF"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"v",
+				"font-variant"
+			],
+			[
+				"he",
+				"hexToRGBArr"
+			],
+			[
+				"mix",
+				"mixCol"
+			],
+			[
+				"cont",
+				"containerBottom"
+			],
+			[
+				"conta",
+				"containerTop"
+			],
+			[
+				"con",
+				"containerY"
+			],
+			[
+				"container",
+				"containerHeight"
+			],
+			[
+				"init",
+				"initListeners"
+			],
+			[
+				"move",
+				"moveToCategory"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"reques",
+				"request_helper"
+			],
+			[
+				"cate",
+				"categoryId"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"edit",
+				"editCallback"
+			],
+			[
+				"cy",
+				"currencyHelper"
+			],
+			[
+				"coo",
+				"cookieHelper"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/views/admin/booking/admin_booking.html",
+			"settings":
+			{
+				"buffer_size": 8276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/admin/admin_layout.html",
+			"settings":
+			{
+				"buffer_size": 620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/elements/i18n/i18n.html",
+			"settings":
+			{
+				"buffer_size": 746,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 32.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pyli",
+				"User: Python Flake8 Lint"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"codeintel",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"trim",
+				"Trimmer: Remove trailing whitespace from each line."
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"trai",
+				"Trimmer: Remove trailing whitespace from each line."
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packaen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packagedisa",
+				"Package Control: Disable Package"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"jsin",
+				"JSHint"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jslin",
+				"JSLint: Run JSLint"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"change list",
+				"Change List: Show"
+			],
+			[
+				"list pack",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"paack",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"change",
+				"Change List: Show"
+			],
+			[
+				"bo",
+				"Bookmarks: Clear All"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control",
+				"Package Control: List Packages"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"for",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"sass",
+				"Set Syntax: CSS"
+			],
+			[
+				"iPla",
+				"Snippet: Try/Except/Else/Finally"
+			],
+			[
+				"new",
+				"Snippet: While Loop"
+			],
+			[
+				"new ",
+				"Snippet: New Property"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 203.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/albertmatyi/work/js/ferdinand",
+		"/home/albertmatyi/work/js/ferdinand/public/images"
+	],
+	"file_history":
+	[
+		"/home/albertmatyi/work/js/ferdinand/client/elements/i18n/i18n.html",
+		"/home/albertmatyi/work/python/hotelmotel/hotel-motel.sublime-project",
+		"/home/albertmatyi/work/js/ferdinand/ferdinand.sublime-project",
+		"/home/albertmatyi/work/clients/cosys/website/.assets/base.sql",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/admin/_accept.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/admin/wysihtml5.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/admin_main.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/category/admin/controls.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/models/abstract_content.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/mail/bookingNewAdmin.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/admin/bookable.js",
+		"/home/albertmatyi/Downloads/olfdgabkdgehljipnjaclfhpcmddcjml-1.7.0-www.Crx4Chrome.com.crx",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/elements/social.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/si18n.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/main.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/helpers/_mixins.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/content/admin/form.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_component-animations.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/content/main.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/config.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/category.py",
+		"/run/media/albertmatyi/GARMIN/Garmin/GPX/stbrg.gpx",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/currency.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/helpers/currency.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/models/booking.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/mail/booking.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/booking.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/_bookable.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/helpers/bgscroll.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/price.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/elements/progress.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/helpers/picaslide.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/view/directives/bookable.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/bookable/admin/form.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/helpers/tooltip.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/date.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/helpers.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/helpers/variables.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_responsive-utilities.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/user.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/settings.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap-datepicker/datepicker.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap-datepicker/datepicker.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/booking_datepicker.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/models/db.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/javascripts/bootstrap/tooltip.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/elements/admin/controls.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/elements/nav.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/form.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/elements/modal.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/bookable/main.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/category/main.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/admin/category.js",
+		"/home/albertmatyi/work/js/meteor-template-page/meteor-create-page",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/picasa.js",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts.html",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts_helpers.js",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts_i18n.js",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts_routes.js",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts_events.js",
+		"/home/albertmatyi/work/js/meteor-template-page/posts/posts.import.less",
+		"/home/albertmatyi/work/js/meteor-template-page/post/post_i18n.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/admin/accept.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/admin/deny.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/admin/details.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/admin/list.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/mail/bookingNewClient.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/mail/bookingDeniedClient.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/mail/bookingAcceptedClient.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/booking_form.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/_category.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_grid.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_variables.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/elements/_helpers.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/main.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/css/bootstrap/glyphicons-halflings-regular.svg",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/_base.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/elements/_navbar.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/wysihtml5/js/advanced_parser_rules.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/model/base.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/models/bookable.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/elements/helpers.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/elements/_footer.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/helpers/_fonts.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/helpers/helpers.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_buttons.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_mixins.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/javascripts/bootstrap/button.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/models/base.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/base/base.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/googlepics_mock_resp.json",
+		"/home/albertmatyi/work/python/hotelmotel/application/generate_keys.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/img/dsign/cat-border-top.svg",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/helpers/fixit.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_navbar.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/stylesheets/bootstrap/_navs.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/img/xcf/social_sprite_v.xcf",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/_content.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/booking/admin/email_fields.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/test/integration.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/todo",
+		"/home/albertmatyi/.config/openbox/rc.xml",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/elements/admin/controls.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/img/dsign/rombus.svg",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/_booking.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/scss/helpers/_colors.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/view/bookable.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/wysihtml5/js/wysihtml5-0.3.0.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/templates/elements/social.html",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/main.admin.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/mail.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/test/main.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/selenium/viewCategoryEdit",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/robots.txt",
+		"/home/albertmatyi/work/python/hotelmotel/application/helpers/request.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/controllers/category.js",
+		"/home/albertmatyi/work/python/hotelmotel/assets/xports/rombus.svg",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/test/util.js",
+		"/home/albertmatyi/work/python/hotelmotel/compile_css.sh",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/js/view/category.js",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/content.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/booking.py",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/bootstrap/css/bootstrap.scss",
+		"/home/albertmatyi/work/python/hotelmotel/application/controllers/bookable.py",
+		"/home/albertmatyi/work/python/hotelmotel/compile_js.sh",
+		"/home/albertmatyi/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/albertmatyi/work/python/hotelmotel/application/.jshintrc",
+		"/home/albertmatyi/work/python/hotelmotel/application/static/lib/flatui/bootstrap/css/bootstrap.css"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"*.py, *.html, *.js",
+			"*.py",
+			"*.js, *.html, *.scss",
+			"*.js, *.html",
+			"*.js, *.html, *.scss",
+			"*.js, *.html",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.html",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.scss",
+			"*.py",
+			"*.html",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.html",
+			"*.py",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js, *.scss, *.py, *.html",
+			"*.html",
+			"*.js, *.scss, *.py",
+			"*.js",
+			"*.scss",
+			"*.py, *.js, *.scss",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.python",
+			"*.js",
+			"*.html",
+			"*.js, ",
+			"*.scss, *.js, *.html",
+			"*.scss, *.js",
+			"*.scss",
+			"*.yaml",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.js, *.html, *.py",
+			"*.js, *.html",
+			"*.js",
+			"*.py",
+			"py",
+			"*.js, *.html",
+			"*.py",
+			"*.js",
+			"*.py",
+			"*.js, *.scss",
+			"*.html",
+			"*",
+			"*.js",
+			"*.py",
+			"*.js, -lib/, *.html, *.scss",
+			"*.js, -lib/, *.html",
+			"*.js, -lib/",
+			"*.scss",
+			"*.js, -lib/",
+			"*.scss",
+			"*.js",
+			"*.html",
+			"*.js, -lib/",
+			"*.html",
+			"*.js, -lib/",
+			"*.html",
+			"*.js, -lib/",
+			"*.js",
+			"js",
+			"scss",
+			"test/*.js",
+			"*.js",
+			"*.html",
+			"*.scss",
+			"*.html",
+			"*.js",
+			"*.scss",
+			"*.js",
+			"*.scss",
+			"*.py"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"i18nLanguageSelector",
+			"</trkseg>\n</trk>\n<trk>",
+			"</trkseg>\n</trk>\n<trk>\n  <name>48.1153017,11.4796772 - 48.075926,11.4291889 (7.0 km / 9 mins)</name>\n  <trkseg>",
+			" reservation request",
+			"reservation request",
+			"bnr",
+			"bcr",
+			"urllib",
+			"json",
+			"rate",
+			"convertDefaultTo",
+			"calcPerNight",
+			"guests",
+			"guestsSelect",
+			"MESSAGE_END_DATE_VALIDATION",
+			"setQuantity",
+			"refresh",
+			"setQuantity",
+			"quantity",
+			"loadBookingDates",
+			"validate",
+			"recalculatePrices",
+			"Template.posts.helpers({\n	postData: function() {\n		console.log('help');\n		return 'hawaii';\n	}\n});\n\n",
+			"post",
+			"5px",
+			"navbar",
+			"$grid-gutter-width",
+			"376px",
+			"94,0",
+			"376",
+			"left",
+			"absol",
+			"15px",
+			"15",
+			";\n",
+			"left",
+			";\n",
+			"md",
+			"54",
+			"64",
+			"48",
+			"rgba(147,147,147,1)",
+			"tile",
+			"page-header",
+			"page-he",
+			"lxterminal",
+			"i",
+			"icon-white",
+			"i",
+			"icon-white",
+			"icon-",
+			"[^\\w]icon-",
+			"icon-",
+			"background",
+			"contentGradientFrom",
+			"span",
+			"span4",
+			"icon-plus",
+			"css",
+			"150",
+			"icon",
+			"brand-font",
+			"body-font",
+			"=\"",
+			"127.125",
+			"330711",
+			"&amp;",
+			"&",
+			"Log out",
+			"Log",
+			"true",
+			"/",
+			"BaseURL + ",
+			" + 1",
+			"8",
+			"calcBg",
+			"album",
+			"5852899626158870961",
+			"116008649935898699063",
+			"bgBaseURL",
+			"openCate",
+			"this",
+			"transition",
+			"container",
+			"h1",
+			"initButtons",
+			"\"",
+			"\n-",
+			"-  ",
+			"- ",
+			"-",
+			"flat",
+			"print",
+			"Motel",
+			"# ",
+			"'.bookable[^\\s']",
+			".bookable[^\\s]",
+			"focus",
+			"bookableVaria",
+			"bookable_variant",
+			"i",
+			"category",
+			"ContentModel",
+			"bookableVariants/",
+			"content",
+			"contents",
+			"admin_contents",
+			"admin/form",
+			"addBookableVariantButton",
+			"word_wrap",
+			"entityId",
+			"id",
+			"entityId",
+			"admin/controls.html",
+			"$controls",
+			" $",
+			"controls",
+			"adminContr",
+			"controls",
+			"adminContr",
+			"pattern",
+			"leString",
+			"\\s([0-9]{4})\\s*[\\-/.]\\s*([0-9]{2})\\s*[\\-/.]\\s*([0-9]{2})",
+			"\\s*([0-9]{4})\\s*[\\-/.]\\s*([0-9]{2})\\s*[\\-/.]\\s*([0-9]{2})",
+			"([0-9]{4})\\s*[\\-/.]\\s*([0-9]{2})\\s*[\\-/.]\\s*([0-9]{2})",
+			"/",
+			"startIdx",
+			"endIdx"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"booking",
+			"$1#$2#$3",
+			"d:$3 m: $2 y: $1",
+			"Pension",
+			".$1",
+			"$1_$2",
+			"or",
+			"and",
+			"#",
+			"",
+			":",
+			"def $1",
+			"",
+			"'",
+			"\\",
+			"<li>",
+			"$1",
+			"<li>$0</li>",
+			"<ul class=\"tags\"><li class=\"title\">technologies</li><li>$1</li></ul>",
+			"<ul><li>$2</li></ul>",
+			"css",
+			"mysql",
+			"php",
+			"<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n<title>Albert Nagy Matyas's CV - Stack Overflow Careers 2.0 </title>\n<link href=\"Albert%20Nagy%20Matyas%27s%20CV%20-%20Stack%20Overflow%20Careers%202.0_files/apply.css\" rel=\"stylesheet\">\n</head>\n\n<body>\n\n    <div class=\"dialog-body\">\n\n        <div class=\"dialog-content\">\n\n            <div id=\"subheader\">\n                <div class=\"address\">\n                    <div>Munich, Germany</div>\n                    <div>albertmatyi@gmail.com</div>\n                    <div></div>\n                </div>\n                <h2>Albert Nagy Matyas</h2>\n            </div>\n\n            <table>\n                <thead>\n                    <tr>\n                        <th></th>\n                        <th></th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">\n                         <a href=\"http://careers.stackoverflow.com/albertmatyi\">careers.stackoverflow.com/albertmatyi</a><br/>\n                         <a href=\"http://en.linkedin.com/in/albertmatyi\">en.linkedin.com/in/albertmatyi</a>\n                     </td>\n                 </tr>\n             </tfoot>\n             <tbody>\n                <tr>\n                    <th>About Me</th>\n                    <td><p>I am a developer who:</p>\n\n                        <ul>\n                            <li>pursues challenges and is eager to learn new technologies</li>\n                            <li>likes to get a good grip on how stuff works</li>\n                            <li>finds interesting getting to the bottom of problems</li>\n                            <li>is passionate about his job and gets really involved</li>\n                            <li>hacks on small projects in his free time</li>\n                        </ul>\n\n                        <p>That being said, I am currently looking for a startup <em>-ish</em>\n                            work environment where I would have the opportunity to work along\n                            like-minded developers with great technical skills to share knowledge\n                            and develop an interesting product.</p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Technical Skills</th>\n                        <td class=\"skills\">\n                            <div>\n\n                                <strong>Like:</strong> spring, html5, jquery, c++, python, angularjs, continuous-integration, tdd\n                            </div>\n                            <div>\n\n                                <strong>Dislike:</strong> php, flash\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Experience</th>\n                        <td class=\"experience group\">\n                            <div class=\"group\">\n                                <h4 style=\"white-space: nowrap\">\n                                    <small>\n                                        <b>November 2012 - August 2013</b>\n                                    </small>\n                                    JEE6 Developer\n                                    <i>- BMW</i>\n                                </h4>\n                                <div class=\"tags\"><em>technologies:</em> java-ee-6 primefaces tdd selenium jquery less cdi glassfish-3 oracle11g intellij-idea maven</div>\n                                <p></p><p>I have managed to integrate into the ongoing <strong>web-based sales platform</strong>\n                                project with ease. I saw this job as a great opportunity to learn about\n                                the above mentioned technologies, and how such a large scale <strong>SCRUMM</strong> project that is about to have a public API for other clients is structured and developed.</p>\n\n                                <p>Although I have worked on many tasks regarding @EJB services <strong>JMS</strong>, my field of expertise was more related to the webapp part, where I have built deep understanding of how <strong>CDI</strong> and <strong>JSF</strong> / <strong>primefaces</strong> works.</p>\n\n                                <p>Besides the day-to-day business related user-stories we were working\n                                    on, I was more than happy to create project wide solutions for problems\n                                    all of us faced or that would enhance the quality of the project, which\n                                    were appreciated by colleagues, just as some of my larger refactoring /\n                                    restructuring proposals in the webapp which we as a team implemented.</p>\n\n                                    <p>Since we had a \"no-tester\" policy, everything was heavily tested\n                                        using integration and selenium test. Code quality and coverage was a\n                                        must which I easily met by following the TDD red-green-refactor\n                                        principle.</p>\n\n                                        <p>Though the project was on going I free willingly left in seek of a less corporateish workplace.</p>\n                                        <p></p>\n                                    </div>\n                                    <div class=\"group\">\n                                        <h4 style=\"white-space: nowrap\">\n                                            <small>\n                                                <b>September 2011 - November 2012</b>\n                                            </small>\n                                            Spring Developer\n                                            <i>- Pentalog</i>\n                                        </h4>\n                                        <div class=\"tags\"><em>technologies:</em> java spring neo4j jsp flex jquery continuous-integration tdd sonar</div>\n                                        <p></p><p>Working on a 5 people\n                                        project I was responsible for designing and implementing the back-end of\n                                        a CRM application for touch devices using spring, neo4j and flex.</p>\n\n                                        <p>Besides the service implementation - where we successfully used\n                                            custom AOP approaches - we had to find interesting approaches for\n                                            storage design, that is because we worked with a graph based DB (neo4j),\n                                            and the app should have taken advantage of it. </p>\n\n                                            <p>Although the frontend consisted of Flex, I got to work on develop\n                                                with jsp, jquery and css as well for the admin part of the application.</p>\n\n                                                <p>Along the application development I set up a continuous integration\n                                                    environment (nexus, jenkins, sonar) for the team to provide us fast\n                                                    feedback on stability and quality, which I have found very helpful.</p>\n\n                                                    <p>Starting from May 2012, I have completed a Flex self-training course,\n                                                     and started working on the frontend of the application, dipping my toes\n                                                     in the challenges of UI design and development. This experience taught\n                                                     me a lot about interactive UI programming, most of which knowledge is\n                                                     applicable both in the rich world of html &amp; js. </p>\n\n                                                     <p>My most notable contributions on the frontend side were defining\n                                                        structural patterns that we should use and reimplementing a custom\n                                                        gesture detection mechanism, because the one provided by the framework\n                                                        did not fit our needs.</p>\n                                                        <p></p>\n                                                    </div>\n                                                    <div class=\"group\">\n                                                        <h4 style=\"white-space: nowrap\">\n                                                            <small>\n                                                                <b>June 2010 - September 2010</b>\n                                                            </small>\n                                                            Cloud Computing Intern\n                                                            <i>- Pentalog</i>\n                                                        </h4>\n                                                        <div class=\"tags\"><em>technologies:</em> java vaadin google-app-engine c# asp.net-mvc junit selenium-rc windows-azure</div>\n                                                        <p></p><p>I have been testdriving cloud computing solutions: </p>\n\n                                                        <ul>\n                                                            <li>Windows Azure</li>\n                                                            <li>Google App Engine</li>\n                                                            <li>Amazon Web Services ( &amp; Eucalyptus)</li>\n                                                        </ul>\n\n                                                        <p>That meant developing Proof of concept applications on these platforms using mainly Java and C# .NET technologies.</p>\n\n                                                        <p>My biggest contribution was a contest platform application developed\n                                                            on top of Google App Engine using Java and Vaadin as the UI kit. It\n                                                            featured an multilanguage CMS with authentication for contestants, who\n                                                            could upload contest entries that were then ranked by the\n                                                            administrators.</p>\n\n                                                            <p>For this webapp I created a desktop counterpart, using which anyone could:</p>\n\n                                                            <ul>\n                                                                <li>easily deploy any number of apps in the cloud</li>\n                                                                <li>thoroughly UI test it (using Selenium Webdriver)</li>\n                                                                <li>migrate data from one deployment to the other</li>\n                                                            </ul>\n\n                                                            <p>At the end of my internship I held two presentations for project managers at Brasov (RO) &amp; Chisinau (MD) about: </p>\n\n                                                            <ul>\n                                                                <li>cloud computing</li>\n                                                                <li>test driven development &amp; selenium</li>\n                                                                <li>Sonar.</li>\n                                                            </ul>\n                                                            <p></p>\n                                                        </div>\n\n                                                    </td>\n                                                </tr>\n                                                <tr>\n                                                    <th>Education</th>\n                                                    <td class=\"education group\">\n                                                        <div class=\"group\">\n                                                            <b>2009 - 2011</b>\n                                                            <h4>Masters in CS Artificial Intelligence</h4>\n                                                            <p></p>\n                                                        </div>\n                                                        <div class=\"group\">\n                                                            <b>2006 - 2009</b>\n                                                            <h4>Bachelors in CS</h4>\n                                                            <p></p>\n                                                        </div>\n                                                    </td>\n                                                </tr>\n                                                <tr>\n                                                    <th>Projects</th>\n                                                    <td class=\"projects group\">\n                                                        <div class=\"group\">\n                                                            <h4>\n                                                                <small>\n                                                                    <a href=\"http://stackoverflow.com/users/209427\" alt=\"Albert Nagy Matyas's Stack Overflow Profile\">stackoverflow.com/users/209427</a>                                                                                            <br><b>November 2009 - Current</b>\n                                                                </small>\n                                                                Stack Overflow\n                                                            </h4>\n                                                            <p></p><p>Written 138 answers.  Active in javascript, jquery and java.</p>\n                                                            <p></p>\n                                                        </div>\n                                                        <div class=\"group\">\n                                                            <h4>\n                                                                <small>\n                                                                    <a href=\"https://github.com/albertmatyi/motelferdinand\" alt=\"Project Profile\">github.com/albertmatyi/motelferdinand</a>                                                                                            <br><b>July 2012 - June 2013</b>\n                                                                </small>\n                                                                GitHub - motelferdinand\n                                                            </h4>\n                                                            <div class=\"tags\"><em>technologies:</em> python javascript twitter-bootstrap client-side-templating html5</div>\n                                                            <p></p><p>A i18ned CMS and booking site for a pension deployable appengine</p>\n\n                                                            <p><a href=\"http://ferdinandmotel.appspot.com/\">http://ferdinandmotel.appspot.com</a></p>\n                                                            <p></p>\n                                                        </div>\n                                                        <div class=\"group\">\n                                                            <h4>\n                                                                <small>\n                                                                    <a href=\"https://github.com/albertmatyi/flaskgaellery\" alt=\"Project Profile\">github.com/albertmatyi/flaskgaellery</a>                                                                                            <br><b>May 2012 - June 2012</b>\n                                                                </small>\n                                                                GitHub - flaskgaellery\n                                                            </h4>\n                                                            <p></p><p>An image gallery based on flask deployable on Google Appengine</p>\n                                                            <p></p>\n                                                        </div>\n                                                        <div class=\"group\">\n                                                            <h4>\n                                                                <small>\n                                                                    <a href=\"http://code.google.com/p/pitchin/\" alt=\"Project Profile\">code.google.com/p/pitchin</a>                                                                                    </small>\n                                                                    Google Code - pitchin\n                                                                </h4>\n                                                                <p></p><p>Java ME based metronome for mobile phones</p>\n\n                                                                <p>I've created this metronome / tone generator from scratch for my\n                                                                    brother, and later published it on Google Code.  (it has got 300+\n                                                                    downloads)</p>\n                                                                    <p></p>\n                                                                </div>\n                                                                <div class=\"group\">\n                                                                    <h4>\n                                                                        <small>\n                                                                            <a href=\"http://pentalog-concursbetarelease.appspot.com/\" alt=\"Project Profile\">pentalog-concursbetarelease.appspot.com</a>                                                                                    </small>\n                                                                            Pentalog contest platform\n                                                                        </h4>\n                                                                        <div class=\"tags\"><em>technologies:</em> google-app-engine java datanucleus vaadin selenium </div>\n                                                                        <p></p><p>A multi-language CMS, that\n                                                                        allows the deployer to host contests, and users to sign-up, send\n                                                                        solutions for the contest and be graded.</p>\n\n                                                                        <p>I've built this application from scratch, both back and front-end.\n                                                                            I've also done UI/functional testing for the app</p>\n                                                                            <p></p>\n                                                                        </div>\n                                                                    </td>\n                                                                </tr>\n                                                            </tbody>\n                                                        </table>\n                                                    </div>\n                                                </div>\n\n                                            </body>\n                                            </html>",
+			".i18n",
+			"request.form",
+			".convertDefaultTo(",
+			"'",
+			"get_bookings_that_end_after",
+			"MILLIS_IN_DAY",
+			"book$1start",
+			"start",
+			"end",
+			"start",
+			"end",
+			"start",
+			"book",
+			"New",
+			"$1",
+			"state",
+			"#booking.$1<",
+			"#booking$1<",
+			">#$1",
+			"",
+			"#",
+			"",
+			"nrOfNights",
+			"catInfo.title",
+			"\\1:\\2",
+			"\\: ",
+			"\\:",
+			":\n:",
+			"'\\1'",
+			"'\\1\\",
+			" -= 1",
+			"'",
+			"'use strict'",
+			"$0 name$1",
+			"\\0 name\\1",
+			"#",
+			"",
+			"booking-entries",
+			"test/elements/dialog",
+			"EntryAdd",
+			"elements/modal",
+			"dialog.confirmation.ok",
+			"displayNotification",
+			"r + '",
+			"config",
+			"Bookable",
+			"bookable",
+			"\\(selector",
+			"Content",
+			"content",
+			"\\1 {",
+			"data-toggle=\"tooltip\"",
+			"	",
+			"/lib/",
+			"Bookable",
+			"bookable",
+			"ontent",
+			"content",
+			"\"elements/admin/controls\"",
+			"base/admin/form",
+			"populateForm",
+			"Bookable",
+			"bookable",
+			"ategory",
+			"\\1u\\2",
+			"bookable",
+			"Bookable",
+			"bookable",
+			"ontent",
+			"bookable",
+			"Bookable",
+			"bookable",
+			"ontent",
+			"Content",
+			"content",
+			"catIdx",
+			"catIdx\ncatIdx",
+			"admin-controls",
+			"'destroy'",
+			"bookedRooms",
+			"var $",
+			"bookingAddRoomModal",
+			"<div class=\"control-group\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/views/admin/booking/admin_booking.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/views/admin/admin_layout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								596,
+								596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/elements/i18n/i18n.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 403.0
+	},
+	"pinned_build_system": "",
+	"project": "ferdinand.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"i18nhtml",
+				"client/elements/i18n/i18n.html"
+			],
+			[
+				"adminlayou",
+				"client/views/admin/admin_layout.html"
+			],
+			[
+				"adminbook",
+				"client/views/admin/booking/admin_booking.html"
+			],
+			[
+				"adminscss",
+				"static/scss/admin/_bookings.scss"
+			],
+			[
+				"socia",
+				"templates/elements/social.html"
+			],
+			[
+				"mainhtml",
+				"templates/main.html"
+			],
+			[
+				"currenc",
+				"static/js/helpers/currency.js"
+			],
+			[
+				"bookin",
+				"controllers/booking.py"
+			],
+			[
+				"curre",
+				"static/js/helpers/currency.js"
+			],
+			[
+				"price",
+				"static/js/helpers/price.js"
+			],
+			[
+				"help/date",
+				"static/js/helpers/date.js"
+			],
+			[
+				"helptool",
+				"static/js/helpers/tooltip.js"
+			],
+			[
+				"datepicker",
+				"static/js/controllers/booking_datepicker.js"
+			],
+			[
+				"bookinghtml",
+				"templates/booking/form.html"
+			],
+			[
+				"picasa",
+				"static/lib/picasa.js"
+			],
+			[
+				"navhtml",
+				"templates/elements/nav.html"
+			],
+			[
+				"modalht",
+				"templates/elements/modal.html"
+			],
+			[
+				"bookablescss",
+				"static/scss/_bookable.scss"
+			],
+			[
+				"mixins",
+				"static/lib/bootstrap/stylesheets/bootstrap/_mixins.scss"
+			],
+			[
+				"buttonsc",
+				"static/lib/bootstrap/stylesheets/bootstrap/_buttons.scss"
+			],
+			[
+				"basescs",
+				"static/scss/_base.scss"
+			],
+			[
+				"grids",
+				"static/lib/bootstrap/stylesheets/bootstrap/_grid.scss"
+			],
+			[
+				"variscs",
+				"static/lib/bootstrap/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"catetop",
+				"static/img/dsign/cat-border-top.svg"
+			],
+			[
+				"catscss",
+				"static/scss/_category.scss"
+			],
+			[
+				"catborder",
+				"static/img/dsign/cat-border-top.svg"
+			],
+			[
+				"fixijs",
+				"static/js/helpers/fixit.js"
+			],
+			[
+				"navscs",
+				"static/scss/elements/_navbar.scss"
+			],
+			[
+				"varia",
+				"static/lib/bootstrap/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"bookscss",
+				"static/scss/_bookable.scss"
+			],
+			[
+				"bookmainhtml",
+				"templates/bookable/main.html"
+			],
+			[
+				"svg",
+				"static/img/dsign/rombus.svg"
+			],
+			[
+				"admincontrol",
+				"templates/elements/admin/controls.html"
+			],
+			[
+				"admincontrohtml",
+				"templates/elements/admin/controls.html"
+			],
+			[
+				"admincontr",
+				"templates/category/admin/controls.html"
+			],
+			[
+				"variabs",
+				"static/lib/bootstrap/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"colorscs",
+				"static/scss/helpers/_colors.scss"
+			],
+			[
+				"basescss",
+				"static/scss/_base.scss"
+			],
+			[
+				"socijs",
+				"static/js/elements/social.js"
+			],
+			[
+				"mainadminj",
+				"static/js/main.admin.js"
+			],
+			[
+				"mainjs",
+				"static/js/main.js"
+			],
+			[
+				"datepi",
+				"static/js/controllers/booking_datepicker.js"
+			],
+			[
+				"fixit",
+				"static/js/helpers/fixit.js"
+			],
+			[
+				"coloscs",
+				"static/scss/helpers/_colors.scss"
+			],
+			[
+				"mixin",
+				"static/scss/helpers/_mixins.scss"
+			],
+			[
+				"catetml",
+				"templates/category/main.html"
+			],
+			[
+				"catescss",
+				"static/scss/_category.scss"
+			],
+			[
+				"colors",
+				"static/scss/helpers/_colors.scss"
+			],
+			[
+				"rom",
+				"static/img/dsign/rombus.svg"
+			],
+			[
+				"admincatejs",
+				"static/js/controllers/admin/category.js"
+			],
+			[
+				"font",
+				"static/scss/helpers/_fonts.scss"
+			],
+			[
+				"socialhtml",
+				"templates/elements/social.html"
+			],
+			[
+				"mainscss",
+				"static/scss/main.scss"
+			],
+			[
+				"si1",
+				"helpers/si18n.py"
+			],
+			[
+				"nav",
+				"static/scss/elements/_navbar.scss"
+			],
+			[
+				"confi",
+				"static/js/config.js"
+			],
+			[
+				"bookingform",
+				"static/js/controllers/booking_form.js"
+			],
+			[
+				"bookinjs",
+				"static/js/controllers/booking.js"
+			],
+			[
+				"picas",
+				"static/js/helpers/picaslide.js"
+			],
+			[
+				"scroll",
+				"static/js/helpers/bgscroll.js"
+			],
+			[
+				"catemain",
+				"templates/category/main.html"
+			],
+			[
+				"categoryjs",
+				"static/js/controllers/category.js"
+			],
+			[
+				"jshintr",
+				".jshintrc"
+			],
+			[
+				"solorssc",
+				"static/scss/helpers/_colors.scss"
+			],
+			[
+				"bootstr",
+				"static/lib/bootstrap/css/bootstrap.scss"
+			],
+			[
+				"i18n",
+				"helpers/si18n.py"
+			],
+			[
+				"bg",
+				"static/js/helpers/bgscroll.js"
+			],
+			[
+				"contradminbooka",
+				"static/js/controllers/admin/bookable.js"
+			],
+			[
+				"bgsc",
+				"static/js/helpers/bgscroll.js"
+			],
+			[
+				"bookpy",
+				"controllers/bookable_variant.py"
+			],
+			[
+				"admincontrols",
+				"static/js/elements/admin/controls.js"
+			],
+			[
+				"bookavarinpy",
+				"controllers/bookable_variant.py"
+			],
+			[
+				"modelsjs",
+				"static/js/model/base.js"
+			],
+			[
+				"bookablvarian",
+				"models/bookable_variant.py"
+			],
+			[
+				"bookabpy",
+				"models/bookable.py"
+			],
+			[
+				"basepy",
+				"models/base.py"
+			],
+			[
+				"url",
+				"urls.py"
+			],
+			[
+				"modelbooka",
+				"models/bookable_variant.py"
+			],
+			[
+				"conpy",
+				"controllers/content.py"
+			],
+			[
+				"adminform",
+				"templates/bookable_variant/admin/form.html"
+			],
+			[
+				"bookform",
+				"templates/bookable/admin/form.html"
+			],
+			[
+				"adminvarij",
+				"static/js/controllers/admin/bookable_variant.js"
+			],
+			[
+				"main.js",
+				"static/js/main.js"
+			],
+			[
+				"bookavarijs",
+				"static/js/view/bookable_variant.js"
+			],
+			[
+				"viewcatejs",
+				"static/js/view/category.js"
+			],
+			[
+				"direcb",
+				"static/js/view/directives/body.js"
+			],
+			[
+				"bookmainht",
+				"templates/bookable/main.html"
+			],
+			[
+				"direvari",
+				"static/js/view/directives/bookable_variant.js"
+			],
+			[
+				"direcbooka",
+				"static/js/view/directives/bookable.js"
+			],
+			[
+				"bookhtml",
+				"templates/bookable_variant/main.html"
+			],
+			[
+				"adminbookajs",
+				"static/js/controllers/admin/bookable.js"
+			],
+			[
+				"datejs",
+				"static/js/helpers/date.js"
+			],
+			[
+				"date",
+				"helpers/date.py"
+			],
+			[
+				"cate",
+				"controllers/category.py"
+			],
+			[
+				"",
+				"templates/main.html"
+			],
+			[
+				"hero",
+				"templates/elements/hero.html"
+			],
+			[
+				"social",
+				"templates/elements/social.html"
+			],
+			[
+				"catejs",
+				"static/js/controllers/category.js"
+			],
+			[
+				"mainadminjs",
+				"static/js/main.admin.js"
+			],
+			[
+				"si",
+				"helpers/si18n.py"
+			],
+			[
+				"i18njs",
+				"static/js/helpers/i18n.js"
+			],
+			[
+				"socialscss",
+				"static/scss/elements/_social.scss"
+			],
+			[
+				"nav.sc",
+				"static/scss/elements/_navbar.scss"
+			],
+			[
+				"mainadmin",
+				"static/js/main.admin.js"
+			],
+			[
+				"mainscs",
+				"static/scss/main.scss"
+			],
+			[
+				"baseht",
+				"templates/base/base.html"
+			],
+			[
+				"contrcatejs",
+				"static/js/controllers/category.js"
+			],
+			[
+				"viewcate",
+				"static/js/view/category.js"
+			],
+			[
+				"picascs",
+				"static/scss/helpers/_picaslide.scss"
+			],
+			[
+				"picaslide",
+				"static/js/helpers/picaslide.js"
+			],
+			[
+				"picaslidejs",
+				"static/js/helpers/picaslide.js"
+			],
+			[
+				"contemain",
+				"templates/content/main.html"
+			],
+			[
+				"bookablhtml",
+				"templates/bookable/main.html"
+			],
+			[
+				"bookingscss",
+				"static/scss/_booking.scss"
+			],
+			[
+				"si18n",
+				"helpers/si18n.py"
+			],
+			[
+				"picaslisc",
+				"static/scss/helpers/_picaslide.scss"
+			],
+			[
+				"bootstrscss",
+				"static/lib/bootstrap/css/bootstrap.scss"
+			],
+			[
+				"contescss",
+				"static/scss/_content.scss"
+			],
+			[
+				"bookascss",
+				"static/scss/_bookable.scss"
+			],
+			[
+				"bookablema",
+				"templates/bookable/main.html"
+			],
+			[
+				"contema",
+				"templates/content/main.html"
+			],
+			[
+				"catehtml",
+				"templates/category/main.html"
+			],
+			[
+				"base.html",
+				"templates/base/base.html"
+			],
+			[
+				"categoryhtml",
+				"templates/category/main.html"
+			],
+			[
+				"wysihtmljs",
+				"static/js/helpers/wysihtml5.js"
+			],
+			[
+				"contenthtm",
+				"templates/content/admin/form.html"
+			],
+			[
+				"mainadmijs",
+				"static/js/main.admin.js"
+			],
+			[
+				"progrjs",
+				"static/js/elements/progress.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/work/js/story_share/storyshare.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 52.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 413.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

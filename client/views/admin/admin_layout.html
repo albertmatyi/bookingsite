@@ -1,22 +1,27 @@
 <template name="adminLayout">
-    <div class="alerts">
-			{{> bootstrapAlerts}}
-    </div>
+	<div class="alerts">
+		{{> bootstrapAlerts}}
+	</div>
 	{{>adminHeader}}
-    <div class="container-fluid admin-layout-container">
-			{{> yield}}
-    </div>
+	<div class="container-fluid admin-layout-container">
+		{{> yield}}
+	</div>
 </template>
 
 <template name="adminHeader">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
 
-                <a class="navbar-brand"
-                   href="{{pathFor 'admin'}}">{{i18n 'admin.Ferdinand'}}</a>
-            </div>
-        </div>
-    </nav>
+				<a class="navbar-brand"
+				href="{{pathFor 'admin'}}">{{i18n 'admin.Ferdinand'}}</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					{{>i18nLanguageSelector}}
+				</li>
+			</ul>
+		</div>
+	</nav>
 </template>

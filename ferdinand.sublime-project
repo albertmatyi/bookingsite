@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns" : [".meteor/local", "packages", ".git", ".idea"],
+			"file_exclude_patterns" : []
+		}
+	]
+}
