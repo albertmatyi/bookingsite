@@ -29,7 +29,7 @@ App.component('i18n.translations.en.booking').expose({
 	}
 });
 App.component('i18n.translations.hu.booking').expose({
-	title: 'Book',
+	title: 'Foglalás',
 	form: {
 		'Full Name': 'Teljes név',
 		'Specify a valid full name': 'Adjon meg egy helyes nevet',
@@ -56,7 +56,7 @@ App.component('i18n.translations.hu.booking').expose({
 	}
 });
 App.component('i18n.translations.ro.booking').expose({
-	title: 'Book',
+	title: 'Rezervare',
 	form: {
 		'Full Name': 'Nume complet',
 		'Specify a valid full name': 'Specificați numele complet',
