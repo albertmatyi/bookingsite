@@ -7,6 +7,7 @@ var invalidate = function(field, invalid, msg) {
 		$input.attr('title', msg).tooltip('fixTitle');
 	}
 	$input
+		.tooltip({trigger: 'manual'})
 		.tooltip(invalid ? 'show' : 'hide');
 	var $group = $input.parents('.form-group');
 	if (invalid) {
@@ -72,6 +73,7 @@ Template.bookingForm.events({
 					App.error.handle(err);
 				} else {
 					Router.go('booking.success', {_id: roomId});
+					Alerts.add(App.i18n.translate('booking.bookingSuccess'), 'success');
 				}
 			});
 		} else {

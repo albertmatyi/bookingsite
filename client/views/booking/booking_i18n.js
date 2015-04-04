@@ -3,6 +3,7 @@
 
 App.component('i18n.translations.en.booking').expose({
 	title: 'Book',
+	'bookingSuccess': 'Booking successfully completed',
 	form: {
 		'Full Name': 'Full Name',
 		'Specify a valid full name': 'Specify a valid full name',
@@ -30,6 +31,7 @@ App.component('i18n.translations.en.booking').expose({
 });
 App.component('i18n.translations.hu.booking').expose({
 	title: 'Foglalás',
+	'bookingSuccess': 'A foglalás sikeres',
 	form: {
 		'Full Name': 'Teljes név',
 		'Specify a valid full name': 'Adjon meg egy helyes nevet',
@@ -52,11 +54,12 @@ App.component('i18n.translations.hu.booking').expose({
 		'Nights': 'Északák',
 		'Invalid data! See fields above.': 'Helytelen űrlap. Kérem ellenőrizze',
 		'Book': 'Foglalás',
-		'Cancel': 'Mégse'
+		'Cancel': 'Mégse'		
 	}
 });
 App.component('i18n.translations.ro.booking').expose({
 	title: 'Rezervare',
+	'bookingSuccess': 'Rezervarea s-a efectuat cu succes',
 	form: {
 		'Full Name': 'Nume complet',
 		'Specify a valid full name': 'Specificați numele complet',
