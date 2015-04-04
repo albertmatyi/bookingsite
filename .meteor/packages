@@ -23,3 +23,5 @@ fastclick
 mrt:cookies
 accounts-base
 accounts-password
+# page animation
+# percolate:velocityjs
