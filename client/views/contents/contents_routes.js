@@ -36,4 +36,4 @@ defineContentPage('presso', w++);
 defineContentPage('location', w++);
 defineContentPage('about', w++);
 //defineContentPage('partners', w++);
-defineContentPage('guestbook', w++);
+// defineContentPage('guestbook', w++);

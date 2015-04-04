@@ -1,0 +1,16 @@
+<template name="feedbacks">
+	{{>pageHead type="feedbacks" classes="col-xs-12 col-sm-12 col-md-4"}}
+	{{#tile type="contact" classes="col-xs-12 col-sm-12 col-md-8"}}
+  
+	{{#each feedbacks}}
+		{{> feedback}}
+	{{/each}}
+	{{/tile}}
+</template>
+
+<template name="feedback">
+	<div class="feedback">
+	    <div class="col-xs-12">{{name}}</div>
+	    <div class="col-xs-12">{{message}}</div>
+	</div>
+</template>
