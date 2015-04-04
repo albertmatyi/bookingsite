@@ -23,40 +23,47 @@ var calculatePrices = function(booking) {
 	//calculate prices in booking currency
 	booking.price= cdt(booking.price, booking.currency, booking.rates);
 	booking.pricePerNight= cdt(booking.pricePerNight, 
-			booking.currency, booking.rates);
+		booking.currency, booking.rates);
 	booking.discount= cdt(booking.discount, booking.currency, booking.rates);
 	booking.total= cdt(booking.total, booking.currency, booking.rates);
 	booking.totalPricePerNight= // jshint
-		cdt(booking.totalPricePerNight, booking.currency, booking.rates);
-	};
-	var setState = function(booking) {
-		booking.state = booking.state || 'new';
-		booking.stateName = App.i18n.translate('admin.state.' + booking.state);
+	cdt(booking.totalPricePerNight, booking.currency, booking.rates);
+};
+var setState = function(booking) {
+	booking.state = booking.state || 'new';
+	booking.stateName = App.i18n.translate('admin.state.' + booking.state);
 
-		booking.stateIcon = App.admin.booking.STATE_ICONS[booking.state];
-	};
-	Router.route('/admin/booking/:_id', {
-		name: 'adminBooking',
-		template: 'adminBooking',
-		layoutTemplate: 'adminLayout',
-		waitOn: function() {
-			return [
-			Meteor.subscribe('guests'),
-			Meteor.subscribe('booking', this.params._id),
-			Meteor.subscribe('rooms')
-			];
-		},
-		data: function() {
-			var booking = App.bookings.collection.findOne(this.params._id);
-			if (!booking) {
-				return {};
-			}
-			calculatePrices(booking);
-			setState(booking);
-			return {
-				booking: booking,
-				room: App.rooms.collection.findOne(booking.roomId),
-				guest: App.guests.collection.findOne(booking.guestId)
-			};
+	booking.stateIcon = App.admin.booking.STATE_ICONS[booking.state];
+};
+Router.route('/admin/booking/:_id', {
+	name: 'adminBooking',
+	template: 'adminBooking',
+	layoutTemplate: 'adminLayout',
+	waitOn: function() {
+		return [
+		Meteor.subscribe('guests'),
+		Meteor.subscribe('booking', this.params._id),
+		Meteor.subscribe('rooms')
+		];
+	},
+	onBeforeAction: function() {
+		if (Meteor.userId()) {
+			this.next();
+		} else {
+			Router.go('login');
 		}
-	});
+	},
+	data: function() {
+		var booking = App.bookings.collection.findOne(this.params._id);
+		if (!booking) {
+			return {};
+		}
+		calculatePrices(booking);
+		setState(booking);
+		return {
+			booking: booking,
+			room: App.rooms.collection.findOne(booking.roomId),
+			guest: App.guests.collection.findOne(booking.guestId)
+		};
+	}
+});

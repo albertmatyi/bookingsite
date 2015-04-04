@@ -18,10 +18,15 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li>
+					{{>currencySelector}}
+				</li>
+				<li>
 					{{>i18nLanguageSelector}}
 				</li>
 				<li>
-					{{>currencySelector}}
+					<button class="logout btn">
+						{{i18n 'admin.logout'}}
+					</button>
 				</li>
 			</ul>
 		</div>

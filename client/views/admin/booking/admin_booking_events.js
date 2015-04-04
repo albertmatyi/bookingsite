@@ -36,7 +36,9 @@ Template.adminBookingButtons.events({
 			App.bookings.collection.remove(this.booking._id, function (err) {
 				if (!err) {
 					Router.go('adminBookings');
-					Alerts.add(App.i18n.translate('admin.deleteSuccessMessage', 'success'));
+					var message = App.i18n.translate(
+						'admin.deleteSuccessMessage', 'success');
+					Alerts.add(message);
 				} else {
 					App.error.handle(err);
 				}

@@ -1,6 +1,7 @@
 'use strict';
 
 App.component('i18n.translations.en.admin').expose({
+		'logout': 'Log Out',
 		'Booking between': 'Booking between',
 		'Start (yyyy-mm-dd)': 'Start (yyyy-mm-dd)',
 		'End (yyyy-mm-dd)': 'End (yyyy-mm-dd)',
@@ -55,5 +56,118 @@ App.component('i18n.translations.en.admin').expose({
 		'booking.actionSuccess': 'Booking successfully updated!',
 		'confirmDelete': 'Are you sure you would like to delete this booking?',
 		'deleteSuccessMessage': 'Booking removed successfully'
+	}
+);
+App.component('i18n.translations.ro.admin').expose({
+		'logout': 'Logout',
+		'Booking between': 'Rezervare între',
+		'Start (yyyy-mm-dd)': 'Sosire (yyyy-mm-dd)',
+		'End (yyyy-mm-dd)': 'Plecare (yyyy-mm-dd)',
+		'Load': 'Încarcă',
+		'Quicksearch': 'Căutare',
+		'Name': 'Nume',
+		'Email': 'Email',
+		'Phone': 'Telefon',
+		'Room': 'Cameră',
+		'Date': 'Data',
+		'State': 'Status',
+		'state.new': 'Nou',
+		'state.accepted': 'Acceptat',
+		'state.denied': 'Refuzat',
+		'Ferdinand': 'Ferdinand',
+		'Preferred language': 'Limbaj preferat',
+		'Citizenship': 'Cetățenie',
+		'Attached message': 'Mesaj atașat',
+		'Modified': 'Modificat',
+		'Quantity': 'Cantitate',
+		'Guests': 'Oaspeți',
+		'Arrival date': 'Data sosirii',
+		'Departure date': 'Data plecării',
+		'nights': 'nopți',
+		'Client': 'Client',
+		'Prices displayed in the currency the client chose. The price of the bookable and exchange rates are the ones from the day of the booking.': 'Prețurile afișate în moneda aleasă de client. Prețul camerei și ratele de schimb valutar sunt calculate cu valorile din ziua efectuării rezervării.',//jshint ignore: line
+		'Admin': 'Admin',
+		'Prices in the currently selected currency. The price of the bookable and exchange rates are the ones from the day of the booking.': 'Prețurile în moneda activă.  Prețul camerei și ratele de schimb valutar sunt calculate cu valorile din ziua efectuării rezervării.', //jshint ignore: line
+		'Price': 'Preț',
+		'Per night': 'Per noapte',
+		'Discount': 'Discount',
+		'Total': 'Total',
+		'Delete': 'Șterge',
+		'Back': 'Înapoi',
+		'Accept': 'Acceptă',
+		'Deny': 'Refuză',
+		'Send message': 'Trimite mesaj',
+		'sending': 'Trimite',
+		'instant update': 'actualizare instantă',
+		'Subject': 'Subiect',
+		'send': 'Trimite',
+		'cancel': 'Anulare',
+		'to': 'Destinatar',
+		'messageSent': 'Mesajul a fost trimis cu succes!',
+		'sentOn': 'Messaj trimis pe',
+		'Body': 'Conținut',
+		'message.sentMessages': 'Mesaje trimise',
+		'booking.acceptConfirm': 'Sunteți siguri că vreți să ACCEPTAȚI rezervarea? Reamintim că această acțiune va trimite un email clientului, care nu poate fi anulat', //jshint ignore: line
+		'booking.denyConfirm': 'Sunteți siguri că vreți să REFUZAȚI rezervarea? Reamintim că această acțiune va trimite un email clientului, care nu poate fi anulat',     //jshint ignore: line
+		'booking.actionSuccess': 'Rezervarea a fost actualizată cu succes!',
+		'confirmDelete': 'Sunteți siguri că vreți să ștergeți rezervarea?',
+		'deleteSuccessMessage': 'Rezervarea a fost ștearsă cu succes'
+	}
+);
+
+App.component('i18n.translations.hu.admin').expose({
+		'logout': 'Kilépés',
+		'Booking between': 'Foglalási intervallum',
+		'Start (yyyy-mm-dd)': 'Sosire (yyyy-mm-dd)',
+		'End (yyyy-mm-dd)': 'Plecare (yyyy-mm-dd)',
+		'Load': 'Betölt',
+		'Quicksearch': 'Keres',
+		'Name': 'Név',
+		'Email': 'Email',
+		'Phone': 'Telefon',
+		'Room': 'Szoba',
+		'Date': 'Dátum',
+		'State': 'Státus',
+		'state.new': 'Új',
+		'state.accepted': 'Elfogadva',
+		'state.denied': 'Elutasítva',
+		'Ferdinand': 'Ferdinánd',
+		'Preferred language': 'Választott nyelv',
+		'Citizenship': 'Állampolgárság',
+		'Attached message': 'Csatolt üzenet',
+		'Modified': 'Módosítva',
+		'Quantity': 'Mennyiség',
+		'Guests': 'Vendégek',
+		'Arrival date': 'Érkezés időpontja',
+		'Departure date': 'Távozás időpontja',
+		'nights': 'északák',
+		'Client': 'Kliens',
+		'Prices displayed in the currency the client chose. The price of the bookable and exchange rates are the ones from the day of the booking.': 'A feltüntetett árak a kliens által választott pénznemben. A szoba ára illetve a valutaárfolyam a foglalás napján érvényes értékekkel van feltüntetve.',//jshint ignore: line
+		'Admin': 'Admin',
+		'Prices in the currently selected currency. The price of the bookable and exchange rates are the ones from the day of the booking.': 'A feltüntetett árak az aktuálisan kiválasztott pénznemben. A szoba ára illetve a valutaárfolyam a foglalás napján érvényes értékekkel van feltüntetve.', //jshint ignore: line
+		'Price': 'Ár',
+		'Per night': 'Per északa',
+		'Discount': 'Kedvezmény',
+		'Total': 'Total',
+		'Delete': 'Töröl',
+		'Back': 'Vissza',
+		'Accept': 'Elfogad',
+		'Deny': 'Visszautasít',
+		'Send message': 'Üzenetküldés',
+		'sending': 'Küld',
+		'instant update': 'instant frissítés',
+		'Subject': 'Tárgy',
+		'send': 'Küld',
+		'cancel': 'Mégse',
+		'to': 'Címzett',
+		'messageSent': 'Az üzenet sikeresen elküldve!',
+		'sentOn': 'Üzenet küldési dátuma',
+		'Body': 'Tartalom',
+		'message.sentMessages': 'Elküldött üzenetek',
+		'booking.acceptConfirm': 'Biztos abban, hogy EL AKARJA FOGADNI a foglalást? Emlékeztetjük, hogy ez a művelet egy igazolóemailt küld a kliensnek amit nem lehet érvényteleníteni.', //jshint ignore: line
+		'booking.denyConfirm': 'Biztos abban, hogy EL AKARJA UTASÍTANI a foglalást? Emlékeztetjük, hogy ez a művelet egy igazolóemailt küld a kliensnek amit nem lehet érvényteleníteni.',     //jshint ignore: line
+		'booking.actionSuccess': 'A foglalás sikeresen frissítve volt!',
+		'confirmDelete': 'Biztos benne, hogy törölni szeretné a foglalást?',
+		'deleteSuccessMessage': 'A foglalás sikeresen törölve volt.'
 	}
 );
