@@ -15,12 +15,12 @@ var getBookingsInRange = function(startDate, endDate) {
 	return cursor;
 };
 
-App.auth.meteor.publish('future-bookings', function() {
+Meteor.publish('future-bookings', function() {
 	return getBookingsInRange(+new Date(), null);
 });
 
 App.auth.meteor.publish('bookings', getBookingsInRange);
-App.auth.meteor.publish('booking', function(id) {
+Meteor.publish('booking', function(id) {
 	var cursor = App.bookings.collection.find(id);
 	// console.log(cursor.count());
 	return cursor;
