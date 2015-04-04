@@ -2,7 +2,12 @@
 
 Template.adminBookingPrices.events({
 	'keyup .discount-input, change .discount-input': function(e) {
-		var discount = parseInt($(e.currentTarget).val()) || 0;
+		var discountInBookingCurrency = parseInt($(e.currentTarget).val()) || 0;
+		var discount = App.currency.convert(
+			discountInBookingCurrency, 
+			this.booking.currency, 
+			App.currency.data.default,
+			this.booking.exchangeRates);
 		App.bookings.collection.update(this.booking._id,
 			{$set: {discount: discount}});
 	}

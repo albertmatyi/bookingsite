@@ -2,6 +2,7 @@
 
 var getBookingsInRange = function(startDate, endDate) {
 	// TODO return bookings in range
+	console.log(startDate);
 	if (!startDate) {
 		startDate = moment().format(App.date.format);
 	}
@@ -9,6 +10,7 @@ var getBookingsInRange = function(startDate, endDate) {
 	if (endDate) {
 		qry.start = {$lt: endDate};
 	}
+	console.log(qry);
 	var cursor = App.bookings.collection.find(qry);
 	return cursor;
 };
