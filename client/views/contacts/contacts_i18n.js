@@ -25,7 +25,7 @@ App.component('i18n.translations.ro.contacts').expose({
 	messageSuccess: 'Message successfully sent'
 });
 App.component('i18n.translations.hu.contacts').expose({
-	title: 'Elérhetőseg',
+	title: 'Elérhetőség',
 	name: 'Név',
 	description: '',
 	'Your full name': 'Your full name',
