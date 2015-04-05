@@ -1,16 +1,61 @@
 <template name="feedbacks">
 	{{>pageHead type="feedbacks" classes="col-xs-12 col-sm-12 col-md-4"}}
 	{{#tile type="contact" classes="col-xs-12 col-sm-12 col-md-8"}}
-  
+	{{> feedbacksNewForm}}
 	{{#each feedbacks}}
-		{{> feedback}}
+	{{> feedback}}
 	{{/each}}
 	{{/tile}}
 </template>
 
 <template name="feedback">
 	<div class="feedback">
-	    <div class="col-xs-12">{{name}}</div>
-	    <div class="col-xs-12">{{message}}</div>
+		<div class="col-xs-12">{{name}}</div>
+		<div class="col-xs-12">{{message}}</div>
 	</div>
+</template>
+
+<template name="feedbacksNewForm">
+	<div class="feedback-toggler-wrapper">
+		<button class="form-toggler btn btn-primary">{{ i18n 'feedbacks.leaveFeedback' }}</button>
+	</div>
+	<form class="feedback-form form-horizontal">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label class="col-xs-2" for="contact-name">
+					{{ i18n 'feedbacks.name' }}*
+				</label>
+
+				<div class="col-xs-10">
+					<input class="form-control"
+					id="contact-name"
+					type="text"
+					placeholder="{{ i18n 'feedbacks.Your full name'}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-xs-2" for="contact-email">
+					{{ i18n 'feedbacks.email' }} *
+				</label>
+
+				<div class="col-xs-10">
+					<input class="form-control"
+					id="contact-email"
+					type="text"
+					placeholder="{{ i18n 'feedbacks.Your email address'}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-xs-2" for="contact-message">
+					{{ i18n 'feedbacks.message' }}*
+				</label>
+
+				<div class="col-xs-10">
+					<textarea class="form-control"
+					id="contact-message"
+					placeholder="{{ i18n 'feedbacks.The body of the message'}}"></textarea>
+				</div>
+			</div>
+		</div>
+	</form>
 </template>
