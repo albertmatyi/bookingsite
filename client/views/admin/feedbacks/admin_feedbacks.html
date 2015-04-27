@@ -1,0 +1,27 @@
+<template name="adminFeedbacks">
+	{{> adminFeedbacksList}}
+</template>
+
+<template name="adminFeedbacksList">
+    <table class="feedbacks table">
+        <thead>
+        <tr>
+            <td>{{ i18n 'feedbacks.Name'}}</td>
+            <td>{{ i18n 'feedbacks.Email'}}</td>
+            <td>{{ i18n 'feedbacks.Message'}}</td>
+        </tr>
+        </thead>
+        <tbody>
+				{{#each feedbacks}}
+					{{> adminFeedbackListElement}}
+				{{/each}}
+        </tbody>
+    </table>
+</template>
+<template name="adminFeedbackListElement">
+    <tr class="feedback">
+        <td>{{ this.name}}</td>
+        <td>{{ this.email}}</td>
+        <td>{{ i18n this 'message'}}</td>
+    </tr>
+</template>

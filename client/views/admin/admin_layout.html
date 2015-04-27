@@ -1,34 +1,39 @@
 <template name="adminLayout">
-	<div class="alerts">
-		{{> bootstrapAlerts}}
-	</div>
+    <div class="alerts">
+			{{> bootstrapAlerts}}
+    </div>
 	{{>adminHeader}}
-	<div class="container-fluid admin-layout-container">
-		{{> yield}}
-	</div>
+    <div class="container-fluid admin-layout-container">
+			{{> yield}}
+    </div>
 </template>
 
 <template name="adminHeader">
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<a class="navbar-brand"
-				href="{{pathFor 'admin'}}">{{i18n 'admin.Ferdinand'}}</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					{{>currencySelector}}
-				</li>
-				<li>
-					{{>i18nLanguageSelector}}
-				</li>
-				<li>
-					<button class="logout btn btn-link">
-						{{i18n 'admin.logout'}}
-					</button>
-				</li>
-			</ul>
-		</div>
-	</nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand"
+                   href="{{pathFor 'admin'}}">{{i18n 'admin.Ferdinand'}}</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{pathFor 'adminFeedbacks'}}">
+											{{i18n 'adminFeedbacks.Title'}}
+                    </a>
+                </li>
+                <li>
+									{{>currencySelector}}
+                </li>
+                <li>
+									{{>i18nLanguageSelector}}
+                </li>
+                <li>
+                    <button class="logout btn btn-link">
+											{{i18n 'admin.logout'}}
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </template>

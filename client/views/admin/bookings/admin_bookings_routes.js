@@ -11,13 +11,7 @@ Router.route('/admin/bookings', {
 			Meteor.subscribe('rooms')
 		];
 	},
-	onBeforeAction: function() {
-		if (Meteor.userId()) {
-			this.next();
-		} else {
-			Router.go('login');
-		}
-	},
+	onBeforeAction: App.login.userCheck,
 	data: function() {
 		return {
 			bookings: App.bookings.collection.find()

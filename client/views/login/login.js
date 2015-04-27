@@ -24,3 +24,4 @@ Template.login.events({
 		});
 	}
 });
+

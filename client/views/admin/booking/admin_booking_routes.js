@@ -6,7 +6,7 @@ var calculatePrices = function(booking) {
 	booking.discount = booking.discount || 0;
 	booking.total = booking.price - booking.discount;
 	booking.totalPricePerNight =
-	Math.round(booking.total * 100 / booking.days) / 100;
+		Math.round(booking.total * 100 / booking.days) / 100;
 	// calculate prices in selected "admin" currency
 	var curr = App.currency.selected();
 	var cdt = App.currency.convertDefaultTo;
@@ -16,18 +16,18 @@ var calculatePrices = function(booking) {
 		discount: cdt(booking.discount, curr, booking.rates),
 		total: cdt(booking.total),
 		totalPricePerNight: // jshint
-		cdt(booking.totalPricePerNight, curr, booking.rates),
+			cdt(booking.totalPricePerNight, curr, booking.rates),
 		currency: curr
 	};
 
 	//calculate prices in booking currency
-	booking.price= cdt(booking.price, booking.currency, booking.rates);
-	booking.pricePerNight= cdt(booking.pricePerNight, 
+	booking.price = cdt(booking.price, booking.currency, booking.rates);
+	booking.pricePerNight = cdt(booking.pricePerNight,
 		booking.currency, booking.rates);
-	booking.discount= cdt(booking.discount, booking.currency, booking.rates);
-	booking.total= cdt(booking.total, booking.currency, booking.rates);
-	booking.totalPricePerNight= // jshint
-	cdt(booking.totalPricePerNight, booking.currency, booking.rates);
+	booking.discount = cdt(booking.discount, booking.currency, booking.rates);
+	booking.total = cdt(booking.total, booking.currency, booking.rates);
+	booking.totalPricePerNight = // jshint
+		cdt(booking.totalPricePerNight, booking.currency, booking.rates);
 };
 var setState = function(booking) {
 	booking.state = booking.state || 'new';
@@ -41,18 +41,12 @@ Router.route('/admin/booking/:_id', {
 	layoutTemplate: 'adminLayout',
 	waitOn: function() {
 		return [
-		Meteor.subscribe('guests'),
-		Meteor.subscribe('booking', this.params._id),
-		Meteor.subscribe('rooms')
+			Meteor.subscribe('guests'),
+			Meteor.subscribe('booking', this.params._id),
+			Meteor.subscribe('rooms')
 		];
 	},
-	onBeforeAction: function() {
-		if (Meteor.userId()) {
-			this.next();
-		} else {
-			Router.go('login');
-		}
-	},
+	onBeforeAction: App.login.userCheck,
 	data: function() {
 		var booking = App.bookings.collection.findOne(this.params._id);
 		if (!booking) {
