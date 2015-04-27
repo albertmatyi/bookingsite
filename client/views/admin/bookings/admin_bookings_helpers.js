@@ -29,3 +29,17 @@ App.component('admin.booking').expose({
 	getState: getState,
 	STATE_ICONS: STATE_ICONS
 });
+
+Template.adminBookingsFilters.rendered = function() {
+	$('.datepicker').datepicker({
+		format: App.date.format.toLowerCase(),
+		todayHighlight: true,
+		todayBtn: false,
+		autoclose: true,
+		weekStart: 1,
+		startDate: App.date.today,
+		endDate: undefined,
+		keyboardNavigation: true,
+		forceParse: false
+	});
+};

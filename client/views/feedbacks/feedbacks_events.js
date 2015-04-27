@@ -5,7 +5,7 @@ Template.feedbacksNewForm.events({
 		e.preventDefault();
 		var data = $(e.currentTarget).serializeObject();
 		App.call('feedbacks.new', data, function() {
-
+			Session.set('feedbacks.sent', true);
 		});
 	},
 	'click .cancel.btn': function(e) {

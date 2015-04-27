@@ -1,3 +1,4 @@
+/* jshint maxlen: false*/
 'use strict';
 
 App.component('i18n.translations.en.feedbacks').expose({

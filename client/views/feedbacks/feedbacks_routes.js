@@ -10,8 +10,7 @@ Router.route('/feedbacks', {
 			feedbacks: App.feedbacks.collection.find({}, {sort: {created: -1}})
 		};
 	}
-})
-;
+});
 
 
 App.component('pages.feedbacks').expose({

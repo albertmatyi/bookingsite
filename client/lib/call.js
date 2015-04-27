@@ -2,7 +2,8 @@
 
 App.call = function() {
 	var callback;
-	if (arguments.length > 0 && typeof arguments[arguments.length - 1] === 'function') {
+	if (arguments.length > 0 &&
+		typeof arguments[arguments.length - 1] === 'function') {
 		callback = arguments[arguments.length - 1];
 	}
 	var argArr = Array.prototype.splice.call(arguments, 0);
