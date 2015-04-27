@@ -1,8 +1,6 @@
 'use strict';
 
-var getBookingsInRange = function(startDate, endDate) {	console.log('dude');
-	// TODO return bookings in range
-	// console.log(startDate);
+var getBookingsInRange = function(startDate, endDate) {
 	if (!startDate) {
 		startDate = moment().format(App.date.format);
 	}

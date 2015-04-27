@@ -1,12 +1,16 @@
 'use strict';
 
-Template.feedbacks.helpers({
-	feedbacks: function() {
-		return ['wow', 'doge'];
-	},
-	feedbackData: function() {
-		console.log('help');
-		return 'hawaii';
+Template.feedbacksNewForm.helpers({
+	showForm: function() {
+		return Session.get('feedbacks.showForm') ? '' : 'hidden';
+	}, showFormToggler: function() {
+		return !Session.get('feedbacks.showForm') ? '' : 'hidden';
 	}
 });
+Template.feedbacks.helpers({
+	feedbackSent: function() {
+		return Session.get('feedbacks.sent');
+	}
+});
+
 

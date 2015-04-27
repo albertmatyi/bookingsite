@@ -7,10 +7,11 @@ Router.route('/feedbacks', {
 	},
 	data: function() {
 		return {
-			feedbacks: App.feedbacks.collection.find()
+			feedbacks: App.feedbacks.collection.find({}, {sort: {created: -1}})
 		};
 	}
-});
+})
+;
 
 
 App.component('pages.feedbacks').expose({

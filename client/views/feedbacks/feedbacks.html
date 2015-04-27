@@ -1,61 +1,88 @@
 <template name="feedbacks">
 	{{>pageHead type="feedbacks" classes="col-xs-12 col-sm-12 col-md-4"}}
-	{{#tile type="contact" classes="col-xs-12 col-sm-12 col-md-8"}}
-	{{> feedbacksNewForm}}
-	{{#each feedbacks}}
-	{{> feedback}}
-	{{/each}}
+	{{#tile type="feedbacks" classes="col-xs-12 col-sm-12 col-md-8"}}
+		{{# if feedbackSent }}
+			{{> feedbacksThankYou}}
+		{{else}}
+			{{> feedbacksNewForm}}
+		{{/if}}
+		{{#each feedbacks}}
+			{{> feedback}}
+		{{/each}}
 	{{/tile}}
 </template>
 
+<template name="feedbacksThankYou">
+    <div class="row">
+        <h3 class="thank-you col-xs-10 col-xs-offset-1">
+					{{i18n 'feedbacks.thankYou'}}
+        </h3>
+    </div>
+</template>
+
 <template name="feedback">
-	<div class="feedback">
-		<div class="col-xs-12">{{name}}</div>
-		<div class="col-xs-12">{{message}}</div>
-	</div>
+    <div class="feedback row">
+        <div class="name col-xs-12">{{name}}</div>
+        <div class="message col-xs-12">{{message}}</div>
+    </div>
 </template>
 
 <template name="feedbacksNewForm">
-	<div class="feedback-toggler-wrapper">
-		<button class="form-toggler btn btn-primary">{{ i18n 'feedbacks.leaveFeedback' }}</button>
-	</div>
-	<form class="feedback-form form-horizontal">
-		<div class="col-xs-12">
-			<div class="form-group">
-				<label class="col-xs-2" for="contact-name">
-					{{ i18n 'feedbacks.name' }}*
-				</label>
+    <div class="feedback-toggler-wrapper {{showFormToggler}}">
+        <button class="form-toggler btn btn-primary ">
+            <span class="fa fa-edit"></span>
+					{{ i18n 'feedbacks.leaveFeedback' }}
+        </button>
+    </div>
+    <form class="feedback-form form-horizontal {{showForm}}">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label class="col-xs-2" for="feedback-name">
+									{{ i18n 'feedbacks.name' }}*
+                </label>
 
-				<div class="col-xs-10">
-					<input class="form-control"
-					id="contact-name"
-					type="text"
-					placeholder="{{ i18n 'feedbacks.Your full name'}}"/>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-xs-2" for="contact-email">
-					{{ i18n 'feedbacks.email' }} *
-				</label>
+                <div class="col-xs-10">
+                    <input class="form-control"
+                           id="feedback-name"
+                           name="name"
+                           type="text"
+                           placeholder="{{ i18n 'feedbacks.Your full name'}}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2" for="feedback-email">
+									{{ i18n 'feedbacks.email' }} *
+                </label>
 
-				<div class="col-xs-10">
-					<input class="form-control"
-					id="contact-email"
-					type="text"
-					placeholder="{{ i18n 'feedbacks.Your email address'}}"/>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-xs-2" for="contact-message">
-					{{ i18n 'feedbacks.message' }}*
-				</label>
+                <div class="col-xs-10">
+                    <input class="form-control"
+                           id="feedback-email"
+                           name="email"
+                           type="text"
+                           placeholder="{{ i18n 'feedbacks.Your email address'}}"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2" for="feedback-message">
+									{{ i18n 'feedbacks.message' }}*
+                </label>
 
-				<div class="col-xs-10">
+                <div class="col-xs-10">
 					<textarea class="form-control"
-					id="contact-message"
-					placeholder="{{ i18n 'feedbacks.The body of the message'}}"></textarea>
-				</div>
-			</div>
-		</div>
-	</form>
+                    id="feedback-message"
+                    name="message"
+                    placeholder="{{ i18n 'feedbacks.The body of the message'}}"></textarea>
+                </div>
+            </div>
+            <div class="form-actions form-group">
+                <button class="cancel btn btn-link">
+									{{{i18n 'feedbacks.cancel'}}}
+                </button>
+                <button class="submit-feedback btn btn-primary">
+                    <span class="fa fa-check"></span>
+									{{ i18n 'feedbacks.submitFeedback' }}
+                </button>
+            </div>
+        </div>
+    </form>
 </template>

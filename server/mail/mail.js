@@ -35,6 +35,7 @@ App.component('mail').expose({
 	getOptions: getMailOptions,
 	renderTemplate: renderTemplate,
 	send: function(data) {
+		console.log('Sending mail', data);
 		NigerianPrinceGun.send(data);
 	}
 });

@@ -1,0 +1,44 @@
+Dear Administrator,
+
+
+A new feedback was left on the Ferdinand website.
+
+Please visit the admin panel to review & accept it
+
+
+    Name: {{name}}
+
+    Email: {{email}}
+
+    Message: {{i18n.en.message}}
+
+
+Best regards,
+The internet
+
+
+Contact
+     Street address
+     Strada 1 Decembrie 1918 nr. 10 ( Yard )
+
+     Locality/City
+     Sfântu Gheorghe
+
+     Region/State
+     Covasna
+
+     Country
+     Romania
+
+     Postal code
+     520008
+
+     Email
+     fp@zoltur.ro
+
+		  Phone
+		  +40 740 180 502
+
+		  Fax
+		  +40 367 800 449
+    
