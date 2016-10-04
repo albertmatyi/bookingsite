@@ -19,9 +19,9 @@ Package.on_use(function (api) {
   api.add_files('lib/js/affix.js', 'client');
 
   // fonts
-  api.add_files('lib/fonts/glyphicons-halflings-regular.eot', 'client');
-  api.add_files('lib/fonts/glyphicons-halflings-regular.svg', 'client');
-  api.add_files('lib/fonts/glyphicons-halflings-regular.ttf', 'client');
-  api.add_files('lib/fonts/glyphicons-halflings-regular.woff', 'client');
-  api.add_files('lib/fonts/glyphicons-halflings-regular.woff2', 'client');
+  api.addAssets('lib/fonts/glyphicons-halflings-regular.eot', 'client');
+  api.addAssets('lib/fonts/glyphicons-halflings-regular.svg', 'client');
+  api.addAssets('lib/fonts/glyphicons-halflings-regular.ttf', 'client');
+  api.addAssets('lib/fonts/glyphicons-halflings-regular.woff', 'client');
+  api.addAssets('lib/fonts/glyphicons-halflings-regular.woff2', 'client');
 });

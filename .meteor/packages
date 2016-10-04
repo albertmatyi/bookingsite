@@ -3,14 +3,13 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
 iron:router
 component
 bootstrap3-less
 font-awesome-4-less
-less
+less@2.7.5
 momentjs:moment
-accounts-google
+accounts-google@1.0.10
 rajit:bootstrap3-datepicker
 ian:accounts-ui-bootstrap-3
 mrt:bootstrap-alerts
@@ -18,5 +17,21 @@ percolate:migrations
 natestrauser:animate-css
 gfk:mailgun-api
 meteorhacks:ssr
-fastclick
+fastclick@1.0.12
 mrt:cookies
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+standard-minifier-css
+standard-minifier-js
+shell-server
